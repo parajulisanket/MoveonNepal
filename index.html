@@ -36,110 +36,104 @@
       }
     </style>
   </head>
-  <body>
-    <!-- navigaiton bar -->
-    <div
-      class="bg-gradient-to-r from-[#021a45] to-[#00479e] justify-center h-10 flex items-center"
-    >
-      <p class="text-[20px] text-white font-extralight md:text-[13px] font-inter tracking-widest">
-        This is historical material “frozen in time”. The website is no longer
-        updated and links to external websites and some internal pages may not
-        work.
-      </p>
-    </div>
+<!-- Notification Banner -->
+<div class="bg-gradient-to-r from-[#021a45] to-[#00479e] justify-center h-10 flex items-center">
+  <p class="text-[20px] text-white font-extralight md:text-[13px] font-inter tracking-widest">
+    This is historical material “frozen in time”. The website is no longer updated and links to external websites and some internal pages may not work.
+  </p>
+</div>
 
-    <nav
-      class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg"
-    >
-      <a href="./index.html" class="flex-shrink-0 cursor-pointer">
-        <h2
-        class="text-[18px] px-6 font-serif font-semibold text-[#021a45] hover:text-red-700 tracking-wider "
-      >
-        MOVE ON NEPAL
-      </h2>
-      </a>
+<!-- Navigation Bar -->
+<nav class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg">
 
-      <a
-        href="./index.html"
-        class="absolute left-1/2 transform -translate-x-1/2 top-2"
-      >
-        <img
-          src="./assets/logo.png"
-          alt="Logo"
-          class="h-16 transition-transform duration-400 ease-in-out hover:scale-105 cursor-pointer"
-        />
-      </a>
+  <!-- Logo Section (Centered Logo) -->
+  <a href="./index.html" class="flex-shrink-0 cursor-pointer">
+    <h2 class="text-[18px] px-6 font-serif font-semibold text-[#021a45] hover:text-red-700 tracking-wider">
+      MOVE ON NEPAL
+    </h2>
+  </a>
 
-      <div class="flex items-center space-x-6 pr-6">
-        <ul class="flex space-x-6 text-[15px]">
-          <li
-            class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
-          >
-            <a href="./administration.html">Administration</a>
-          </li>
-          <li
-            class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
-          >
-            <a href="./record.html"> The Record</a>
-          </li>
-          <li
-            class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
-          >
-            <a href="./issues.html">The Issues </a>
-          </li>
-          <li
-            class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
-          >
-            <a href="./briefingroom.html">Briefing Room</a>
-          </li>
-          <li
-            class="text-blue-600 border-b-[0.5px] border-blue-300 hover:text-red-600 hover:border-red-700 cursor-pointer"
-          >
-            <a href="./">Nepali </a>
-          </li>
-        </ul>
-        <a href="./menu.html"
+  <!-- Logo Image -->
+  <a href="./index.html" class="absolute left-1/2 transform -translate-x-1/2 top-2">
+    <img
+      src="./assets/logo.png"
+      alt="Logo"
+      class="h-16 transition-transform duration-400 ease-in-out hover:scale-105 cursor-pointer"
+    />
+  </a>
 
-        class="text-[12px] font-semibold border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
-      >
+  <!-- Navigation Links (Desktop View: Large screens) -->
+  <div class="flex items-center space-x-6 pr-6 hidden xl:flex"> 
+    <ul class="flex space-x-6 text-[15px]">
+      <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
+        <a href="./administration.html">Administration</a>
+      </li>
+      <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
+        <a href="./record.html">The Record</a>
+      </li>
+      <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
+        <a href="./issues.html">The Issues</a>
+      </li>
+      <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
+        <a href="./briefingroom.html">Briefing Room</a>
+      </li>
+      <li class="text-blue-600 border-b-[0.5px] border-blue-300 hover:text-red-600 hover:border-red-700 cursor-pointer">
+        <a href="./">Nepali</a>
+      </li>
+    </ul>
+    
+    <!-- Menu Link for Desktop -->
+    <a href="./menu.html" class="text-[12px] font-semibold border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110">
       MENÚ
-        </a>
-      </div>
-    </nav>
-    <!-- main part  -->
-    <div class="pb-0 mb-0">
-    <div class="relative w-full h-full overflow-hidden ">
-      <img
-        src="./assets/durbar.jpg"
-        alt="Biden cover photo"
-        class="w-full h-full object-cover zoom-out"
-      />
-      <div
-        class="absolute inset-0 bg-gradient-to-tl from-[#020a1b] to-transparent z-0"
-      ></div>
-    </div>
-
-    <div class="absolute bottom-[150px] right-[400px] p-4 rounded w-64 ">
-      <h1
-        class="text-white text-[30px] font-bold mb-2 font-lato tracking-widest"
-      >
-      The Rundown
-      </h1>
-      <p class="text-white text-[25px] w-[500px] text-justify font-serif">
-        A daily or weekly brief summarizing top headlines.
-      </p>
-    </div>
+    </a>
   </div>
 
-    <!-- part 2 -->
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2  bg-gradient-to-b from-[#040b1e] to-[#020a1b] px-20 -mt-4"
-    >
-      <!-- Card 1 -->
-      <a href="./record.html">
-      <div
-        class="bg-[#9fb0c2] h-[500px] rounded-lg shadow-lg overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
+  <!-- Menu Link for Mobile and Small Laptop View (visible on screens smaller than 1024px) -->
+  <div class="xl:hidden flex items-center"> 
+    <a href="./menu.html" class="text-[12px] font-semibold border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110">
+      MENÚ
+    </a>
+  </div>
+</nav>
+<!-- Main Part -->
+  <!-- part-1 -->
+<div class="pb-0 mb-0 relative z-10">
+  <!-- Image Section with Responsive Design -->
+  <div class="relative w-full h-full overflow-hidden">
+    <img
+      src="./assets/durbar.jpg"
+      alt="Biden cover photo"
+      class="w-full h-full object-cover zoom-out z-0"
+    />
+    <div class="absolute inset-0 bg-gradient-to-tl from-[#020a1b] to-transparent z-0"></div>
+  </div>
+
+  <!-- Rundown Section -->
+  <div class="absolute bottom-[150px] left-1/2 transform -translate-x-1/2 p-4 rounded w-64 
+  sm:bottom-[120px] sm:w-56 sm:left-1/2 sm:transform -translate-x-1/2 
+  md:w-64 md:bottom-[100px] md:left-1/2 md:transform -translate-x-1/2 
+  lg:bottom-[150px] lg:left-1/2 lg:transform -translate-x-1/2 
+  xl:bottom-[150px] xl:left-2/3 xl:transform -translate-x-1/2 
+  ">
+  <h1 class="text-white text-[30px] font-bold mb-2 font-lato tracking-widest 
+    sm:text-[24px] sm:mb-1 md:text-[26px] md:mb-2">
+    The Rundown
+  </h1>
+  <p class="text-white text-[25px] w-[500px] text-justify font-serif 
+    sm:text-[20px] sm:w-[400px] md:text-[22px] md:w-[450px]">
+    A daily or weekly brief summarizing top headlines.
+  </p>
+</div>
+</div>
+
+
+<!-- part 2 -->
+<div class="relative z-30 bg-gradient-to-b  from-[#040b1e] to-[#020a1b] px-4 lg:px-20 pt-10 overflow-x-auto scrollbar-hide">
+  <div class="flex lg:grid lg:grid-cols-4 gap-4 min-w-[1024px] lg:min-w-0">
+
+    <!-- Card 1 -->
+    <a href="./record.html">
+      <div class="bg-[#9fb0c2] h-[500px] rounded-lg shadow-lg overflow-hidden -mt-20 relative z-30  transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[260px] lg:min-w-0">
         <div class="p-6">
           <h3 class="text-2xl font-bold text-gray-800 tracking-widest pb-2">
             Press Releases
@@ -150,22 +144,19 @@
         </div>
         <div class="relative">
           <iframe
-          class="w-full h-96 object-cover"
-          src="https://www.youtube.com/embed/iljwpwHWl3s?autoplay=1&mute=1&loop=1&playlist=iljwpwHWl3s&controls=0"
-          allow="autoplay; encrypted-media"
-        ></iframe>
-        
+            class="w-full h-96 object-cover"
+            src="https://www.youtube.com/embed/iljwpwHWl3s?autoplay=1&mute=1&loop=1&playlist=iljwpwHWl3s&controls=0"
+            allow="autoplay; encrypted-media"
+          ></iframe>
         </div>
       </div>
     </a>
 
-      <!-- Card 2 -->
-      <a href="./moments.html">
-      <div
-        class="bg-[#f4f4f4] h-[500px] rounded-lg shadow-lg overflow-hidden z-10 -mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer&modestbranding=1&showinfo=0&rel=0"
-      >
+    <!-- Card 2 -->
+    <a href="./moments.html">
+      <div class="bg-[#f4f4f4] h-[500px] rounded-lg shadow-lg overflow-hidden -mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[260px] lg:min-w-0">
         <div class="p-6">
-          <h3 class="text-2xl font-bold  text-gray-800 tracking-widest pb-2">
+          <h3 class="text-2xl font-bold text-gray-800 tracking-widest pb-2">
             Media Coverage
           </h3>
           <p class="text-black text-[14px] font-serif tracking-wider">
@@ -180,70 +171,73 @@
       </div>
     </a>
 
-      <!-- Card 3 -->
-      <div
-        class="bg-[#7dbcff] h-[500px] rounded-lg shadow-lg overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="p-6">
-          <h3 class="text-2xl font-bold  text-gray-800 tracking-widest pb-2">
-            Story
-          </h3>
-          <p class="text-black text-[14px] font-serif tracking-wider">
-            Long-form pieces, interviews, human interest stories.
-          </p>
-        </div>
-        <div class="relative">
-          <iframe
+    <!-- Card 3 -->
+    <div class="bg-[#7dbcff] h-[500px] rounded-lg shadow-lg overflow-hidden -mt-20  transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[260px] lg:min-w-0">
+      <div class="p-6">
+        <h3 class="text-2xl font-bold text-gray-800 tracking-widest pb-2">
+          Story
+        </h3>
+        <p class="text-black text-[14px] font-serif tracking-wider">
+          Long-form pieces, interviews, human interest stories.
+        </p>
+      </div>
+      <div class="relative">
+        <iframe
           class="w-full h-96 object-cover"
           src="https://www.youtube.com/embed/eAHE0ifn0Gs?autoplay=1&mute=1&loop=1&playlist=eAHE0ifn0Gs&controls=0&modestbranding=1&showinfo=0&rel=0"
           allow="autoplay; encrypted-media"
           allowfullscreen
         ></iframe>
-              </div>
       </div>
+    </div>
 
-      <!-- Card 4 -->
-      <div
-        class="bg-[#ffdaa3] h-[500px] rounded-lg shadow-lg overflow-hidden z-10 -mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="p-6">
-          <h3 class="text-2xl font-bold  text-gray-800 tracking-widest pb-2">
-            Economic Updates
-          </h3>
-          <p class="text-blck text-[14px] font-serif tracking-wider">
-            Focus on finance, economy, job data and many more
-          </p>
-        </div>
-        <div class="relative">
-          <iframe
+    <!-- Card 4 -->
+    <div class="bg-[#ffdaa3] h-[500px] rounded-lg shadow-lg overflow-hidden -mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[260px] lg:min-w-0">
+      <div class="p-6">
+        <h3 class="text-2xl font-bold text-gray-800 tracking-widest pb-2">
+          Economic Updates
+        </h3>
+        <p class="text-black text-[14px] font-serif tracking-wider">
+          Focus on finance, economy, job data and many more
+        </p>
+      </div>
+      <div class="relative">
+        <iframe
           class="w-full h-96 object-cover"
           src="https://www.youtube.com/embed/RQcspgfANoc?start=7&autoplay=1&mute=1&loop=1&playlist=RQcspgfANoc&controls=0&modestbranding=1&showinfo=0&rel=0"
           allow="autoplay; encrypted-media"
           allowfullscreen
         ></iframe>
-        
-        
-        </div>
       </div>
     </div>
-    <!-- part-2 -->
-    <div
-      class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] h-[700px] relative"
-    >
-      <div class="relative py-24 px-20 z-10">
-        <iframe
-        width="1250"
-        height="750"
-        src="https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&loop=1&playlist=kzi1ik6qjZs&fs=0&cc_load_policy=0"
+
+  </div>
+</div>
+
+    
+
+<!-- part-3 -->
+<div class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] h-auto relative">
+  <div class="relative py-24 px-4 sm:px-8 md:px-12 lg:px-20 z-10">
+    
+    <!-- Responsive iframe container -->
+    <div class="relative w-full pt-[56.25%]"> 
+      <iframe
+        class="absolute top-0 left-0 w-full h-full"
+        src="https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&loop=1&playlist=kzi1ik6qjZs&fs=0&cc_load_policy=0"
         title="Nepal parliament in deadlock over speaker replacement dispute"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
-      ></iframe>          
-      </div>
+      ></iframe>
     </div>
-    <!-- part-3 -->
+
+  </div>
+</div>
+
+
+    <!-- part-4 -->
     <div class="relative">
       <img
         src="./assets/parliament.jpg"
@@ -335,7 +329,7 @@
       </div>
     </div>
 
-    <!-- part-4  -->
+    <!-- part-5 -->
     <div class="bg-[#f1f6fc]">
       <div class="flex justify-between px-20 py-20">
         <h2 class="text-3xl font-semibold tracking-widest">Top Stories & Categories</h2>

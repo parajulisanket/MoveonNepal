@@ -1,0 +1,14 @@
+@keyframes revealOverlay {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.animate-reveal-overlay {
+  animation: revealOverlay 2s ease-out forwards;
+}

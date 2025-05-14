@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <style>
+      @keyframes zoomOut {
+        0% {
+          transform: scale(1.09);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .zoom-out {
+        animation: zoomOut 5s ease-in-out forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navigaiton bar -->
+    <div
+      class="bg-gradient-to-r from-[#021a45] to-[#00479e] justify-center h-10 flex items-center"
+    >
+      <p class="text-[20px] text-white font-extralight md:text-[13px] font-inter tracking-widest">
+        This is historical material “frozen in time”. The website is no longer
+        updated and links to external websites and some internal pages may not
+        work.
+      </p>
+    </div>
+
+    <nav
+      class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg"
+    >
+      <a href="./index.html" class="flex-shrink-0 cursor-pointer">
+        <h2
+        class="text-[18px] px-6 font-serif font-semibold text-[#021a45] hover:text-red-700 tracking-wider "
+      >
+        THE WHITE HOUSE
+      </h2>
+      </a>
+
+      <a
+        href="./index.html"
+        class="absolute left-1/2 transform -translate-x-1/2 top-2"
+      >
+        <img
+          src="./assets/logo.png"
+          alt="Logo"
+          class="h-16 transition-transform duration-400 ease-in-out hover:scale-105 cursor-pointer"
+        />
+      </a>
+
+      <div class="flex items-center space-x-6 pr-6">
+        <ul class="flex space-x-6 text-[15px]">
+          <li
+            class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
+          >
+            <a href="./administration.html">Administration</a>
+          </li>
+          <li
+            class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
+          >
+            <a href="./record.html"> The Record</a>
+          </li>
+          <li
+            class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
+          >
+            <a href="./issues.html">The Issues </a>
+          </li>
+          <li
+            class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
+          >
+            <a href="./briefingroom.html">Briefing Room</a>
+          </li>
+          <li
+            class="text-blue-600 border-b-[0.5px] border-blue-300 hover:text-red-600 hover:border-red-700 cursor-pointer"
+          >
+            <a href="./">Nepali </a>
+          </li>
+        </ul>
+        <div
+        class="text-[12px] font-semibold border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
+      >
+      MENÚ
+        </div>
+      </div>
+    </nav>
+    <!-- main part  -->
+    <div class="pb-0 mb-0">
+    <div class="relative w-full h-full overflow-hidden ">
+      <img
+        src="./assets/hero-desktop.jpg"
+        alt="Biden cover photo"
+        class="w-full h-full object-cover zoom-out"
+      />
+      <div
+        class="absolute inset-0 bg-gradient-to-tl from-[#020a1b] to-transparent z-0"
+      ></div>
+    </div>
+
+    <div class="absolute bottom-[150px] right-[400px] p-4 rounded w-64 ">
+      <h1
+        class="text-white text-[30px] font-bold mb-2 font-lato tracking-widest"
+      >
+        THE BIDEN PRESIDENCY
+      </h1>
+      <p class="text-white text-[25px] w-[500px] text-justify font-serif">
+        A presidency for all Americans, a country for all Americans, a future
+        for all Americans.
+      </p>
+    </div>
+  </div>
+
+    <!-- part 2 -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2  bg-gradient-to-b from-[#040b1e] to-[#020a1b] px-20 -mt-14"
+    >
+      <!-- Card 1 -->
+      <a href="./record.html">
+      <div
+        class="bg-[#9fb0c2] h-[500px] rounded-lg shadow-lg overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+      >
+        <div class="p-6">
+          <h3 class="text-2xl font-bold text-gray-800 tracking-widest pb-2">
+            THE RECORD
+          </h3>
+          <p class="text-black text-[14px] font-serif tracking-wider">
+            Explore the accomplishments of the Biden-Harris Administration .
+          </p>
+        </div>
+        <div class="relative">
+          <video class="w-full h-96 object-cover" autoplay loop muted>
+            <source src="./assets/card1.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </a>
+
+      <!-- Card 2 -->
+      <a href="./moments.html">
+      <div
+        class="bg-[#f4f4f4] h-[500px] rounded-lg shadow-lg overflow-hidden z-10 -mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+      >
+        <div class="p-6">
+          <h3 class="text-2xl font-bold  text-gray-800 tracking-widest pb-2">
+            THE MOMENTS
+          </h3>
+          <p class="text-black text-[14px] font-serif tracking-wider">
+            View moments featuring the American people during the Biden-Harris
+            Administration.
+          </p>
+        </div>
+        <div class="relative">
+          <video class="w-full h-96 object-cover" autoplay loop muted>
+            <source src="./assets/card2.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </a>
+
+      <!-- Card 3 -->
+      <div
+        class="bg-[#7dbcff] h-[500px] rounded-lg shadow-lg overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+      >
+        <div class="p-6">
+          <h3 class="text-2xl font-bold  text-gray-800 tracking-widest pb-2">
+            THE STORY
+          </h3>
+          <p class="text-black text-[14px] font-serif tracking-wider">
+            Experience a visual timeline of the Biden-Harris Administration.
+          </p>
+        </div>
+        <div class="relative">
+          <video class="w-full h-96 object-cover" autoplay loop muted>
+            <source src="./assets/card3.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div
+        class="bg-[#ffdaa3] h-[500px] rounded-lg shadow-lg overflow-hidden z-10 -mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+      >
+        <div class="p-6">
+          <h3 class="text-2xl font-bold  text-gray-800 tracking-widest pb-2">
+            THE ECONOMY
+          </h3>
+          <p class="text-blck text-[14px] font-serif tracking-wider">
+            Learn more about the President’s economy for all Americans.
+          </p>
+        </div>
+        <div class="relative">
+          <video class="w-full h-96 object-cover" autoplay loop muted>
+            <source src="./assets/card4.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+    <!-- part-2 -->
+    <div
+      class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] h-[700px] relative"
+    >
+      <div class="relative py-24 px-20 z-10">
+        <video class="w-full h-auto object-cover z-10" autoplay loop muted>
+          <source src="./assets/main_video.mp4" type="video/mp4" />
+        </video>
+        <div class="absolute inset-0 opacity-30"></div>
+      </div>
+    </div>
+    <!-- part-3 -->
+    <div class="relative">
+      <img
+        src="./assets/whitehouse.png"
+        alt="white house"
+        class="w-full h-auto object-cover"
+      />
+
+      <div
+        class="absolute bottom-14 left-0 w-full flex justify-center items-center flex-col space-y-4 p-8"
+      >
+        <div
+          class="bg-white/95 w-3/5 p-8 h-96  flex justify-center items-center flex-col space-y-8"
+        >
+          <p class="text-[13px] text-gray-800 font-medium tracking-widest">ADMINISTRATION</p>
+          <div class="flex space-x-10 justify-center">
+            <div class="flex flex-col items-center cursor-pointer hover:text-red-700 hover:underline-offset-4 hover:underline">
+              <img
+                src="./assets/circle1.jpg"
+                alt="Image 1"
+                class="w-24 h-24 rounded-full object-cover"
+              />
+              <div
+                class="cursor-pointer"
+              >
+                <p
+                  class="mt-2 text-center text-sm "
+                >
+                  First Lady
+                </p>
+                <p class="text-center text-lg">Jill Biden</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center hover:text-red-700 hover:underline-offset-4 hover:underline">
+              <img
+                src="./assets/circle2.png"
+                alt="Image 2"
+                class="w-32 h-32 rounded-full object-cover cursor-pointer"
+              />
+              <div
+                class="cursor-pointer"
+              >
+                <p
+                  class="mt-2 text-center text-sm "
+                >
+                  President
+                </p>
+                <h3 class="text-center text-lg">Joe Biden</h3>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center hover:text-red-700 hover:underline-offset-4 hover:underline">
+              <img
+                src="./assets/circle3.png"
+                alt="Image 3"
+                class="w-32 h-32 rounded-full object-cover cursor-pointer"
+              />
+              <div
+                class="cursor-pointer"
+              >
+                <p
+                  class="mt-2 text-center text-sm "
+                >
+                  Vice President
+                </p>
+                <p class="text-center text-lg">Kamala Harris</p>
+              </div>
+            </div>
+
+            <div class="flex flex-col items-center hover:text-red-700 hover:underline-offset-4 hover:underline">
+              <img
+                src="./assets/circle4.jpeg"
+                alt="Image 4"
+                class="w-24 h-24 rounded-full object-cover cursor-pointer "
+              />
+              <div
+                class="cursor-pointer "
+              >
+                <p
+                  class="mt-2 text-center text-sm "
+                >
+                  Second Gentleman
+                </p>
+                <p class="text-center text-lg">Douglas Emhoff</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- part-4  -->
+    <div class="bg-[#f1f6fc]">
+      <div class="flex justify-between px-20 py-20">
+        <h2 class="text-3xl font-semibold tracking-widest">INITIATIVES</h2>
+        <div class="hover:text-red-700 space-x-4 cursor-pointer">
+          <i class="fas fa-arrow-left" ></i>
+          <i class="fas fa-arrow-right" ></i>
+        </div>
+      </div>
+      <div class="overflow-x-auto px-20 py-20 ">
+
+        <div class="flex gap-10 w-max">
+        <!-- card-1 -->
+        <a href="./scotus.html">
+        <div
+          class="bg-white h-[400px] w-[350px] overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+        >
+          <div class="relative">
+            <img src="./assets/img1.jpg" alt="" class="h-60 w-auto" />
+          </div>
+          <div class="px-6 py-8">
+            <h3
+              class="text-xl font-semibold text-gray-800 tracking-widest pb-2"
+            >
+              SCOTUS
+            </h3>
+            <p
+              class="text-black text-[13px] font-serif tracking-wide text-left"
+            >
+              President Biden is proud to have kept his promise to build a bench
+              that looks like America. Learn more.
+            </p>
+          </div>
+        </div>
+        </a>
+        <!--card-2  -->
+        <div
+          class="bg-white h-[400px] w-[350px] overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+        >
+          <div class="relative">
+            <img src="./assets/img2.jpg" alt="" class="h-60 w-auto" />
+          </div>
+          <div class="px-6 py-8">
+            <h3
+              class="text-xl font-semibold text-gray-800 tracking-widest pb-2"
+            >
+              Equity
+            </h3>
+            <p
+              class="text-black text-[13px] font-serif tracking-wide text-left"
+            >
+              The Biden-Harris Administration has championed racial equity and
+              equal opportunity for underserved communities through landmark
+              legislation. Learn more.
+            </p>
+          </div>
+        </div>
+        <!--card-3  -->
+        <div
+          class="bg-white h-[400px] w-[350px] overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+        >
+          <div class="relative">
+            <img src="./assets/img3.jpg" alt="" class="h-60 w-auto" />
+          </div>
+          <div class="px-6 py-8">
+            <h3
+              class="text-xl font-semibold text-gray-800 tracking-widest pb-2"
+            >
+              Cancer Moonshot
+            </h3>
+            <p
+              class="text-black text-[13px] font-serif tracking-wide text-left"
+            >
+              The Biden Cancer Moonshot is bringing us one step closer to ending
+              cancer as we know it. Learn more.
+            </p>
+          </div>
+        </div>
+        <!--card-4  -->
+        <div
+          class="bg-white h-[400px] w-[350px] overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+        >
+          <div class="relative">
+            <img src="./assets/img4.jpeg" alt="" class="h-60 w-auto" />
+          </div>
+          <div class="px-6 py-8">
+            <h3
+              class="text-xl font-semibold text-gray-800 tracking-widest pb-2"
+            >
+              Joining Forces
+            </h3>
+            <p
+              class="text-black text-[13px] font-serif tracking-wide text-left"
+            >
+              President Biden and the First Lady recognize the service and
+              strength of military-connected families. Learn more.
+            </p>
+          </div>
+        </div>
+        <!--card-5  -->
+        <div
+          class="bg-white h-[400px] w-[350px] overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+        >
+          <div class="relative">
+            <img src="./assets/img5.jpg" alt="" class="h-60 w-auto" />
+          </div>
+          <div class="px-6 py-8">
+            <h3
+              class="text-xl font-semibold text-gray-800 tracking-widest pb-2"
+            >
+            Student Debt Relief
+            </h3>
+            <p
+              class="text-black text-[13px] font-serif tracking-wide text-left"
+            >
+            President Biden kept his promise to fix problems in our student loan program that've hurt borrowers. Learn more.
+            </p>
+          </div>
+        </div>
+        <!--card-6  -->
+        <div
+          class="bg-white h-[400px] w-[350px] overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+        >
+          <div class="relative">
+            <img src="./assets/img6.jpg" alt="" class="h-60 w-auto" />
+          </div>
+          <div class="px-6 py-8">
+            <h3
+              class="text-xl font-semibold text-gray-800 tracking-widest pb-2"
+            >
+            CleanEnergy.gov
+            </h3>
+            <p
+              class="text-black text-[13px] font-serif tracking-wide text-left"
+            >
+            The Inflation Reduction Act made the largest investment in climate and clean energy in the history of the world. Learn more.
+            </p>
+          </div>
+        </div>
+        <!--card-7  -->
+        <div
+          class="bg-white h-[400px] w-[350px] overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+        >
+          <div class="relative">
+            <img src="./assets/img7.png" alt="" class="h-60 w-auto" />
+          </div>
+          <div class="px-6 py-8">
+            <h3
+              class="text-xl font-semibold text-gray-800 tracking-widest pb-2"
+            >
+            Investing in America
+            </h3>
+            <p
+              class="text-black text-[13px] font-serif tracking-wide text-left"
+            >
+            President Biden is bringing manufacturing back to America while creating new, good-paying jobs. Learn more.
+            </p>
+          </div>
+        </div>
+        <!--card-8  -->
+        <div
+          class="bg-white h-[400px] w-[350px] overflow-hidden z-10 -mt-20 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
+        >
+          <div class="relative">
+            <img src="./assets/img8.jpeg" alt="" class="h-60 w-auto" />
+          </div>
+          <div class="px-6 py-8">
+            <h3
+              class="text-xl font-semibold text-gray-800 tracking-widest pb-2"
+            >
+            Climate
+            </h3>
+            <p
+              class="text-black text-[13px] font-serif tracking-wide text-left"
+            >
+            President Biden campaigned on a bold vision of tackling the climate crisis with the urgency that science demands. Learn more.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="h-[450px] bg-white relative">
+      <div class="w-full flex flex-col items-center py-20">
+        <hr class="w-5/6 border-t border-gray-300" />
+      </div>
+      <div class="flex justify-between px-32 ">
+        <div class=" w-full h-20 flex space-x-36">
+          <div class="text-sm" >
+            <ul class="space-y-4">
+              <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"><a href="./index.html">Home</a></li>
+              <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"><a href="./record.html">The Record</a></li>
+              <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"><a href="./issues.html">The Issues</a></li>
+              <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"><a href="./briefingroom.html">Briefing Room</a></li>
+            </ul>
+          </div>
+          <div class="text-sm">
+            <ul class="space-y-4">
+              <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"><a href="">The Administration</a></li>
+              <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"><a href="">Executive Office</a></li>
+              <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"><a href="">The White House</a></li>
+              <li class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"><a href="">Nepali</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class=" w-full h-20 justify-end flex space-x-20">
+          <div class=" text-[12px] text-gray-600 ">
+            <ul class="space-y-2 ">
+              <li class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"><a href="">Contact Us</a></li>
+              <li class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"><a href="">Privacy Policy</a></li>
+              <li class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"><a href="">Copyright Policy</a></li>
+              <li class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"><a href="">Accessibility Statement</a></li>
+            </ul>
+          </div>
+          <div class="space-y-1">
+            <div class="space-x-4 w-24">
+              <i class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"></i>
+              <i class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"></i>
+              <i class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"></i>
+            </div>
+            <div class=" space-x-4 w-24 ">
+              <i class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"></i>
+              <i class="fa-brands fa-threads hover:text-red-700 cursor-pointer"></i>
+              <i class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"></i>
+            </div>
+
+            <div class="pt-10 ">
+            <h4 class="text-sm font-serif font-semibold">The White House</h4>
+            <p class="text-left text-sm w-48 font-thin font-serif text-gray-600">1600 Pennsylvania Ave NW
+              Washington, DC 20500</p>
+          </div>
+          <div class="pt-4 font-serif text-xl text-yellow-800">
+            <h2 class="font-bold hover:text-red-700 cursor-pointer">W H<span class="font-medium">.GOV</span></h2>
+          </div>
+          </div>
+        </div>
+
+      </div>
+    </footer>
+  </body>
+</html>

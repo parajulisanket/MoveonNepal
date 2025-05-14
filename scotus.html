@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
+    <title>Scotus</title>
+    <meta charset="UTF-8" />
+    <style>
+      @keyframes zoomOut {
+        0% {
+          transform: scale(1.09);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .zoom-out {
+        animation: zoomOut 5s ease-in-out forwards;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Notice Banner -->
+    <div
+      class="bg-gradient-to-r from-[#021a45] to-[#00479e] justify-center h-10 flex items-center"
+    >
+      <p
+        class="text-[20px] text-white font-extralight md:text-[13px] font-inter tracking-widest"
+      >
+        This is historical material “frozen in time”. The website is no longer
+        updated and links to external websites and some internal pages may not
+        work.
+      </p>
+    </div>
+
+    <div class="relative">
+      <img src="./assets/scouts.jpg" alt="" class="w-full object-cover" />
+
+      <nav
+        class="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-4 h-16"
+      >
+        <a href="./index.html" class="flex-shrink-0 cursor-pointer">
+          <h2
+            class="text-[18px] text-white px-6 font-serif font-semibold ] tracking-wider"
+          >
+            THE WHITE HOUSE
+          </h2>
+        </a>
+
+        <a
+          href="./index.html"
+          class="absolute left-1/2 transform -translate-x-1/2 top-2"
+        >
+          <img
+            src="./assets/logo.png"
+            alt="Logo"
+            class="h-16 transition-transform duration-400 ease-in-out hover:scale-105 cursor-pointer"
+          />
+        </a>
+
+        <div class="flex items-center space-x-6 pr-6">
+          <ul class="flex space-x-6 text-[15px] text-white">
+            <li
+              class="border-b-[1px] border-gray-400 hover:border-white cursor-pointer"
+            >
+              <a href="./administration.html">Administration</a>
+            </li>
+            <li
+              class="border-b-[1px] border-gray-400 hover:border-white cursor-pointer"
+            >
+              <a href="./record.html">The Record</a>
+            </li>
+            <li
+              class="border-b-[1px] border-gray-400 hover:border-white cursor-pointer"
+            >
+              <a href="./issues.html">The Issues</a>
+            </li>
+            <li
+              class="border-b-[1px] border-gray-400 hover:border-white cursor-pointer"
+            >
+              <a href="./briefingroom.html">Briefing Room</a>
+            </li>
+            <li
+              class="border-b-[1px] border-gray-400 hover:border-white cursor-pointer"
+            >
+              <a href="./">Nepali</a>
+            </li>
+          </ul>
+          <div
+            class="text-[12px] font-semibold border-y-[3px] text-white border-double border-white border-l-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
+          >
+            MENÚ
+          </div>
+        </div>
+      </nav>
+
+      <div class="absolute top-20 left-24 space-y-6 mt-4">
+        <h3
+          id="line1"
+          class="text-white text-2xl tracking-widest opacity-0 transition duration-500"
+        >
+          THE SENATE CONFIRMS
+        </h3>
+        <h1
+          id="line2"
+          class="text-white text-7xl tracking-widest w-40 font-serif opacity-0 transition duration-500"
+        >
+          KETANJI BROWN JACKESON
+        </h1>
+        <h3
+          id="line3"
+          class="text-white text-2xl tracking-widest opacity-0 transition duration-500"
+        >
+          TO SERVE ON THE U.S. SUPREME COURT
+        </h3>
+        <div
+          id="line4"
+          class="opacity-0 transition duration-500 text-white max-w-2xl text-md font-serif tracking-widest text-left space-y-4"
+        >
+          <p>
+            On February 25, 2022, President Joe Biden nominated Judge Ketanji
+            Brown Jackson to become the 116th Associate Justice of the United
+            States Supreme Court.
+          </p>
+          <p>
+            On April 7, 2022, a bipartisan group of Senators confirmed Judge
+            Jackson's nomination.
+          </p>
+        </div>
+      </div>
+      <script src="./assets/scotus.js"></script>
+    </div>
+    <!-- part-2 -->
+    <div
+      class="text-left text-md m-20 mx-auto max-w-3xl font-serif text-gray-700 tracking-wider leading-relaxed"
+    >
+      <p class="pb-4">
+        <span class="text-7xl text-yellow-700">S</span>ince Justice Stephen
+        Breyer announced his retirement, President Biden has conducted a
+        rigorous process to identify his replacement. President Biden sought a
+        candidate with exceptional credentials, unimpeachable character, and
+        unwavering dedication to the rule of law. And the President sought an
+        individual who is committed to equal justice under the law and who
+        understands the profound impact that the Supreme Court’s decisions have
+        on the lives of the American people.
+      </p>
+      <p>
+        That is why the President nominated Judge Ketanji Brown Jackson to serve
+        as the next Justice on the Supreme Court. Judge Jackson is one of our
+        nation’s brightest legal minds and has an unusual breadth of experience
+        in our legal system, giving her the perspective to be an exceptional
+        Justice.
+      </p>
+    </div>
+    <!-- part-3 -->
+    <div class="mx-auto max-w-3xl m-20">
+      <h1 class="text-4xl tracking-wider">About Judge Ketanji Brown Jackson</h1>
+      <p
+        class="font-serif text-gray-700 tracking-wider text-left pt-4 text-md leading-relaxed"
+      >
+        Judge Jackson was born in Washington, DC and grew up in Miami, Florida.
+        Her parents attended segregated primary schools, then attended
+        historically black colleges and universities. Both started their careers
+        as public school teachers and became leaders and administrators in the
+        Miami-Dade Public School System. When Judge Jackson was in preschool,
+        her father attended law school. In a 2017 lecture, Judge Jackson traced
+        her love of the law back to sitting next to her father in their
+        apartment as he tackled his law school homework—reading cases and
+        preparing for Socratic questioning—while she undertook her preschool
+        homework—coloring books.
+      </p>
+      <p
+        class="font-serif text-gray-700 tracking-wider text-left pt-4 text-md leading-relaxed"
+      >
+        Judge Jackson stood out as a high achiever throughout her childhood. She
+        was a speech and debate star who was elected “mayor” of Palmetto Junior
+        High and student body president of Miami Palmetto Senior High School.
+        But like many Black women, Judge Jackson still faced naysayers. When
+        Judge Jackson told her high school guidance counselor she wanted to
+        attend Harvard, the guidance counselor warned that Judge Jackson should
+        not set her “sights so high.”
+      </p>
+      <p
+        class="font-serif text-gray-700 tracking-wider text-left pt-4 text-md leading-relaxed"
+      >
+        That did not stop Judge Jackson. She graduated magna cum laude from
+        Harvard University, then attended Harvard Law School, where she
+        graduated cum laude and was an editor of the Harvard Law Review.
+      </p>
+      <p
+        class="font-serif text-gray-700 tracking-wider text-left pt-4 text-md leading-relaxed"
+      >
+        Judge Jackson lives with her husband, Patrick, and their two daughters,
+        in Washington, DC.
+      </p>
+    </div>
+    <!-- part-4 -->
+    <div class="mx-auto max-w-3xl m-20">
+      <h1 class="text-4xl tracking-wider">Experience</h1>
+      <div class="max-w-3xl mx-auto mt-10 pb-4 space-y-8">
+        <!-- Experience 1 -->
+        <div class="border-b border-gray-400 pb-4">
+          <div class="accordion-toggle flex cursor-pointer space-x-4">
+            <span class="toggle-icon text-4xl font-thin text-black select-none"
+              >+</span
+            >
+            <h2 class="text-3xl font-normal text-black">
+              Judge on the U.S. Court of Appeals
+            </h2>
+          </div>
+          <div
+            class="accordion-content hidden mt-4 px-10 text-md leading-relaxed tracking-wider font-serif text-gray-700 text-justify"
+          >
+            Judge Jackson was one of President Biden’s first judicial nominees.
+            She was confirmed with bipartisan support to the U.S. Court of
+            Appeals for the D.C. Circuit in 2021.
+          </div>
+        </div>
+        <!-- Experience 2 -->
+        <div class="border-b border-gray-400 pb-4">
+          <div class="accordion-toggle flex cursor-pointer space-x-4">
+            <span class="toggle-icon text-4xl font-thin text-black select-none"
+              >+</span
+            >
+            <h2 class="text-3xl font-normal text-black">
+              Judge on the U.S. District Court
+            </h2>
+          </div>
+          <div
+            class="accordion-content hidden mt-4 px-10 text-md leading-relaxed tracking-wider font-serif text-gray-700 text-justify"
+          >
+            President Obama nominated Judge Jackson to be a district court judge
+            for the U.S. District Court for the District of Columbia in 2012.
+            She was confirmed with bipartisan support in 2013.
+          </div>
+        </div>
+        <!-- Experience 3 -->
+        <div class="border-b border-gray-400 pb-4">
+          <div class="accordion-toggle flex cursor-pointer space-x-4">
+            <span class="toggle-icon text-4xl font-thin text-black select-none"
+              >+</span
+            >
+            <h2 class="text-3xl font-normal text-black">
+              Vice Chair of the U.S. Sentencing Commission
+            </h2>
+          </div>
+          <div
+            class="accordion-content hidden mt-4 px-10 text-md leading-relaxed tracking-wider font-serif text-gray-700 text-justify"
+          >
+            President Obama nominated Judge Jackson to serve as the Vice Chair
+            of the U.S. Sentencing Commission in 2009, and she was confirmed
+            with bipartisan support in 2010. Prior to serving as a judge, Judge
+            Jackson followed in the footsteps of her mentor Justice Breyer by
+            working on the U.S. Sentencing Commission. The Commission, which
+            President Biden fought to create as a member of the U.S. Senate, is
+            bipartisan by design. Her work there focused on reducing unwarranted
+            sentencing disparities and ensuring that federal sentences were just
+            and proportionate.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Part 5 -->
+    <div class="w-full bg-[#6651dc] text-white py-14">
+      <h1 class="px-28 text-lg font-semibold tracking-wider">
+        IN THEIR OWN WORD
+      </h1>
+
+      <div class="overflow-x-auto px-20 py-20">
+        <div class="flex gap-10">
+          <div class="flex flex-col gap-6 px-10">
+            <div class="text-6xl text-[#c0dbee]">
+              <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <p class="text-justify text-xl tracking-wider">
+              Judge Jackson comes from a law enforcement family, with two uncles
+              who were career law enforcement officers: one was a Miami-Dade
+              County sex crimes detective, and the other rose through the ranks
+              of the City of Miami Police Department to become the Chief of
+              Police. Her brother served as an undercover officer in a
+              drug-sting unit in Baltimore after graduating from college, so she
+              should know quite well the difficulties and dangers our officers
+              face in the line of duty every single day … From our analysis of
+              Judge Jackson’s record and some of her cases, we believe she has
+              considered the facts and applied the law consistently and fairly
+              on a range of issues. There is little doubt that she has the
+              temperament, intellect, legal experience, and family background to
+              have earned this appointment. We are reassured that, should she be
+              confirmed, she would approach her future cases with an open mind
+              and treat issues related to law enforcement fairly and justly. We
+              wish her well as the confirmation process begins.
+            </p>
+            <div class="flex justify-between items-end">
+              <p class="text-lg font-semibold tracking-widest">
+                Fraternal Order of Police
+              </p>
+              <div class="text-3xl space-x-3">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+                <i class="fa-solid fa-link"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="flex flex-col gap-6 px-10">
+        <div class="text-6xl text-[#c0dbee]">
+          <i class="fa-solid fa-quote-left"></i>
+        </div>
+        <p class="text-justify text-xl tracking-wider">
+          Judge Jackson comes from a law enforcement family, with two uncles who were career law enforcement officers:
+          one was a Miami-Dade County sex crimes detective, and the other rose through the ranks of the City of Miami
+          Police Department to become the Chief of Police. Her brother served as an undercover officer in a drug-sting
+          unit in Baltimore after graduating from college, so she should know quite well the difficulties and dangers
+          our officers face in the line of duty every single day … From our analysis of Judge Jackson’s record and some
+          of her cases, we believe she has considered the facts and applied the law consistently and fairly on a range
+          of issues. There is little doubt that she has the temperament, intellect, legal experience, and family
+          background to have earned this appointment. We are reassured that, should she be confirmed, she would
+          approach her future cases with an open mind and treat issues related to law enforcement fairly and justly. We
+          wish her well as the confirmation process begins.
+        </p>
+        <div class="flex justify-between items-end">
+          <p class="text-lg font-semibold tracking-widest">Fraternal Order of Police</p>
+          <div class="text-3xl space-x-3">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-solid fa-link"></i>
+          </div>
+        </div>
+      </div> -->
+        </div>
+      </div>
+      <div class="px-28 pt-10 flex justify-between cursor-pointer">
+        <i class="fas fa-arrow-left"></i>
+        <i class="fas fa-arrow-right"></i>
+      </div>
+    </div>
+    <!-- part 6 -->
+    <div class="grid grid-cols-3 grid-rows-2 gap-4 p-20">
+      <div class="w-full h-60 bg-gray-200">
+        <img src="./assets/s1.jpg" alt="" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full h-60 bg-gray-200">
+        <img src="./assets/s2.jpg" alt="" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full h-60 bg-gray-200">
+        <img src="./assets/s3.jpg" alt="" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full h-60 bg-gray-200">
+        <img src="./assets/s4.jpg" alt="" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full h-60 bg-gray-200">
+        <img src="./assets/s5.jpg" alt="" class="w-full h-full object-cover" />
+      </div>
+      <div class="w-full h-60 bg-gray-200">
+        <img src="./assets/s6.jpg" alt="" class="w-full h-full object-cover" />
+      </div>
+    </div>
+    <div class="mx-auto max-w-3xl">
+      <h1 class="text-4xl tracking-wider">About the Nomination Process</h1>
+
+      <div class="p-4">
+        <div class="accordion-toggle flex cursor-pointer space-x-4">
+          <span class="toggle-icon text-4xl font-thin text-black select-none"
+            >+</span
+          >
+          <h2 class="text-3xl font-normal text-black">
+            What criteria did President Biden use to pick his nominee?
+          </h2>
+        </div>
+        <div
+          class="accordion-content hidden mt-4 px-10 text-md leading-relaxed tracking-wider font-serif text-gray-700 text-justify"
+        >
+          President Biden conducted a rigorous process to identify Justice
+          Breyer’s replacement. As the longtime Chairman of the Senate Judiciary
+          Committee, the President took seriously the Constitution’s requirement
+          that he make this appointment “by and with the Advice and Consent of
+          the Senate,” seeking the advice of Senators in both parties. He
+          studied the histories and case records of candidates and consulted
+          legal experts. Confirming exceptionally qualified judicial nominees
+          with varying backgrounds and experiences has been a key priority for
+          the President since he took office.
+
+          <p class="pt-2">
+            President Biden sought a candidate with exceptional credentials,
+            unimpeachable character, and unwavering dedication to the rule of
+            law. He also sought a nominee—much like Justice Stephen Breyer—who
+            is wise, pragmatic, and has a deep understanding of the Constitution
+            as an enduring charter of liberty. And finally, the President sought
+            an individual who is committed to equal justice under the law who
+            understands the profound impact that the Supreme Court’s decisions
+            can have on the lives of the American people.
+          </p>
+        </div>
+      </div>
+      <div
+        class="px-16 py-8 space-y-4 font-serif text-gray-700 text-md tracking-wider"
+      >
+        <p>
+          On February 25, 2022, President Joe Biden nominated Judge Ketanji
+          Brown Jackson to become the 116th Associate Justice of the United
+          States Supreme Court.
+        </p>
+        <p>
+          On April 7, 2022, a bipartisan group of Senators confirmed Judge
+          Jackson's nomination.
+        </p>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="h-[450px] bg-white relative">
+      <div class="w-full flex flex-col items-center py-20">
+        <hr class="w-5/6 border-t border-gray-300" />
+      </div>
+      <div class="flex justify-between px-32">
+        <div class="w-full h-20 flex space-x-36">
+          <div class="text-sm">
+            <ul class="space-y-4">
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./index.html">Home</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./record.html">The Record</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./issues.html">The Issues</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./briefingroom.html">Briefing Room</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm">
+            <ul class="space-y-4">
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="">The Administration</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="">Executive Office</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="">The White House</a>
+              </li>
+              <li
+                class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="">Nepali</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full h-20 justify-end flex space-x-20">
+          <div class="text-[12px] text-gray-600">
+            <ul class="space-y-2">
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="">Contact Us</a>
+              </li>
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="">Privacy Policy</a>
+              </li>
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="">Copyright Policy</a>
+              </li>
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="">Accessibility Statement</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-1">
+            <div class="space-x-4 w-24">
+              <i
+                class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+              ></i>
+            </div>
+            <div class="space-x-4 w-24">
+              <i
+                class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-threads hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+              ></i>
+            </div>
+
+            <div class="pt-10">
+              <h4 class="text-sm font-serif font-semibold">The White House</h4>
+              <p
+                class="text-left text-sm w-48 font-thin font-serif text-gray-600"
+              >
+                1600 Pennsylvania Ave NW Washington, DC 20500
+              </p>
+            </div>
+            <div class="pt-4 font-serif text-xl text-yellow-800">
+              <h2 class="font-bold hover:text-red-700 cursor-pointer">
+                W H<span class="font-medium">.GOV</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/scotus.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
+    <title>Record</title>
+    <style>
+      .zoom-out {
+        animation: zoomOut 4s ease forwards;
+      }
+
+      @keyframes zoomOut {
+        from {
+          transform: scale(1.1);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      class="bg-gradient-to-r from-[#021a45] to-[#00479e] justify-center h-10 flex items-center z-20"
+    >
+      <p
+        class="text-[20px] text-white font-extralight md:text-[13px] font-inter tracking-widest"
+      >
+        This is historical material “frozen in time”. The website is no longer
+        updated and links to external websites and some internal pages may not
+        work.
+      </p>
+    </div>
+
+    <div class="relative overflow-hidden">
+      <img
+        src="./assets/bidenharris.jpg copy.png"
+        alt=""
+        class="w-full object-cover zoom-out"
+      />
+
+      <nav
+        class="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-4 h-16"
+      >
+        <a href="./index.html" class="flex-shrink-0 cursor-pointer">
+          <h2
+            class="text-[18px] text-white px-6 font-serif font-semibold ] tracking-wider"
+          >
+            THE WHITE HOUSE
+          </h2>
+        </a>
+
+        <a
+          href="./index.html"
+          class="absolute left-1/2 transform -translate-x-1/2 top-2"
+        >
+          <img
+            src="./assets/logo.png"
+            alt="Logo"
+            class="h-16 transition-transform duration-400 ease-in-out hover:scale-105 cursor-pointer"
+          />
+        </a>
+
+        <div class="flex items-center space-x-6 pr-6">
+          <ul class="flex space-x-6 text-[15px] text-white">
+            <li
+              class="border-b-[1px] border-gray-500 hover:border-white cursor-pointer"
+            >
+              <a href="./administration.html">Administration</a>
+            </li>
+            <li
+              class="border-b-[1px] border-gray-500 hover:border-white cursor-pointer"
+            >
+              <a href="./record.html">The Record</a>
+            </li>
+            <li
+              class="border-b-[1px] border-gray-500 hover:border-white cursor-pointer"
+            >
+              <a href="./issues.html">The Issues</a>
+            </li>
+            <li
+              class="border-b-[1px] border-gray-500 hover:border-white cursor-pointer"
+            >
+              <a href="./briefingroom.html">Briefing Room</a>
+            </li>
+            <li
+              class="border-b-[1px] border-gray-500 hover:border-white cursor-pointer"
+            >
+              <a href="./">Nepali</a>
+            </li>
+          </ul>
+          <div
+            class="text-[12px] font-semibold border-y-[3px] text-white border-double border-white border-l-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
+          >
+            MENÚ
+          </div>
+        </div>
+      </nav>
+      <!-- Dots navigation -->
+      <div
+        id="dot-nav"
+        class="fixed left-4 top-1/2 -translate-y-1/2 z-30 flex flex-col space-y-3"
+      >
+        <span
+          class="dot block w-2 h-2 rounded-full bg-white opacity-60 transition-all duration-300"
+        ></span>
+        <span
+          class="dot block w-2 h-2 rounded-full bg-white opacity-60 transition-all duration-300"
+        ></span>
+        <span
+          class="dot block w-2 h-2 rounded-full bg-white opacity-60 transition-all duration-300"
+        ></span>
+      </div>
+
+      <div class="absolute bottom-32 right-96 mt-4 z-10">
+        <h3
+          id="line1"
+          class="text-white text-2xl font-semibold tracking-widest opacity-0 transition duration-500"
+        >
+          THE BIDEN-HARRIS
+        </h3>
+        <h1
+          id="line2"
+          class="text-white text-9xl tracking-wider w-40 font-bold opacity-0 transition duration-500"
+        >
+          RECORD
+        </h1>
+      </div>
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-0"
+      ></div>
+      <script src="./assets/scotus.js"></script>
+    </div>
+
+    <!-- Full-page Video Section -->
+    <section
+      class="h-screen w-full flex items-center justify-center bg-black relative z-20"
+    >
+      <video
+        id="main-video"
+        src="./assets/main_video.mp4"
+        class="w-full h-full object-cover transition-transform duration-700 scale-90 opacity-0"
+        autoplay
+        loop
+        muted
+      ></video>
+    </section>
+
+    <!-- Economic Section -->
+    <section
+      class="relative w-full min-h-screen flex flex-col items-center justify-center py-24"
+    >
+      <!-- Background image with overlay -->
+      <div
+        class="absolute inset-0 w-full h-full object-cover z-0"
+        style="
+          background-image: url('./assets/a.jpg');
+          background-size: cover;
+          background-position: center;
+        "
+      ></div>
+      <div class="absolute inset-0 bg-black/60 z-10"></div>
+
+      <!-- Content -->
+      <div class="relative z-20 flex flex-col items-center w-full">
+        <h2
+          class="text-white text-4xl md:text-5xl font-extrabold tracking-widest mb-16 px-4 text-center"
+        >
+          BUILDING THE ECONOMY<br />
+          FROM THE MIDDLE OUT,<br />
+          BOTTOM UP
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-3 gap-8 w-full max-w-6xl font-serif"
+        >
+          <!-- Row 1 -->
+          <div
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            style="transition: transform 0.3s ease"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <h3 class="text-xl mb-4 text-center">
+              Small Businesses: The Engines of the Economy
+            </h3>
+            <p class="text-[15px] font-thin text-center pt-2">
+              President Biden is driving a small business boom with American
+              entrepreneurs filing a record 21 million new business applications
+              since he took office.
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            style="transition: transform 0.3s ease"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <h3 class="text-xl mb-4 text-center">
+              Historically Strong and Broadly Shared Recovery
+            </h3>
+            <p class="text-[15px] font-thin text-center pt-2">
+              The Biden-Harris Administration, thanks in part through the
+              American Rescue Plan, got America vaccinated and out of the
+              pandemic while fueling a historic recovery with a record 16.6
+              million jobs created, a record 21 million new business
+              applications, and the lowest average unemployment of any
+              administration in more than 50 years.
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            style="transition: transform 0.3s ease"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <h3 class="text-xl mb-4 text-center">
+              Most Pro-Labor President in History
+            </h3>
+            <p class="text-[15px] font-thin text-center pt-2">
+              Thanks to President Biden's work to fight for overtime pay,
+              protect millions of pensions, and stand in solidarity with workers
+              as they went on strike, the Biden-Harris Administration has been
+              cemented as the most pro-labor administration in history.
+            </p>
+          </div>
+          <!-- Row 2 -->
+          <div
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            style="transition: transform 0.3s ease"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <h3 class="text-xl mb-4 text-center">
+              Lowering Costs, Tackling Junk Fees, and Promoting Competition
+            </h3>
+            <p class="text-[15px] font-thin text-centerpt-2">
+              President Biden knows that prices are too high and too many
+              families are being squeezed by the cost of living. The
+              Biden-Harris Administration's actions have lowered costs in key
+              areas – from health insurance premiums and prescription drugs to
+              utility bills.
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            style="transition: transform 0.3s ease"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <h3 class="text-xl mb-4 text-center">
+              Building a Fairer Tax System
+            </h3>
+            <p class="text-[15px] font-thin text-center pt-2">
+              The Biden-Harris Administration enacted a corporate minimum tax
+              that ensures billion-dollar companies can't get away with paying
+              $0 in federal income taxes, places a surcharge on corporate stock
+              buybacks, and invests in the Internal Revenue Service (IRS) to
+              ensure wealthy tax cheats pay their fair share.
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            style="transition: transform 0.3s ease"
+            onmouseover="this.style.transform='scale(1.05)'"
+            onmouseout="this.style.transform='scale(1)'"
+          >
+            <h3 class="text-xl mb-4 text-center">
+              Increased Housing for Americans
+            </h3>
+            <p class="text-[15px] font-thin text-center pt-2">
+              After decades of under-investment in housing, we are finally
+              seeing progress under President Biden and Vice President Harris
+              with more units under construction than at any time in over 50
+              years, and the rate of new housing starts up 17% compared to under
+              the last administration.
+            </p>
+          </div>
+        </div>
+        <div
+          class="flex justify-center bg-[#e7c190] hover:bg-white rounded-full my-20 w-auto p-4 cursor-pointer"
+        >
+          <p class="text-[12px] tracking-wider">VIEW ALL ACCOMPLISHMENTS</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="h-[450px] bg-white relative">
+      <div class="w-full flex flex-col items-center py-20">
+        <hr class="w-5/6 border-t border-gray-300" />
+      </div>
+      <div class="flex justify-between px-32">
+        <div class="w-full h-20 flex space-x-36">
+          <div class="text-sm">
+            <ul class="space-y-4">
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./index.html">Home</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./record.html">The Record</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./issues.html">The Issues</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./briefingroom.html">Briefing Room</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm">
+            <ul class="space-y-4">
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="">The Administration</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="">Executive Office</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="">The White House</a>
+              </li>
+              <li
+                class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="">Nepali</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full h-20 justify-end flex space-x-20">
+          <div class="text-[12px] text-gray-600">
+            <ul class="space-y-2">
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="">Contact Us</a>
+              </li>
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="">Privacy Policy</a>
+              </li>
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="">Copyright Policy</a>
+              </li>
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="">Accessibility Statement</a>
+              </li>
+            </ul>
+          </div>
+          <div class="space-y-1">
+            <div class="space-x-4 w-24">
+              <i
+                class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+              ></i>
+            </div>
+            <div class="space-x-4 w-24">
+              <i
+                class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-threads hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+              ></i>
+            </div>
+
+            <div class="pt-10">
+              <h4 class="text-sm font-serif font-semibold">The White House</h4>
+              <p
+                class="text-left text-sm w-48 font-thin font-serif text-gray-600"
+              >
+                1600 Pennsylvania Ave NW Washington, DC 20500
+              </p>
+            </div>
+            <div class="pt-4 font-serif text-xl text-yellow-800">
+              <h2 class="font-bold hover:text-red-700 cursor-pointer">
+                W H<span class="font-medium">.GOV</span>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const hero = document.getElementById("hero-section");
+      window.addEventListener("scroll", () => {
+        if (!hero) return;
+        const scrollY = window.scrollY;
+        const heroHeight = hero.offsetHeight;
+        let opacity = 1 - Math.min(scrollY / heroHeight, 1);
+        hero.style.opacity = opacity;
+      });
+
+      const sections = [
+        document.getElementById("hero-section"),
+        document.querySelector("section.h-screen.w-full.z-20"),
+        document.querySelector("section.relative.w-full.min-h-screen"),
+      ];
+      const dots = document.querySelectorAll("#dot-nav .dot");
+      window.addEventListener("scroll", () => {
+        let activeIdx = 0;
+        const scroll = window.scrollY + window.innerHeight / 2;
+        sections.forEach((section, idx) => {
+          if (section && scroll >= section.offsetTop) {
+            activeIdx = idx;
+          }
+        });
+        dots.forEach((dot, idx) => {
+          if (idx === activeIdx) {
+            dot.classList.add("w-3", "h-3", "opacity-100");
+            dot.classList.remove("w-2", "h-2", "opacity-60");
+          } else {
+            dot.classList.remove("w-3", "h-3", "opacity-100");
+            dot.classList.add("w-2", "h-2", "opacity-60");
+          }
+        });
+      });
+
+      window.addEventListener("DOMContentLoaded", () => {
+        const video = document.getElementById("main-video");
+        if (!video) return;
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                video.classList.add("scale-100", "opacity-100");
+                video.classList.remove("scale-90", "opacity-0");
+              }
+            });
+          },
+          { threshold: 0.3 }
+        );
+        observer.observe(video);
+      });
+    </script>
+  </body>
+</html>

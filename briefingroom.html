@@ -23,12 +23,10 @@
     <title>Briefing Room</title>
   </head>
   <body>
-    <!-- navigaiton bar -->
-    <div
-      class="bg-gradient-to-r from-[#021a45] to-[#00479e] justify-center h-10 flex items-center"
-    >
+    <!-- Notification Banner -->
+    <div class="bg-gradient-to-r from-[#020a1b] to-[#003366] p-4">
       <p
-        class="text-[20px] text-white font-extralight md:text-[13px] font-inter tracking-widest"
+        class="text-[10px] text-white font-extralight text-center sm:text-[9px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-inter tracking-wide leading-relaxed max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto"
       >
         This is historical material “frozen in time”. The website is no longer
         updated and links to external websites and some internal pages may not
@@ -36,9 +34,11 @@
       </p>
     </div>
 
+    <!-- Navigation Bar -->
     <nav
-      class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16"
+      class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg"
     >
+      <!-- Logo Section (Centered Logo) -->
       <a href="./index.html" class="flex-shrink-0 cursor-pointer">
         <h2
           class="hidden sm:block text-[16px] sm:text-[18px] px-4 sm:px-6 font-serif font-semibold text-[#021a45] hover:text-red-700 tracking-wider"
@@ -47,6 +47,7 @@
         </h2>
       </a>
 
+      <!-- Logo Image -->
       <a
         href="./index.html"
         class="absolute left-1/2 transform -translate-x-1/2 top-2"
@@ -58,7 +59,8 @@
         />
       </a>
 
-      <div class="flex items-center space-x-6 pr-6">
+      <!-- Navigation Links (Desktop View: Large screens) -->
+      <div class="flex items-center space-x-6 pr-6 hidden xl:flex">
         <ul class="flex space-x-6 text-[15px]">
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
@@ -68,12 +70,12 @@
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
           >
-            <a href="./record.html"> The Record</a>
+            <a href="./record.html">The Record</a>
           </li>
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
           >
-            <a href="./issues.html">The Issues </a>
+            <a href="./issues.html">The Issues</a>
           </li>
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
@@ -83,12 +85,23 @@
           <li
             class="text-blue-600 border-b-[0.5px] border-blue-300 hover:text-red-600 hover:border-red-700 cursor-pointer"
           >
-            <a href="./">Nepali </a>
+            <a href="./">Nepali</a>
           </li>
         </ul>
+
+        <!-- Menu Link for Desktop -->
         <a
           href="./menu.html"
-          class="text-[12px] font-semibold border-y-2 border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
+          class="text-[12px] font-semibold border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
+        >
+          MENÚ
+        </a>
+      </div>
+
+      <div class="xl:hidden flex items-center">
+        <a
+          href="./menu.html"
+          class="text-[12px] font-semibold border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
         >
           MENÚ
         </a>
@@ -97,42 +110,53 @@
     <!-- main content -->
     <!-- part-1 -->
     <div class="px-4">
-      <div class="w-full h-[650px] rounded-3xl overflow-hidden relative">
-        <div class="relative w-full h-fit">
+      <div
+        class="w-full lg:h-[650px] sm:h-[500px] md:h-[400px] rounded-3xl overflow-hidden relative"
+      >
+        <!-- Image Wrapper -->
+        <div class="relative w-full h-full">
           <img
             src="./assets/brief.webp"
             alt="Biden cover photo"
-            class="w-full h-fit object-cover rounded-3xl"
+            class="w-full h-full object-cover rounded-3xl"
           />
           <div
             class="absolute inset-0 bg-gradient-to-t from-[#020a1b] to-transparent z-0"
           ></div>
         </div>
+
+        <!-- Text Overlay -->
+        <div
+          class="absolute bottom-[30px] sm:bottom-[50px] md:bottom-[80px] left-1/2 transform -translate-x-1/2 p-4 rounded font-serif"
+        >
+          <h1
+            class="text-white text-sm sm:text-base md:text-xl lg:text-2xl font-bold mb-2 font-lato tracking-normal sm:tracking-wide md:tracking-widest leading-none"
+          >
+            BRIEFING ROOM
+          </h1>
+        </div>
       </div>
     </div>
-    <div class="absolute bottom-[100px] right-[500px] p-4 rounded font-serif">
-      <h1 class="text-white text-4xl font-bold mb-2 font-lato tracking-widest">
-        BRIEFING ROOM
-      </h1>
-    </div>
 
-    <!-- part-2  -->
-    <div class="flex justify-center px-8 pt-10">
+    <!-- part-2 -->
+    <div class="flex justify-center px-4 sm:px-8 pt-10">
       <p
-        class="text-left w-auto px-96 font-serif text-gray-700 text-3xl tracking-wide"
+        class="text-center w-full md:w-3/4 lg:w-2/3 font-serif text-gray-700 text-base sm:text-lg md:text-xl lg:text-3xl tracking-wide"
       >
         <span
-          class="text-yellow-700 text-8xl transform scale-150 relative align-baseline"
+          class="text-yellow-700 text-6xl sm:text-7xl md:text-8xl lg:text-8xl font-bold relative align-baseline"
           >W</span
         >
         elcome to Nepal's official news and communications hub. Here you'll find
-        the latest government announcements, public briefings executive and
-        national statements all curated to keep citizens informed and engaged in
-        the country's progress.
+        the latest government announcements, public briefings, executive and
+        national statements, all curated to keep citizens informed and engaged
+        in the country's progress.
       </p>
     </div>
-    <div class="w-full flex flex-col items-center py-10">
-      <hr class="w-40 border-t-[2px] border-[#021a45]" />
+    <div class="w-full flex flex-col items-center py-6 sm:py-8 md:py-10">
+      <hr
+        class="w-20 sm:w-32 md:w-40 border-t-[1px] sm:border-t-[1.5px] md:border-t-[2px] border-[#021a45]"
+      />
     </div>
 
     <!-- part-3 -->
@@ -141,17 +165,19 @@
     >
       <div class="text-black overflow-hidden space-y-9">
         <div class="statement-item">
-          <div class="max-w-2xl flex flex-col item-start mx-auto space-y-2">
+          <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Boosting Digital Literacy in Nepal’s Rural Communities
             </h1>
-            <p class="text-[12px] tracking-wider text-left">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -159,18 +185,21 @@
             <hr class="w-4/6 border-t-[0.5px] border-gray-400" />
           </div>
         </div>
+
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Encouraging Regional Stability and Security
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -181,15 +210,17 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto sapce-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Celebrating Nepal’s Role in Global Diplomacy
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -200,15 +231,17 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Statement on Climate Change on Nepal
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -220,15 +253,17 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Statement on Climate Change and U.S.-Nepal Cooperation
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -239,16 +274,18 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Statement on Nepal’s Growth in Technology and Digital
               Infrastructure
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -259,15 +296,17 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Nepal’s Growing Tourism Industry and Cultural Heritage
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -278,15 +317,17 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Nepal’s Commitment to Climate Action and Sustainability
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -297,15 +338,17 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Statement on Nepal’s Advancements in Education and Innovation
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -316,15 +359,17 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Nepal's Commitment to Clean and Renewable Energy
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -335,15 +380,17 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Nepal's Commitment to Clean and Renewable Energy
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -354,15 +401,17 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Revitalizing Nepal's Tourism Industry After the Pandemic
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -373,15 +422,17 @@
         <div class="statement-item">
           <div class="max-w-2xl flex flex-col items-start mx-auto space-y-2">
             <h1
-              class="text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
+              class="text-2xl sm:text-3xl md:text-4xl font-serif hover:text-red-700 hover:underline-offset-4 hover:underline decoration-[1.5px]"
             >
               Nepal’s Leadership in Promoting Regional Stability
             </h1>
-            <p class="text-[12px] tracking-wider">
+            <p
+              class="text-[10px] sm:text-[12px] md:text-sm tracking-wider text-left"
+            >
               JANUARY 20, 2025 <span>•</span>
-              <spam
+              <span
                 class="text-blue-500 tracking-wider hover:border-b-red-700 hover:border-b hover:text-red-700"
-                >STATEMENTS AND RELEASES</spam
+                >STATEMENTS AND RELEASES</span
               >
             </p>
           </div>
@@ -444,12 +495,20 @@
     <script src="./assets/pagination.js"></script>
 
     <!-- footer -->
-    <footer class="h-[450px] bg-white relative">
-      <div class="w-full flex flex-col items-center py-20">
+    <footer class="bg-white relative">
+      <!-- Divider -->
+      <div class="w-full flex justify-center pt-14">
         <hr class="w-5/6 border-t border-gray-300" />
       </div>
-      <div class="flex justify-between px-32">
-        <div class="w-full h-20 flex space-x-36">
+
+      <!-- Footer Content -->
+      <div
+        class="hidden sm:flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-between items-start lg:items-center px-8 md:px-16 lg:px-32 py-8 md:py-12 lg:py-16 gap-y-8 md:gap-y-12 lg:space-y-0"
+      >
+        <!-- Links - Left Column -->
+        <div
+          class="flex flex-col lg:flex-row space-y-6 md:space-y-8 lg:space-y-0 lg:space-x-36 w-full lg:w-auto"
+        >
           <div class="text-sm">
             <ul class="space-y-4">
               <li
@@ -479,53 +538,57 @@
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">The Administration</a>
+                <a href="#">The Administration</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">Executive Office</a>
+                <a href="#">Executive Offices</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">The White House</a>
+                <a href="#">The White House</a>
               </li>
               <li
                 class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">Nepali</a>
+                <a href="#">Español</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="w-full h-20 justify-end flex space-x-20">
-          <div class="text-[12px] text-gray-600">
-            <ul class="space-y-2">
+
+        <!-- Contact and Address - Right Column -->
+        <div
+          class="flex flex-col items-start md:items-center lg:items-start space-y-8 md:space-y-10 lg:space-y-0 lg:flex-row lg:space-x-20 w-full lg:w-auto"
+        >
+          <div class="text-sm text-gray-600">
+            <ul class="space-y-4">
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Contact Us</a>
+                <a href="#">Contact Us</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Copyright Policy</a>
+                <a href="#">Copyright Policy</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Accessibility Statement</a>
+                <a href="#">Accessibility Statement</a>
               </li>
             </ul>
           </div>
-          <div class="space-y-1">
-            <div class="space-x-4 w-24">
+          <div class="flex flex-col items-center text-center space-y-6 md:mt-6">
+            <div class="flex justify-center space-x-4">
               <i
                 class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
               ></i>
@@ -535,8 +598,6 @@
               <i
                 class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
               ></i>
-            </div>
-            <div class="space-x-4 w-24">
               <i
                 class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
               ></i>
@@ -547,21 +608,122 @@
                 class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
               ></i>
             </div>
-
-            <div class="pt-10">
+            <div>
               <h4 class="text-sm font-serif font-semibold">The White House</h4>
-              <p
-                class="text-left text-sm w-48 font-thin font-serif text-gray-600"
-              >
-                1600 Kathamndu Ave NW Bagmati, DC 20500
+              <p class="text-sm font-thin font-serif text-gray-600">
+                1600 Baneshower Ave NW<br />
+                Kathmandu, DC 20500
               </p>
             </div>
-            <div class="pt-4 font-serif text-xl text-yellow-800">
-              <h2 class="font-bold hover:text-red-700 cursor-pointer">
-                W H<span class="font-medium">.GOV</span>
-              </h2>
-            </div>
+            <h2
+              class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif"
+            >
+              W H<span class="font-medium">.GOV</span>
+            </h2>
           </div>
+        </div>
+      </div>
+
+      <!-- Mobile View -->
+      <div class="sm:hidden flex flex-col items-start space-y-6 px-6 py-10">
+        <div>
+          <ul class="space-y-4">
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./record.html">The Record</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./issues.html">The Issues</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./briefingroom.html">Briefing Room</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">The Administration</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Executive Offices</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">The White House</a>
+            </li>
+            <li
+              class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Español</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="space-y-3 text-sm text-gray-600">
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Contact Us</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Copyright Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Accessibility Statement</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex space-x-4">
+          <i
+            class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+          ></i>
+          <i class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"></i>
+          <i class="fa-brands fa-threads hover:text-red-700 cursor-pointer"></i>
+          <i
+            class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+          ></i>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
+          <p class="text-sm font-thin font-serif text-gray-600">
+            1600 Baneshower Ave NW<br />
+            Kathmandu, DC 20500
+          </p>
+          <h2
+            class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif"
+          >
+            W H<span class="font-medium">.GOV</span>
+          </h2>
         </div>
       </div>
     </footer>

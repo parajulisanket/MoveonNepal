@@ -4,553 +4,1232 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    integrity="sha512-..."
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="icon" href="./assets/logo.png" type="image/png"  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/logo.png" type="image/png" />
     <title>Issues</title>
   </head>
   <body>
-     <div
-     class="bg-gradient-to-r from-[#021a45] to-[#00479e] justify-center h-10 flex items-center"
-   >
-     <p
-       class="text-[20px] text-white font-extralight md:text-[13px] font-inter tracking-widest"
-     >
-       This is historical material “frozen in time”. The website is no longer
-       updated and links to external websites and some internal pages may not
-       work.
-     </p>
-   </div>
+    <!-- Notification Banner -->
+    <div class="bg-gradient-to-r from-[#020a1b] to-[#003366] p-4">
+      <p
+        class="text-[10px] text-white font-extralight text-center sm:text-[9px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-inter tracking-wide leading-relaxed max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto"
+      >
+        This is historical material “frozen in time”. The website is no longer
+        updated and links to external websites and some internal pages may not
+        work.
+      </p>
+    </div>
 
-   <div class="relative">
-     <img src="./assets/image.png" alt="" class="w-full object-cover z-0" />
+    <div class="relative">
+      <!-- Background Image -->
+      <img src="./assets/image.png" alt="" class="w-full object-cover z-0" />
 
-     <nav
-       class="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-4 h-16"
-     >
-       <a href="./index.html" class="flex-shrink-0 cursor-pointer">
-         <h2
-           class="text-[18px] px-6 font-serif font-semibold text-[#021a45] hover:text-red-700 tracking-wider "
-         >
-         MOVE ON NEPAL
-         </h2>
-       </a>
+      <!-- Navigation Bar -->
+      <nav
+        class="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-4 h-16"
+      >
+        <a href="./index.html" class="flex-shrink-0 cursor-pointer">
+          <h2
+            class="hidden sm:block text-[16px] sm:text-[18px] px-4 sm:px-6 font-serif font-semibold text-[#021a45] hover:text-red-700 tracking-wider"
+          >
+            MOVE ON NEPAL
+          </h2>
+        </a>
 
-       <a
-         href="./index.html"
-         class="absolute left-1/2 transform -translate-x-1/2 top-2"
-       >
-         <img
-           src="./assets/logo.png"
-           alt="Logo"
-           class="h-16 transition-transform duration-400 ease-in-out hover:scale-105 cursor-pointer"
-         />
-       </a>
+        <a
+          href="./index.html"
+          class="absolute left-1/2 transform -translate-x-1/2 top-2"
+        >
+          <img
+            src="./assets/logo.png"
+            alt="Logo"
+            class="h-12 sm:h-12 md:h-14 transition-transform duration-400 ease-in-out hover:scale-105 cursor-pointer"
+          />
+        </a>
+        <!-- Navigation Links (Desktop View: Large screens) -->
+        <div class="flex items-center space-x-6 pr-6 hidden xl:flex">
+          <ul class="flex space-x-6 text-[15px]">
+            <li
+              class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
+            >
+              <a href="./administration.html">Administration</a>
+            </li>
+            <li
+              class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
+            >
+              <a href="./record.html">The Record</a>
+            </li>
+            <li
+              class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
+            >
+              <a href="./issues.html">The Issues</a>
+            </li>
+            <li
+              class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
+            >
+              <a href="./briefingroom.html">Briefing Room</a>
+            </li>
+            <li
+              class="text-blue-600 border-b-[0.5px] border-blue-300 hover:text-red-600 hover:border-red-700 cursor-pointer"
+            >
+              <a href="./">Nepali</a>
+            </li>
+          </ul>
 
-       <div class="flex items-center space-x-6 pr-6">
-         <ul class="flex space-x-6 text-[15px] text-[#021a45]">
-           <li
-           class="border-b-[1px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
-           >
-             <a href="./administration.html">Administration</a>
-           </li>
-           <li
-           class="border-b-[1px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
-           >
-             <a href="./record.html">The Record</a>
-           </li>
-           <li
-           class="border-b-[1px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
-           >
-             <a href="./issues.html">The Issues</a>
-           </li>
-           <li
-           class="border-b-[1px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
-           >
-             <a href="./briefingroom.html">Briefing Room</a>
-           </li>
-           <li
-           class="border-b-[1px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
-           >
-             <a href="./">Nepali</a>
-           </li>
-         </ul>
-         <a href="./menu.html"
-         class="text-[12px] font-semibold border-y-2 border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
-       >
-         MENÚ
-       </a>
-     </nav>
-
-     <div
-       class="absolute top-64 left-24"
-     >
-     <h3 class="text-[#021a45] tracking-widest w-40 font-bold text-2xl ">OUR</h3>
-     <h1 class="text-[#021a45]  tracking-widest font-semibold text-[120px] leading-none m-0 ">POLICY</h1>
-     <div class="text-[#021a45] max-w-auto text-center text-[13px] tracking-wider bg-[#e7c190] p-3 rounded-full hover:bg-white cursor-pointer m-2">
-       <p >
-        DRIVING CHANGE THROUGH VISION, ACTION, AND ACCOUNTABILITY
-       </p>
-     </div>
-     </div>
-
-     <div class="p-6 bg-white max-w-7xl mx-auto -mt-24 sticky top-0 z-50 opacity-90  rounded-lg">
-      <ul class="flex justify-between space-x-6 text-black ">
-        <li>Jump to:</li>
-        <li class="border-b-[4px] border-transparent hover:border-blue-600 w-fit"><a href="#economy">Economy</a></li>
-        <li class="border-b-[4px] border-transparent hover:border-blue-600 w-fit"><a href="#investing">Investing in Nepal</a></li>
-        <li class="border-b-[4px] border-transparent hover:border-blue-600 w-fit"><a href="#leadership">Nepali Leadership</a></li>
-        <li class="border-b-[4px] border-transparent hover:border-blue-600 w-fit"><a href="#domestic">Domestic Policy</a></li>
-        <li class="border-b-[4px] border-transparent hover:border-blue-600 w-fit"><a href="#healthcare">Healthcare</a></li>
-        <li class="border-b-[4px] border-transparent hover:border-blue-600 w-fit"><a href="#climate">Energy and Climate</a></li>
-        <li class="border-b-[4px] border-transparent hover:border-blue-600 w-fit"><a href="#democracy">Democracy, Equality and Justice</a></li>
-      </ul>
-     </div>
-   </div>
-
-   <!-- part-2 -->
-   <div id="economy" class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-24 scroll-mt-24 ">
-    <div class=" text-white flex flex-col p-4 h-[700px] overflow-hidden">
-      <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">ECONOMY</h2>
-    
-      <div class="flex flex-col flex-1 gap-4 mt-6">
-        <div class="relative w-full h-full overflow-hidden">
-          <img src="./assets/economy1.webp" alt="Economy Graphic" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay "></div>
-        </div>        
-        <div class="flex gap-4 flex-1">
-          <div class="w-1/2 relative overflow-hidden">
-            <img src="./assets/economy2.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
-        
-          <div class="w-1/2 mt-10 relative overflow-hidden">
-            <img src="./assets/economy3.jpeg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
+          <!-- Menu Link for Desktop -->
+          <a
+            href="./menu.html"
+            class="text-[12px] font-semibold border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
+          >
+            MENÚ
+          </a>
         </div>
-      </div>
-    </div>
-    
-    <div class="py-6 px-20 overflow-y-auto">
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Historically Strong and Broadly Shared Recovery</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration, thanks in part through the American Rescue Plan, got America vaccinated and out of the pandemic while fueling a historic recovery with a record 16.6 million jobs created, a record 21 million new business applications, and the lowest average unemployment of any administration in more than 50 years.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Small Businesses: The Engines of the Economy</h1>
-  <p class="text-sm py-2">President Biden is driving a small business boom with American entrepreneurs filing a record 21 million new business applications since he took office.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Most Pro-Labor President in History</h1>
-  <p class="text-sm py-2">Thanks to President Biden’s work to fight for overtime pay, protect millions of pensions, and stand in solidarity with workers as they went on strike, the Biden-Harris Administration has been cemented as the most pro-labor administration in history.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Building a Fairer Tax System</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration enacted a corporate minimum tax that ensures billion-dollar companies can’t get away with paying $0 in federal income taxes, places a surcharge on corporate stock buybacks, and invests in the Internal Revenue Service (IRS) to ensure wealthy tax cheats pay their fair share.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide max-w-2xl">Lowering Costs, Tackling Junk Fees, and Promoting Competition</h1>
-  <p class="text-sm py-2">President Biden knows that prices are too high and too many families are being squeezed by the cost of living. The Biden- Harris Administration’s actions have lowered costs in key areas – from health insurance premiums and prescription drugs to utility bills.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Increased Housing for Americans</h1>
-  <p class="text-sm py-2">After decades of under-investment in housing, we are finally seeing progress under President Biden and Vice President Harris with more units under construction than at any time in over 50 years, and the rate of new housing starts up 17% compared to under the last administration.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-    </div>
-  </div>
-  <div class="w-full flex flex-col items-center py-20">
-    <hr class="w-5/6 border-t border-gray-400" />
-  </div>
-   <!-- part-3 -->
-    <div id="investing" class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24">
 
-    <div class=" text-white flex flex-col p-4 h-[700px] overflow-hidden">
-      <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">INVESTING IN NEPAL</h2>
-    
-      <div class="flex flex-col flex-1 gap-4 mt-6">
-        <div class="relative w-full h-full overflow-hidden">
-          <img src="./assets/invest1.webp" alt="Economy Graphic" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay "></div>
-        </div>        
-        <div class="flex gap-4 flex-1">
-          <div class="w-1/2 relative overflow-hidden">
-            <img src="./assets/invest2.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
-        
-          <div class="w-1/2 mt-10 relative overflow-hidden">
-            <img src="./assets/invest3.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
+        <!-- Menu Link for Mobile and Small Laptop View (visible on screens smaller than 1024px) -->
+        <div class="xl:hidden flex items-center">
+          <a
+            href="./menu.html"
+            class="text-[12px] font-semibold border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
+          >
+            MENÚ
+          </a>
+        </div>
+      </nav>
+
+      <!-- Text Section -->
+      <div
+        class="absolute top-40 sm:top-52 md:top-64 left-8 sm:left-16 lg:left-24"
+      >
+        <h3
+          class="text-[#021a45] tracking-widest w-32 sm:w-40 font-bold text-xl sm:text-2xl"
+        >
+          OUR
+        </h3>
+        <h1
+          class="text-[#021a45] tracking-widest font-semibold text-[60px] sm:text-[80px] md:text-[120px] leading-none m-0"
+        >
+          POLICY
+        </h1>
+        <div
+          class="text-[#021a45] max-w-auto text-center text-[10px] sm:text-[12px] md:text-[13px] tracking-wider bg-[#e7c190] p-2 sm:p-3 rounded-full hover:bg-white cursor-pointer m-2"
+        >
+          <p>DRIVING CHANGE THROUGH VISION, ACTION, AND ACCOUNTABILITY</p>
         </div>
       </div>
 
-    </div>
-    <div class="py-6 px-20 overflow-y-auto">
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">The Infrastructure Decade</h1>
-  <p class="text-sm py-2">The Bipartisan Infrastructure Law is a once-in-a-generation investment that is rebuilding America’s roads, bridges and rails; expanding access to clean drinking water; ensuring every American has access to high-speed internet; tackling the climate crisis; and more.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Technology and Innovation at Home</h1>
-  <p class="text-sm py-2">America invented the semiconductor, but over time, U.S. manufacturing of these chips went from 40% to about 10%. As a result of President Biden’s CHIPS and Science Act, the United States is now on track to produce nearly 30% of the global supply of leading-edge chips by 2032, up from 0% when the Biden-Harris Administration took office.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Made in America</h1>
-  <p class="text-sm py-2">President Biden and Vice President Harris have fought to bring manufacturing back home. The Administration has implemented the most robust change to the Buy American Act in almost 70 years by raising the domestic content threshold for Federal procurement from 55% to 65% in 2024 — and we are set to raise the bar even higher to 75% in 2029.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Built New Workforce Pathways to Good-Paying Jobs</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration is expanding pathways to good-paying jobs – particularly those that do not require a four-year degree. Efforts include growing Registered Apprenticeship opportunities and programs at community and technical colleges that connect to growing sectors like clean energy, manufacturing, and infrastructure.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
+      <!-- Sticky Navigation Section -->
+      <div
+        class="p-4 sm:p-6 bg-white max-w-7xl mx-auto -mt-16 sm:-mt-20 md:-mt-24 sticky top-0 z-50 opacity-90 rounded-lg"
+      >
+        <ul
+          class="flex flex-wrap justify-between space-x-2 sm:space-x-4 md:space-x-6 text-[10px] sm:text-[12px] md:text-[13px] lg:text-[14px] text-black"
+        >
+          <li>Jump to:</li>
+          <li
+            class="border-b-[2px] sm:border-b-[4px] border-transparent hover:border-blue-600 w-fit"
+          >
+            <a href="#economy">Economy</a>
+          </li>
+          <li
+            class="border-b-[2px] sm:border-b-[4px] border-transparent hover:border-blue-600 w-fit"
+          >
+            <a href="#investing">Investing in Nepal</a>
+          </li>
+          <li
+            class="border-b-[2px] sm:border-b-[4px] border-transparent hover:border-blue-600 w-fit"
+          >
+            <a href="#leadership">Nepali Leadership</a>
+          </li>
+          <li
+            class="border-b-[2px] sm:border-b-[4px] border-transparent hover:border-blue-600 w-fit"
+          >
+            <a href="#domestic">Domestic Policy</a>
+          </li>
+          <li
+            class="border-b-[2px] sm:border-b-[4px] border-transparent hover:border-blue-600 w-fit"
+          >
+            <a href="#healthcare">Healthcare</a>
+          </li>
+          <li
+            class="border-b-[2px] sm:border-b-[4px] border-transparent hover:border-blue-600 w-fit"
+          >
+            <a href="#climate">Energy and Climate</a>
+          </li>
+          <li
+            class="border-b-[2px] sm:border-b-[4px] border-transparent hover:border-blue-600 w-fit"
+          >
+            <a href="#democracy">Democracy, Equality and Justice</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-  </div>
-  <div class="w-full flex flex-col items-center py-20">
-    <hr class="w-5/6 border-t border-gray-400" />
-  </div>
-   <!-- part-4 -->
-    <div id="leadership" class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24">
+    <!-- part-2 -->
+    <div
+      id="economy"
+      class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-24 scroll-mt-24"
+    >
+      <div class="text-white flex flex-col p-4 h-[700px] overflow-hidden">
+        <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">
+          ECONOMY
+        </h2>
 
-    <div class=" text-white flex flex-col p-4 h-[700px] overflow-hidden">
-      <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">NEPALI LEADERSHIP</h2>
-    
-  <div class="flex flex-col flex-1 gap-4 mt-6">
-        <div class="relative w-full h-full overflow-hidden">
-          <img src="./assets/leadership1.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay "></div>
-        </div>        
-        <div class="flex gap-4 flex-1">
-          <div class="w-1/2 relative overflow-hidden">
-            <img src="./assets/leadership2.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
+        <div class="flex flex-col flex-1 gap-4 mt-6">
+          <div class="relative w-full h-full overflow-hidden">
+            <img
+              src="./assets/economy1.webp"
+              alt="Economy Graphic"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay"
+            ></div>
           </div>
-        
-          <div class="w-1/2 mt-10 relative overflow-hidden">
-            <img src="./assets/leadership3.webp" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
+          <div class="flex gap-4 flex-1">
+            <div class="w-1/2 relative overflow-hidden">
+              <img
+                src="./assets/economy2.jpg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+
+            <div class="w-1/2 mt-10 relative overflow-hidden">
+              <img
+                src="./assets/economy3.jpeg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    
-    <div class=" py-6 px-20">
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Strengthened Global Partnerships</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration forged historic partnerships, restored American leadership on the world stage, and hosted high-level leader summits with partners from Africa, the Americas, and Asia.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Reinvigorated and Strengthened NATO</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration reinvigorated the North Atlantic Treaty Organization (NATO) by welcoming - Sweden and Finland to the Alliance while also increasing defense spending across the Alliance to make us all safer and more secure.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Support for Ukraine</h1>
-  <p class="text-sm py-2">In response to Vladimir Putin’s brutal and unprovoked invasion of Ukraine, President Biden has rallied the world to rise to the moment, stand up to autocracy, and defend democracy.
-  </p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Israel and the War in Gaza</h1>
-  <p class="text-sm py-2">President Biden’s stood by Israel after Hamas’ horrific attacks on October 7th, and he worked tirelessly to bring the hostages home through a ceasefire deal to end the fighting in Gaza, as well as to bring humanitarian assistance into Gaza to alleviate the suffering of the Palestinian people.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Protecting the American People</h1>
-  <p class="text-sm py-2">President Biden is working to keep Americans safe and secure. President Biden has brought home dozens of Americans who were held hostage or wrongfully detained overseas.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Investing at Home to Out-Compete the People’s Republic of China</h1>
-  <p class="text-sm py-2">Through the leadership of President Biden and Vice President Harris, the United States has deepened our security and economic partnerships in the Indo-Pacific and around the world.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-    </div>
-  </div>
-  <div class="w-full flex flex-col items-center py-20">
-    <hr class="w-5/6 border-t border-gray-400" />
-  </div>
-   <!-- part-5 -->
-    <div id="domestic" class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24">
 
-    <div class=" text-white flex flex-col p-4 h-[700px] overflow-hidden">
-      <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">DOMESTIC POLICY</h2>
-    
-      <div class="flex flex-col flex-1 gap-4 mt-6">
-        <div class="relative w-full h-full overflow-hidden">
-          <img src="./assets/policy3.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay "></div>
-        </div>        
-        <div class="flex gap-4 flex-1">
-          <div class="w-1/2 relative overflow-hidden">
-            <img src="./assets/policy2.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
-        
-          <div class="w-1/2 mt-10 relative overflow-hidden">
-            <img src="./assets/policy1.jpeg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
+      <div class="py-6 px-20 overflow-y-auto">
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Historically Strong and Broadly Shared Recovery
+          </h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration, thanks in part through the American
+            Rescue Plan, got America vaccinated and out of the pandemic while
+            fueling a historic recovery with a record 16.6 million jobs created,
+            a record 21 million new business applications, and the lowest
+            average unemployment of any administration in more than 50 years.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Small Businesses: The Engines of the Economy
+          </h1>
+          <p class="text-sm py-2">
+            President Biden is driving a small business boom with American
+            entrepreneurs filing a record 21 million new business applications
+            since he took office.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Most Pro-Labor President in History
+          </h1>
+          <p class="text-sm py-2">
+            Thanks to President Biden’s work to fight for overtime pay, protect
+            millions of pensions, and stand in solidarity with workers as they
+            went on strike, the Biden-Harris Administration has been cemented as
+            the most pro-labor administration in history.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Building a Fairer Tax System
+          </h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration enacted a corporate minimum tax that
+            ensures billion-dollar companies can’t get away with paying $0 in
+            federal income taxes, places a surcharge on corporate stock
+            buybacks, and invests in the Internal Revenue Service (IRS) to
+            ensure wealthy tax cheats pay their fair share.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Lowering Costs, Tackling Junk Fees, and Promoting Competition
+          </h1>
+          <p class="text-sm py-2">
+            President Biden knows that prices are too high and too many families
+            are being squeezed by the cost of living. The Biden- Harris
+            Administration’s actions have lowered costs in key areas – from
+            health insurance premiums and prescription drugs to utility bills.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Increased Housing for Americans
+          </h1>
+          <p class="text-sm py-2">
+            After decades of under-investment in housing, we are finally seeing
+            progress under President Biden and Vice President Harris with more
+            units under construction than at any time in over 50 years, and the
+            rate of new housing starts up 17% compared to under the last
+            administration.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
         </div>
       </div>
     </div>
-    
-    <div class=" py-6 px-20">
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Meeting Our Sacred Obligation to Veteran and Military Families</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration has taken broad executive action to fulfill our sacred obligation to our nation’s heroes and their families and signed over 30 bipartisan laws to better support veterans, military families, caregivers, and survivors. President Biden signed into law the Promise to Address Comprehensive Toxins (PACT) Act which enacted the most significant expansion of benefits and services for toxic exposed veterans and their survivors in over thirty years.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Reducing Gun Violence and Other Violent Crimes</h1>
-  <p class="text-sm py-2">President Biden and Vice President Harris established the first-ever White House Office of Gun Violence Prevention and signed the most significant gun violence prevention legislation in nearly 30 years - the Bipartisan Safer Communities Act – into law.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Student Debt Relief</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration has approved student debt relief for over 5 million Americans through more than two dozen executive actions.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Education</h1>
-  <p class="text-sm py-2">A great education opens doors and changes lives, which is why, since Day One, the Biden-Harris Administration has focused on improving academic achievement, increasing student attendance and engagement, and building communities where all students feel they belong and can thrive.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Securing the Border</h1>
-  <p class="text-sm py-2">President Biden took executive action to secure the border, which has reduced unlawful border crossings by 60%. Today, there are fewer border crossings than at the end of the previous administration.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Issued a Review to Reschedule Marijuana</h1>
-  <p class="text-sm py-2">President Biden pardoned those convicted of simple marijuana possession under federal law, and his Administration launched the process to review the classification of marijuana.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Managing the Promise of AI</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration is taking extensive action to ensure that America leads the way in seizing the promise - and managing the risks - of artificial intelligence.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Supporting American Families and Access to Care</h1>
-  <p class="text-sm py-2">Since Day One of the Administration, President Biden and Vice President Harris have been fighting to improve access to affordable, high-quality care while supporting care workers and family caregivers.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-    </div>
-  </div>
-  <div class="w-full flex flex-col items-center py-20">
-    <hr class="w-5/6 border-t border-gray-400" />
-  </div>
-   <!-- part-6 -->
-    <div id="healthcare" class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24">
-
-    <div class=" text-white flex flex-col p-4 h-[700px] overflow-hidden">
-      <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">HEALTHCARE</h2>
-    
-      <div class="flex flex-col flex-1 gap-4 mt-6">
-        <div class="relative w-full h-full overflow-hidden">
-          <img src="./assets/health1.jpeg" alt="Economy Graphic" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay "></div>
-        </div>        
-        <div class="flex gap-4 flex-1">
-          <div class="w-1/2 relative overflow-hidden">
-            <img src="./assets/health2.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
-        
-          <div class="w-1/2 mt-10 relative overflow-hidden">
-            <img src="./assets/health3.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class="py-6 px-20">
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Cancer Moonshot</h1>
-  <p class="text-sm py-2">President Biden and Dr. Biden supercharged their commitment to end cancer as we know it and set bold goals to: reduce the cancer death rate in the United States by at least half – preventing more than 4 million cancer deaths a year – by 2047, and improve the experience of people who are touched by cancer.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Tackling the Mental Health Crisis</h1>
-  <p class="text-sm py-2">President Biden and Vice President Harris have made tackling the mental health crisis a top priority. The Administration’s Mental Health Strategy focuses on supporting Americans by creating healthy environments, strengthening system capacity, and connecting more Americans to care.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Beating the Opioid and Overdose Epidemic</h1>
-  <p class="text-sm py-2">The Unity Agenda is solving big challenges that unite all Americans – like beating the opioid epidemic. The latest data from the CDC shows a 10% reduction in overdose in the last 12 months—the largest decrease on record.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Taking on Big Pharma</h1>
-  <p class="text-sm py-2">President Biden and Vice President Harris have taken on Big Pharma to lower prescription drug costs for millions on Medicare via the Inflation Reduction Act.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Advancing Women’s Health Research and Innovation</h1>
-  <p class="text-sm py-2">Recognizing that research on women’s health remains underfunded and understudied, President Biden and Dr. Biden launched the first-ever White House Initiative on Women’s Health Research to spur innovation, unleash transformative investment to close research gaps, and improve women’s health.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-    </div>
-  </div>
-  <div class="w-full flex flex-col items-center py-20">
-    <hr class="w-5/6 border-t border-gray-400" />
-  </div>
-   <!-- part-7 -->
-    <div id="climate" class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24">
-
-    <div class=" text-white flex flex-col p-4 h-[700px] overflow-hidden">
-      <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">ENERGY AND CLIMATE</h2>
-    
-      <div class="flex flex-col flex-1 gap-4 mt-6">
-        <div class="relative w-full h-full overflow-hidden">
-          <img src="./assets/climate1.webp" alt="Economy Graphic" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay "></div>
-        </div>        
-        <div class="flex gap-4 flex-1">
-          <div class="w-1/2 relative overflow-hidden">
-            <img src="./assets/climate2.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
-        
-          <div class="w-1/2 mt-10 relative overflow-hidden">
-            <img src="./assets/climate3.jpeg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class=" py-6 px-20">
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Clean Energy Future</h1>
-  <p class="text-sm py-2">Under President Biden and Vice President Harris’ leadership, America is setting records for deployment of clean energy, as part of historic climate action that is making the nation safer and stronger, lowering energy costs for families, and creating good-paying union jobs.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Conservation</h1>
-  <p class="text-sm py-2">President Biden launched one of the most rapid accelerations of conservation progress in history and conserved 674 million acres of lands and waters—more than any President in history.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Tackling the Climate Crisis</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration has made tackling the climate crisis a top priority. President Biden signed the Inflation Reduction Act - the largest climate investment in history - a historic investment was made to lower energy costs, create good-paying union jobs, and strengthen energy security.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-    </div>
-  </div>
-  <div class="w-full flex flex-col items-center py-20">
-    <hr class="w-5/6 border-t border-gray-400" />
-  </div>
-   <!-- part-8 -->
-    <div id="democracy" class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24">
-
-    <div class=" text-white flex flex-col p-4 h-[700px] overflow-hidden">
-      <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">DEMOCRACY, EQUALITY, AND JUSTIC</h2>
-    
-      <div class="flex flex-col flex-1 gap-4 mt-6">
-        <div class="relative w-full h-full overflow-hidden">
-          <img src="./assets/equality1.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-          <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay "></div>
-        </div>        
-        <div class="flex gap-4 flex-1">
-          <div class="w-1/2 relative overflow-hidden">
-            <img src="./assets/equality2.jpg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
-        
-          <div class="w-1/2 mt-10 relative overflow-hidden">
-            <img src="./assets/equality3.jpeg" alt="Economy Graphic" class="w-full h-full object-cover" />
-            <div class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div class=" py-6 px-20">
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Democratic Principles</h1>
-  <p class="text-sm py-2">President Biden has taken decisive action to strengthen our democracy and preserve the will of the people.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Combating Hate of All Kinds</h1>
-  <p class="text-sm py-2">There is no place for political violence or for any violence in our country. The Biden-Harris Administration is taking aggressive action to fight discrimination, bias, and hate-fueled violence.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Advancing Equality and Racial Justice</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration is championing racial equity and further advancing equal opportunity for underserved communities through landmark legislation and historic executive actions</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Advancing Gender Equity and Equality</h1>
-  <p class="text-sm py-2">President Biden has taken decisive action to strengthen our democracy and preserve the will of the people.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Combating Hate of All Kinds</h1>
-  <p class="text-sm py-2">President Biden and Vice President Harris are leveraging the full force of the federal government to advance rights and opportunity for women and girls across the country and around the globe.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">LGBTQI+ Rights</h1>
-  <p class="text-sm py-2">President Biden signed the Respect for Marriage Act to protect the right to marry who you love and is the most pro-equality President in history.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Judges Matter</h1>
-  <p class="text-sm py-2">President Biden appointed Justice Ketanji Brown Jackson to the Supreme Court of the United States, along with over 200 of the most diverse judicial appointees ever put forward by a President.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Delivering for Diverse Communities</h1>
-  <p class="text-sm py-2">The Biden-Harris Administration is delivering the most equitable economic recovery on record across Black American, Latino American, Asian American, Native Hawaiian, Pacific Islander, and Indigenous Communities.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-<div class="text-left font-serif py-4"> 
-  <h1 class="text-2xl tracking-wide  max-w-2xl">Clemency</h1>
-  <p class="text-sm py-2">President Biden used his clemency power to issue more individual pardons and commutations than any president in United States history.</p>
-  <p class="text-[12px] font-sans font-bold tracking-widest">LEARN MORE</p>
-</div>
-    </div>
-  </div>
-
-  <!-- fotter -->
-  <footer class="h-[450px] bg-white relative">
     <div class="w-full flex flex-col items-center py-20">
-      <hr class="w-5/6 border-t border-gray-300" />
+      <hr class="w-5/6 border-t border-gray-400" />
     </div>
-    <div class="flex justify-between px-32">
-      <div class="w-full h-20 flex space-x-36">
-        <div class="text-sm">
+    <!-- part-3 -->
+    <div
+      id="investing"
+      class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24"
+    >
+      <div class="text-white flex flex-col p-4 h-[700px] overflow-hidden">
+        <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">
+          INVESTING IN NEPAL
+        </h2>
+
+        <div class="flex flex-col flex-1 gap-4 mt-6">
+          <div class="relative w-full h-full overflow-hidden">
+            <img
+              src="./assets/invest1.webp"
+              alt="Economy Graphic"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay"
+            ></div>
+          </div>
+          <div class="flex gap-4 flex-1">
+            <div class="w-1/2 relative overflow-hidden">
+              <img
+                src="./assets/invest2.jpg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+
+            <div class="w-1/2 mt-10 relative overflow-hidden">
+              <img
+                src="./assets/invest3.jpg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="py-6 px-20 overflow-y-auto">
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            The Infrastructure Decade
+          </h1>
+          <p class="text-sm py-2">
+            The Bipartisan Infrastructure Law is a once-in-a-generation
+            investment that is rebuilding America’s roads, bridges and rails;
+            expanding access to clean drinking water; ensuring every American
+            has access to high-speed internet; tackling the climate crisis; and
+            more.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Technology and Innovation at Home
+          </h1>
+          <p class="text-sm py-2">
+            America invented the semiconductor, but over time, U.S.
+            manufacturing of these chips went from 40% to about 10%. As a result
+            of President Biden’s CHIPS and Science Act, the United States is now
+            on track to produce nearly 30% of the global supply of leading-edge
+            chips by 2032, up from 0% when the Biden-Harris Administration took
+            office.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Made in America</h1>
+          <p class="text-sm py-2">
+            President Biden and Vice President Harris have fought to bring
+            manufacturing back home. The Administration has implemented the most
+            robust change to the Buy American Act in almost 70 years by raising
+            the domestic content threshold for Federal procurement from 55% to
+            65% in 2024 — and we are set to raise the bar even higher to 75% in
+            2029.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Built New Workforce Pathways to Good-Paying Jobs
+          </h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration is expanding pathways to good-paying
+            jobs – particularly those that do not require a four-year degree.
+            Efforts include growing Registered Apprenticeship opportunities and
+            programs at community and technical colleges that connect to growing
+            sectors like clean energy, manufacturing, and infrastructure.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex flex-col items-center py-20">
+      <hr class="w-5/6 border-t border-gray-400" />
+    </div>
+    <!-- part-4 -->
+    <div
+      id="leadership"
+      class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24"
+    >
+      <div class="text-white flex flex-col p-4 h-[700px] overflow-hidden">
+        <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">
+          NEPALI LEADERSHIP
+        </h2>
+
+        <div class="flex flex-col flex-1 gap-4 mt-6">
+          <div class="relative w-full h-full overflow-hidden">
+            <img
+              src="./assets/leadership1.jpg"
+              alt="Economy Graphic"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay"
+            ></div>
+          </div>
+          <div class="flex gap-4 flex-1">
+            <div class="w-1/2 relative overflow-hidden">
+              <img
+                src="./assets/leadership2.jpg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+
+            <div class="w-1/2 mt-10 relative overflow-hidden">
+              <img
+                src="./assets/leadership3.webp"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-6 px-20">
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Strengthened Global Partnerships
+          </h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration forged historic partnerships,
+            restored American leadership on the world stage, and hosted
+            high-level leader summits with partners from Africa, the Americas,
+            and Asia.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Reinvigorated and Strengthened NATO
+          </h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration reinvigorated the North Atlantic
+            Treaty Organization (NATO) by welcoming - Sweden and Finland to the
+            Alliance while also increasing defense spending across the Alliance
+            to make us all safer and more secure.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Support for Ukraine</h1>
+          <p class="text-sm py-2">
+            In response to Vladimir Putin’s brutal and unprovoked invasion of
+            Ukraine, President Biden has rallied the world to rise to the
+            moment, stand up to autocracy, and defend democracy.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Israel and the War in Gaza
+          </h1>
+          <p class="text-sm py-2">
+            President Biden’s stood by Israel after Hamas’ horrific attacks on
+            October 7th, and he worked tirelessly to bring the hostages home
+            through a ceasefire deal to end the fighting in Gaza, as well as to
+            bring humanitarian assistance into Gaza to alleviate the suffering
+            of the Palestinian people.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Protecting the American People
+          </h1>
+          <p class="text-sm py-2">
+            President Biden is working to keep Americans safe and secure.
+            President Biden has brought home dozens of Americans who were held
+            hostage or wrongfully detained overseas.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Investing at Home to Out-Compete the People’s Republic of China
+          </h1>
+          <p class="text-sm py-2">
+            Through the leadership of President Biden and Vice President Harris,
+            the United States has deepened our security and economic
+            partnerships in the Indo-Pacific and around the world.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex flex-col items-center py-20">
+      <hr class="w-5/6 border-t border-gray-400" />
+    </div>
+    <!-- part-5 -->
+    <div
+      id="domestic"
+      class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24"
+    >
+      <div class="text-white flex flex-col p-4 h-[700px] overflow-hidden">
+        <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">
+          DOMESTIC POLICY
+        </h2>
+
+        <div class="flex flex-col flex-1 gap-4 mt-6">
+          <div class="relative w-full h-full overflow-hidden">
+            <img
+              src="./assets/policy3.jpg"
+              alt="Economy Graphic"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay"
+            ></div>
+          </div>
+          <div class="flex gap-4 flex-1">
+            <div class="w-1/2 relative overflow-hidden">
+              <img
+                src="./assets/policy2.jpg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+
+            <div class="w-1/2 mt-10 relative overflow-hidden">
+              <img
+                src="./assets/policy1.jpeg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-6 px-20">
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Meeting Our Sacred Obligation to Veteran and Military Families
+          </h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration has taken broad executive action to
+            fulfill our sacred obligation to our nation’s heroes and their
+            families and signed over 30 bipartisan laws to better support
+            veterans, military families, caregivers, and survivors. President
+            Biden signed into law the Promise to Address Comprehensive Toxins
+            (PACT) Act which enacted the most significant expansion of benefits
+            and services for toxic exposed veterans and their survivors in over
+            thirty years.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Reducing Gun Violence and Other Violent Crimes
+          </h1>
+          <p class="text-sm py-2">
+            President Biden and Vice President Harris established the first-ever
+            White House Office of Gun Violence Prevention and signed the most
+            significant gun violence prevention legislation in nearly 30 years -
+            the Bipartisan Safer Communities Act – into law.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Student Debt Relief</h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration has approved student debt relief for
+            over 5 million Americans through more than two dozen executive
+            actions.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Education</h1>
+          <p class="text-sm py-2">
+            A great education opens doors and changes lives, which is why, since
+            Day One, the Biden-Harris Administration has focused on improving
+            academic achievement, increasing student attendance and engagement,
+            and building communities where all students feel they belong and can
+            thrive.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Securing the Border</h1>
+          <p class="text-sm py-2">
+            President Biden took executive action to secure the border, which
+            has reduced unlawful border crossings by 60%. Today, there are fewer
+            border crossings than at the end of the previous administration.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Issued a Review to Reschedule Marijuana
+          </h1>
+          <p class="text-sm py-2">
+            President Biden pardoned those convicted of simple marijuana
+            possession under federal law, and his Administration launched the
+            process to review the classification of marijuana.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Managing the Promise of AI
+          </h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration is taking extensive action to ensure
+            that America leads the way in seizing the promise - and managing the
+            risks - of artificial intelligence.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Supporting American Families and Access to Care
+          </h1>
+          <p class="text-sm py-2">
+            Since Day One of the Administration, President Biden and Vice
+            President Harris have been fighting to improve access to affordable,
+            high-quality care while supporting care workers and family
+            caregivers.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex flex-col items-center py-20">
+      <hr class="w-5/6 border-t border-gray-400" />
+    </div>
+    <!-- part-6 -->
+    <div
+      id="healthcare"
+      class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24"
+    >
+      <div class="text-white flex flex-col p-4 h-[700px] overflow-hidden">
+        <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">
+          HEALTHCARE
+        </h2>
+
+        <div class="flex flex-col flex-1 gap-4 mt-6">
+          <div class="relative w-full h-full overflow-hidden">
+            <img
+              src="./assets/health1.jpeg"
+              alt="Economy Graphic"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay"
+            ></div>
+          </div>
+          <div class="flex gap-4 flex-1">
+            <div class="w-1/2 relative overflow-hidden">
+              <img
+                src="./assets/health2.jpg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+
+            <div class="w-1/2 mt-10 relative overflow-hidden">
+              <img
+                src="./assets/health3.jpg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-6 px-20">
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Cancer Moonshot</h1>
+          <p class="text-sm py-2">
+            President Biden and Dr. Biden supercharged their commitment to end
+            cancer as we know it and set bold goals to: reduce the cancer death
+            rate in the United States by at least half – preventing more than 4
+            million cancer deaths a year – by 2047, and improve the experience
+            of people who are touched by cancer.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Tackling the Mental Health Crisis
+          </h1>
+          <p class="text-sm py-2">
+            President Biden and Vice President Harris have made tackling the
+            mental health crisis a top priority. The Administration’s Mental
+            Health Strategy focuses on supporting Americans by creating healthy
+            environments, strengthening system capacity, and connecting more
+            Americans to care.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Beating the Opioid and Overdose Epidemic
+          </h1>
+          <p class="text-sm py-2">
+            The Unity Agenda is solving big challenges that unite all Americans
+            – like beating the opioid epidemic. The latest data from the CDC
+            shows a 10% reduction in overdose in the last 12 months—the largest
+            decrease on record.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Taking on Big Pharma</h1>
+          <p class="text-sm py-2">
+            President Biden and Vice President Harris have taken on Big Pharma
+            to lower prescription drug costs for millions on Medicare via the
+            Inflation Reduction Act.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Advancing Women’s Health Research and Innovation
+          </h1>
+          <p class="text-sm py-2">
+            Recognizing that research on women’s health remains underfunded and
+            understudied, President Biden and Dr. Biden launched the first-ever
+            White House Initiative on Women’s Health Research to spur
+            innovation, unleash transformative investment to close research
+            gaps, and improve women’s health.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex flex-col items-center py-20">
+      <hr class="w-5/6 border-t border-gray-400" />
+    </div>
+    <!-- part-7 -->
+    <div
+      id="climate"
+      class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24"
+    >
+      <div class="text-white flex flex-col p-4 h-[700px] overflow-hidden">
+        <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">
+          ENERGY AND CLIMATE
+        </h2>
+
+        <div class="flex flex-col flex-1 gap-4 mt-6">
+          <div class="relative w-full h-full overflow-hidden">
+            <img
+              src="./assets/climate1.webp"
+              alt="Economy Graphic"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay"
+            ></div>
+          </div>
+          <div class="flex gap-4 flex-1">
+            <div class="w-1/2 relative overflow-hidden">
+              <img
+                src="./assets/climate2.jpg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+
+            <div class="w-1/2 mt-10 relative overflow-hidden">
+              <img
+                src="./assets/climate3.jpeg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-6 px-20">
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Clean Energy Future</h1>
+          <p class="text-sm py-2">
+            Under President Biden and Vice President Harris’ leadership, America
+            is setting records for deployment of clean energy, as part of
+            historic climate action that is making the nation safer and
+            stronger, lowering energy costs for families, and creating
+            good-paying union jobs.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Conservation</h1>
+          <p class="text-sm py-2">
+            President Biden launched one of the most rapid accelerations of
+            conservation progress in history and conserved 674 million acres of
+            lands and waters—more than any President in history.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Tackling the Climate Crisis
+          </h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration has made tackling the climate crisis
+            a top priority. President Biden signed the Inflation Reduction Act -
+            the largest climate investment in history - a historic investment
+            was made to lower energy costs, create good-paying union jobs, and
+            strengthen energy security.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w-full flex flex-col items-center py-20">
+      <hr class="w-5/6 border-t border-gray-400" />
+    </div>
+    <!-- part-8 -->
+    <div
+      id="democracy"
+      class="grid grid-cols-1 md:grid-cols-[30%_70%] px-6 md:px-20 pt-20 scroll-mt-24"
+    >
+      <div class="text-white flex flex-col p-4 h-[700px] overflow-hidden">
+        <h2 class="text-3xl font-bold mb-4 tracking-widest text-[#021a45]">
+          DEMOCRACY, EQUALITY, AND JUSTIC
+        </h2>
+
+        <div class="flex flex-col flex-1 gap-4 mt-6">
+          <div class="relative w-full h-full overflow-hidden">
+            <img
+              src="./assets/equality1.jpg"
+              alt="Economy Graphic"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay"
+            ></div>
+          </div>
+          <div class="flex gap-4 flex-1">
+            <div class="w-1/2 relative overflow-hidden">
+              <img
+                src="./assets/equality2.jpg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+
+            <div class="w-1/2 mt-10 relative overflow-hidden">
+              <img
+                src="./assets/equality3.jpeg"
+                alt="Economy Graphic"
+                class="w-full h-full object-cover"
+              />
+              <div
+                class="absolute inset-0 bg-[#e0e5ef] animate-reveal-overlay z-10"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="py-6 px-20">
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Democratic Principles
+          </h1>
+          <p class="text-sm py-2">
+            President Biden has taken decisive action to strengthen our
+            democracy and preserve the will of the people.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Combating Hate of All Kinds
+          </h1>
+          <p class="text-sm py-2">
+            There is no place for political violence or for any violence in our
+            country. The Biden-Harris Administration is taking aggressive action
+            to fight discrimination, bias, and hate-fueled violence.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Advancing Equality and Racial Justice
+          </h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration is championing racial equity and
+            further advancing equal opportunity for underserved communities
+            through landmark legislation and historic executive actions
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Advancing Gender Equity and Equality
+          </h1>
+          <p class="text-sm py-2">
+            President Biden has taken decisive action to strengthen our
+            democracy and preserve the will of the people.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Combating Hate of All Kinds
+          </h1>
+          <p class="text-sm py-2">
+            President Biden and Vice President Harris are leveraging the full
+            force of the federal government to advance rights and opportunity
+            for women and girls across the country and around the globe.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">LGBTQI+ Rights</h1>
+          <p class="text-sm py-2">
+            President Biden signed the Respect for Marriage Act to protect the
+            right to marry who you love and is the most pro-equality President
+            in history.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Judges Matter</h1>
+          <p class="text-sm py-2">
+            President Biden appointed Justice Ketanji Brown Jackson to the
+            Supreme Court of the United States, along with over 200 of the most
+            diverse judicial appointees ever put forward by a President.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">
+            Delivering for Diverse Communities
+          </h1>
+          <p class="text-sm py-2">
+            The Biden-Harris Administration is delivering the most equitable
+            economic recovery on record across Black American, Latino American,
+            Asian American, Native Hawaiian, Pacific Islander, and Indigenous
+            Communities.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+        <div class="text-left font-serif py-4">
+          <h1 class="text-2xl tracking-wide max-w-2xl">Clemency</h1>
+          <p class="text-sm py-2">
+            President Biden used his clemency power to issue more individual
+            pardons and commutations than any president in United States
+            history.
+          </p>
+          <p class="text-[12px] font-sans font-bold tracking-widest">
+            LEARN MORE
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="bg-white relative">
+      <!-- Divider -->
+      <div class="w-full flex justify-center pt-14">
+        <hr class="w-5/6 border-t border-gray-300" />
+      </div>
+
+      <!-- Footer Content -->
+      <div
+        class="hidden sm:flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-between items-start lg:items-center px-8 md:px-16 lg:px-32 py-8 md:py-12 lg:py-16 gap-y-8 md:gap-y-12 lg:space-y-0"
+      >
+        <!-- Links - Left Column -->
+        <div
+          class="flex flex-col lg:flex-row space-y-6 md:space-y-8 lg:space-y-0 lg:space-x-36 w-full lg:w-auto"
+        >
+          <div class="text-sm">
+            <ul class="space-y-4">
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./index.html">Home</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./record.html">The Record</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./issues.html">The Issues</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./briefingroom.html">Briefing Room</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm">
+            <ul class="space-y-4">
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="#">The Administration</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="#">Executive Offices</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="#">The White House</a>
+              </li>
+              <li
+                class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="#">Español</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact and Address - Right Column -->
+        <div
+          class="flex flex-col items-start md:items-center lg:items-start space-y-8 md:space-y-10 lg:space-y-0 lg:flex-row lg:space-x-20 w-full lg:w-auto"
+        >
+          <div class="text-sm text-gray-600">
+            <ul class="space-y-4">
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="#">Contact Us</a>
+              </li>
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="#">Privacy Policy</a>
+              </li>
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="#">Copyright Policy</a>
+              </li>
+              <li
+                class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              >
+                <a href="#">Accessibility Statement</a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex flex-col items-center text-center space-y-6 md:mt-6">
+            <div class="flex justify-center space-x-4">
+              <i
+                class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-threads hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+              ></i>
+            </div>
+            <div>
+              <h4 class="text-sm font-serif font-semibold">The White House</h4>
+              <p class="text-sm font-thin font-serif text-gray-600">
+                1600 Baneshower Ave NW<br />
+                Kathmandu, DC 20500
+              </p>
+            </div>
+            <h2
+              class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif"
+            >
+              W H<span class="font-medium">.GOV</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile View -->
+      <div class="sm:hidden flex flex-col items-start space-y-6 px-6 py-10">
+        <div>
           <ul class="space-y-4">
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
@@ -572,95 +1251,84 @@
             >
               <a href="./briefingroom.html">Briefing Room</a>
             </li>
-          </ul>
-        </div>
-        <div class="text-sm">
-          <ul class="space-y-4">
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="">The Administration</a>
+              <a href="#">The Administration</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="">Executive Office</a>
+              <a href="#">Executive Offices</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="">The White House</a>
+              <a href="#">The White House</a>
             </li>
             <li
               class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="">Nepali</a>
+              <a href="#">Español</a>
             </li>
           </ul>
         </div>
-      </div>
-      <div class="w-full h-20 justify-end flex space-x-20">
-        <div class="text-[12px] text-gray-600">
-          <ul class="space-y-2">
-            <li
-              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
-            >
-              <a href="">Contact Us</a>
-            </li>
-            <li
-              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
-            >
-              <a href="">Privacy Policy</a>
-            </li>
-            <li
-              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
-            >
-              <a href="">Copyright Policy</a>
-            </li>
-            <li
-              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
-            >
-              <a href="">Accessibility Statement</a>
-            </li>
-          </ul>
-        </div>
-        <div class="space-y-1">
-          <div class="space-x-4 w-24">
-            <i
-              class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
-            ></i>
-            <i
-              class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
-            ></i>
-            <i
-              class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
-            ></i>
-          </div>
-          <div class="space-x-4 w-24">
-            <i
-              class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
-            ></i>
-            <i
-              class="fa-brands fa-threads hover:text-red-700 cursor-pointer"
-            ></i>
-            <i
-              class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
-            ></i>
-          </div>
 
-          <div class="pt-10">
-            <h4 class="text-sm font-serif font-semibold">The White House</h4>
-            <p class="text-left text-sm w-48 font-thin font-serif text-gray-600">1600 Kathamndu Ave NW
-              Bagmati, DC 20500</p>
-          </div>
-          <div class="pt-4 font-serif text-xl text-yellow-800">
-            <h2 class="font-bold hover:text-red-700 cursor-pointer">
-              W H<span class="font-medium">.GOV</span>
-            </h2>
-          </div>
+        <div>
+          <ul class="space-y-3 text-sm text-gray-600">
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Contact Us</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Copyright Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Accessibility Statement</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex space-x-4">
+          <i
+            class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+          ></i>
+          <i class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"></i>
+          <i class="fa-brands fa-threads hover:text-red-700 cursor-pointer"></i>
+          <i
+            class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+          ></i>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
+          <p class="text-sm font-thin font-serif text-gray-600">
+            1600 Baneshower Ave NW<br />
+            Kathmandu, DC 20500
+          </p>
+          <h2
+            class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif"
+          >
+            W H<span class="font-medium">.GOV</span>
+          </h2>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
   </body>
 </html>

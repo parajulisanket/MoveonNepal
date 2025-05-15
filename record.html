@@ -34,11 +34,10 @@
     </style>
   </head>
   <body>
-    <div
-      class="bg-gradient-to-r from-[#021a45] to-[#00479e] justify-center h-10 flex items-center z-20"
-    >
+    <!-- Notification Banner -->
+    <div class="bg-gradient-to-r from-[#020a1b] to-[#003366] p-4">
       <p
-        class="text-[20px] text-white font-extralight md:text-[13px] font-inter tracking-widest"
+        class="text-[10px] text-white font-extralight text-center sm:text-[9px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-inter tracking-wide leading-relaxed max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto"
       >
         This is historical material “frozen in time”. The website is no longer
         updated and links to external websites and some internal pages may not
@@ -47,23 +46,27 @@
     </div>
 
     <div class="relative overflow-hidden">
+      <!-- Background Image -->
       <img
         src="./assets/records.webp"
         alt=""
         class="w-full object-cover zoom-out"
       />
 
+      <!-- Navigation Bar -->
       <nav
         class="absolute top-0 left-0 right-0 z-50 flex items-center justify-between px-4 h-16"
       >
+        <!-- Logo Section -->
         <a href="./index.html" class="flex-shrink-0 cursor-pointer">
           <h2
-            class="text-[18px] text-white px-6 font-serif font-semibold ] tracking-wider"
+            class="text-[18px] text-white px-6 font-serif font-semibold tracking-wider"
           >
             MOVE ON NEPAL
           </h2>
         </a>
 
+        <!-- Centered Logo -->
         <a
           href="./index.html"
           class="absolute left-1/2 transform -translate-x-1/2 top-2"
@@ -75,7 +78,8 @@
           />
         </a>
 
-        <div class="flex items-center space-x-6 pr-6">
+        <!-- Navigation Links -->
+        <div class="hidden xl:flex items-center space-x-6 pr-6">
           <ul class="flex space-x-6 text-[15px] text-white">
             <li
               class="border-b-[1px] border-gray-500 hover:border-white cursor-pointer"
@@ -103,6 +107,18 @@
               <a href="./">Nepali</a>
             </li>
           </ul>
+
+          <!-- Menu Button for Desktop -->
+          <a
+            href="./menu.html"
+            class="text-[12px] font-semibold border-y-[3px] text-white border-double border-white border-l-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
+          >
+            MENÚ
+          </a>
+        </div>
+
+        <!-- Menu Button for Mobile -->
+        <div class="xl:hidden flex items-center">
           <a
             href="./menu.html"
             class="text-[12px] font-semibold border-y-[3px] text-white border-double border-white border-l-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
@@ -111,7 +127,8 @@
           </a>
         </div>
       </nav>
-      <!-- Dots navigation -->
+
+      <!-- Dots Navigation -->
       <div
         id="dot-nav"
         class="fixed left-4 top-1/2 -translate-y-1/2 z-30 flex flex-col space-y-3"
@@ -127,23 +144,30 @@
         ></span>
       </div>
 
-      <div class="absolute bottom-32 right-96 mt-4 z-10">
+      <!-- Text Section -->
+      <div
+        class="absolute bottom-32 right-8 md:right-32 lg:right-96 mt-4 z-10 text-center md:text-left"
+      >
         <h3
           id="line1"
-          class="text-white text-2xl font-semibold tracking-widest opacity-0 transition duration-500"
+          class="text-white text-lg sm:text-xl md:text-2xl font-semibold tracking-widest opacity-0 transition duration-500"
         >
           THE BIDHYA-OLI
         </h3>
         <h1
           id="line2"
-          class="text-white text-9xl tracking-wider w-40 font-bold opacity-0 transition duration-500"
+          class="text-white text-4xl sm:text-6xl md:text-7xl lg:text-9xl tracking-wider w-full md:w-40 font-bold opacity-0 transition duration-500"
         >
           RECORD
         </h1>
       </div>
+
+      <!-- Gradient Overlay -->
       <div
         class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-0"
       ></div>
+
+      <!-- JavaScript -->
       <script src="./assets/scotus.js"></script>
     </div>
 
@@ -159,16 +183,18 @@
         loop
         muted
       ></video> -->
-      <div class="relative py-24 px-20 z-10">
+      <div
+        class="relative py-12 px-6 sm:py-16 sm:px-10 md:py-20 md:px-10 lg:py-24 lg:px-20 z-10 md:justify-center flex"
+      >
         <iframe
-        width="1250"
-        height="750"
-        src="https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&mute=1&loop=1&playlist=kzi1ik6qjZs&controls=0&modestbranding=1&rel=0&iv_load_policy=3&fs=0&cc_load_policy=0&showinfo=0"
-        title="Nepal parliament in deadlock over speaker replacement dispute"
-        frameborder="0"
-        allow="autoplay; encrypted-media"
-        referrerpolicy="strict-origin-when-cross-origin"
-      ></iframe>
+          class="h-[400px] sm:h-[300px] sm:w-[500px] md:h-[450px] md:w-[700px] lg:h-[750px] lg:w-[1250px] xl:h-[750px] max-w-[90%] md:max-w-[80%] lg:max-w-[1250px]"
+          src="https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&mute=1&loop=1&playlist=kzi1ik6qjZs&controls=0&modestbranding=1&rel=0&iv_load_policy=3&fs=0&cc_load_policy=0&showinfo=0"
+          title="Nepal parliament in deadlock over speaker replacement dispute"
+          frameborder="0"
+          allow="autoplay; encrypted-media"
+          referrerpolicy="strict-origin-when-cross-origin"
+        ></iframe>
+      </div>
     </section>
 
     <!-- Economic Section -->
@@ -187,9 +213,11 @@
       <div class="absolute inset-0 bg-black/60 z-10"></div>
 
       <!-- Content -->
-      <div class="relative z-20 flex flex-col items-center w-full">
+      <div
+        class="relative z-20 flex flex-col items-center w-full px-4 sm:px-6 md:px-8"
+      >
         <h2
-          class="text-white text-4xl md:text-5xl font-extrabold tracking-widest mb-16 px-4 text-center"
+          class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest mb-16 text-center"
         >
           BUILDING THE ECONOMY<br />
           FROM THE MIDDLE OUT,<br />
@@ -200,30 +228,34 @@
         >
           <!-- Row 1 -->
           <div
-            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-6 sm:px-8 md:px-6 py-16 sm:py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
             style="transition: transform 0.3s ease"
             onmouseover="this.style.transform='scale(1.05)'"
             onmouseout="this.style.transform='scale(1)'"
           >
-            <h3 class="text-xl mb-4 text-center">
+            <h3 class="text-lg sm:text-xl mb-4 text-center">
               Small Businesses: The Engines of the Economy
             </h3>
-            <p class="text-[15px] font-thin text-center pt-2">
+            <p
+              class="text-[13px] sm:text-[14px] md:text-[15px] font-thin text-center pt-2"
+            >
               President Biden is driving a small business boom with American
               entrepreneurs filing a record 21 million new business applications
               since he took office.
             </p>
           </div>
           <div
-            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-6 sm:px-8 md:px-6 py-16 sm:py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
             style="transition: transform 0.3s ease"
             onmouseover="this.style.transform='scale(1.05)'"
             onmouseout="this.style.transform='scale(1)'"
           >
-            <h3 class="text-xl mb-4 text-center">
+            <h3 class="text-lg sm:text-xl mb-4 text-center">
               Historically Strong and Broadly Shared Recovery
             </h3>
-            <p class="text-[15px] font-thin text-center pt-2">
+            <p
+              class="text-[13px] sm:text-[14px] md:text-[15px] font-thin text-center pt-2"
+            >
               The Biden-Harris Administration, thanks in part through the
               American Rescue Plan, got America vaccinated and out of the
               pandemic while fueling a historic recovery with a record 16.6
@@ -233,15 +265,17 @@
             </p>
           </div>
           <div
-            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-6 sm:px-8 md:px-6 py-16 sm:py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
             style="transition: transform 0.3s ease"
             onmouseover="this.style.transform='scale(1.05)'"
             onmouseout="this.style.transform='scale(1)'"
           >
-            <h3 class="text-xl mb-4 text-center">
+            <h3 class="text-lg sm:text-xl mb-4 text-center">
               Most Pro-Labor President in History
             </h3>
-            <p class="text-[15px] font-thin text-center pt-2">
+            <p
+              class="text-[13px] sm:text-[14px] md:text-[15px] font-thin text-center pt-2"
+            >
               Thanks to President Biden's work to fight for overtime pay,
               protect millions of pensions, and stand in solidarity with workers
               as they went on strike, the Biden-Harris Administration has been
@@ -250,15 +284,17 @@
           </div>
           <!-- Row 2 -->
           <div
-            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-6 sm:px-8 md:px-6 py-16 sm:py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
             style="transition: transform 0.3s ease"
             onmouseover="this.style.transform='scale(1.05)'"
             onmouseout="this.style.transform='scale(1)'"
           >
-            <h3 class="text-xl mb-4 text-center">
+            <h3 class="text-lg sm:text-xl mb-4 text-center">
               Lowering Costs, Tackling Junk Fees, and Promoting Competition
             </h3>
-            <p class="text-[15px] font-thin text-centerpt-2">
+            <p
+              class="text-[13px] sm:text-[14px] md:text-[15px] font-thin text-center pt-2"
+            >
               President Biden knows that prices are too high and too many
               families are being squeezed by the cost of living. The
               Biden-Harris Administration's actions have lowered costs in key
@@ -267,15 +303,17 @@
             </p>
           </div>
           <div
-            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-6 sm:px-8 md:px-6 py-16 sm:py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
             style="transition: transform 0.3s ease"
             onmouseover="this.style.transform='scale(1.05)'"
             onmouseout="this.style.transform='scale(1)'"
           >
-            <h3 class="text-xl mb-4 text-center">
+            <h3 class="text-lg sm:text-xl mb-4 text-center">
               Building a Fairer Tax System
             </h3>
-            <p class="text-[15px] font-thin text-center pt-2">
+            <p
+              class="text-[13px] sm:text-[14px] md:text-[15px] font-thin text-center pt-2"
+            >
               The Biden-Harris Administration enacted a corporate minimum tax
               that ensures billion-dollar companies can't get away with paying
               $0 in federal income taxes, places a surcharge on corporate stock
@@ -284,15 +322,17 @@
             </p>
           </div>
           <div
-            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-8 py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
+            class="bg-gradient-to-b from-[#1a5093] to-[#133e71] text-white px-6 sm:px-8 md:px-6 py-16 sm:py-20 transition-transform duration-300 hover:bg-[#e7c190] hover:from-[#e7c190] hover:to-[#e7c190] hover:text-black cursor-pointer transform"
             style="transition: transform 0.3s ease"
             onmouseover="this.style.transform='scale(1.05)'"
             onmouseout="this.style.transform='scale(1)'"
           >
-            <h3 class="text-xl mb-4 text-center">
+            <h3 class="text-lg sm:text-xl mb-4 text-center">
               Increased Housing for Americans
             </h3>
-            <p class="text-[15px] font-thin text-center pt-2">
+            <p
+              class="text-[13px] sm:text-[14px] md:text-[15px] font-thin text-center pt-2"
+            >
               After decades of under-investment in housing, we are finally
               seeing progress under President Biden and Vice President Harris
               with more units under construction than at any time in over 50
@@ -304,18 +344,28 @@
         <div
           class="flex justify-center bg-[#e7c190] hover:bg-white rounded-full my-20 w-auto p-4 cursor-pointer"
         >
-          <p class="text-[12px] tracking-wider">VIEW ALL ACCOMPLISHMENTS</p>
+          <p class="text-[10px] sm:text-[11px] md:text-[12px] tracking-wider">
+            VIEW ALL ACCOMPLISHMENTS
+          </p>
         </div>
       </div>
     </section>
 
     <!-- footer -->
-    <footer class="h-[450px] bg-white relative">
-      <div class="w-full flex flex-col items-center py-20">
+    <footer class="bg-white relative">
+      <!-- Divider -->
+      <div class="w-full flex justify-center pt-14">
         <hr class="w-5/6 border-t border-gray-300" />
       </div>
-      <div class="flex justify-between px-32">
-        <div class="w-full h-20 flex space-x-36">
+
+      <!-- Footer Content -->
+      <div
+        class="hidden sm:flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-between items-start lg:items-center px-8 md:px-16 lg:px-32 py-8 md:py-12 lg:py-16 gap-y-8 md:gap-y-12 lg:space-y-0"
+      >
+        <!-- Links - Left Column -->
+        <div
+          class="flex flex-col lg:flex-row space-y-6 md:space-y-8 lg:space-y-0 lg:space-x-36 w-full lg:w-auto"
+        >
           <div class="text-sm">
             <ul class="space-y-4">
               <li
@@ -345,53 +395,57 @@
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">The Administration</a>
+                <a href="#">The Administration</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">Executive Office</a>
+                <a href="#">Executive Offices</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">The White House</a>
+                <a href="#">The White House</a>
               </li>
               <li
                 class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">Nepali</a>
+                <a href="#">Español</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="w-full h-20 justify-end flex space-x-20">
-          <div class="text-[12px] text-gray-600">
-            <ul class="space-y-2">
+
+        <!-- Contact and Address - Right Column -->
+        <div
+          class="flex flex-col items-start md:items-center lg:items-start space-y-8 md:space-y-10 lg:space-y-0 lg:flex-row lg:space-x-20 w-full lg:w-auto"
+        >
+          <div class="text-sm text-gray-600">
+            <ul class="space-y-4">
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Contact Us</a>
+                <a href="#">Contact Us</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Copyright Policy</a>
+                <a href="#">Copyright Policy</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Accessibility Statement</a>
+                <a href="#">Accessibility Statement</a>
               </li>
             </ul>
           </div>
-          <div class="space-y-1">
-            <div class="space-x-4 w-24">
+          <div class="flex flex-col items-center text-center space-y-6 md:mt-6">
+            <div class="flex justify-center space-x-4">
               <i
                 class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
               ></i>
@@ -401,8 +455,6 @@
               <i
                 class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
               ></i>
-            </div>
-            <div class="space-x-4 w-24">
               <i
                 class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
               ></i>
@@ -413,21 +465,122 @@
                 class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
               ></i>
             </div>
-
-            <div class="pt-10">
+            <div>
               <h4 class="text-sm font-serif font-semibold">The White House</h4>
-              <p
-                class="text-left text-sm w-48 font-thin font-serif text-gray-600"
-              >
-                1600 Kathamndu Ave NW Bagmati, DC 20500
+              <p class="text-sm font-thin font-serif text-gray-600">
+                1600 Baneshower Ave NW<br />
+                Kathmandu, DC 20500
               </p>
             </div>
-            <div class="pt-4 font-serif text-xl text-yellow-800">
-              <h2 class="font-bold hover:text-red-700 cursor-pointer">
-                W H<span class="font-medium">.GOV</span>
-              </h2>
-            </div>
+            <h2
+              class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif"
+            >
+              W H<span class="font-medium">.GOV</span>
+            </h2>
           </div>
+        </div>
+      </div>
+
+      <!-- Mobile View -->
+      <div class="sm:hidden flex flex-col items-start space-y-6 px-6 py-10">
+        <div>
+          <ul class="space-y-4">
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./record.html">The Record</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./issues.html">The Issues</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./briefingroom.html">Briefing Room</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">The Administration</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Executive Offices</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">The White House</a>
+            </li>
+            <li
+              class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Español</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="space-y-3 text-sm text-gray-600">
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Contact Us</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Copyright Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Accessibility Statement</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex space-x-4">
+          <i
+            class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+          ></i>
+          <i class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"></i>
+          <i class="fa-brands fa-threads hover:text-red-700 cursor-pointer"></i>
+          <i
+            class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+          ></i>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
+          <p class="text-sm font-thin font-serif text-gray-600">
+            1600 Baneshower Ave NW<br />
+            Kathmandu, DC 20500
+          </p>
+          <h2
+            class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif"
+          >
+            W H<span class="font-medium">.GOV</span>
+          </h2>
         </div>
       </div>
     </footer>

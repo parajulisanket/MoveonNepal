@@ -24,120 +24,127 @@
       id="menuPanel"
       class="fixed top-0 right-0 h-full w-full bg-transparent z-50 transform translate-x-full transition-transform duration-500 ease-in-out"
     >
-      <div class="p-10 flex justify-between">
-        <a href="/index.html"><img src="./assets/logo.png" class="h-16" /></a>
+      <!-- Add a scrollable wrapper -->
+      <div class="h-full overflow-y-auto">
+        <div class="p-10 flex justify-between">
+          <a href="/index.html"><img src="./assets/logo.png" class="h-16" /></a>
 
-        <button
-          id="closeMenu"
-          class="text-6xl font-thin text-gray-800 hover:text-red-700 grid"
-        >
-          <span class="text-[12px] font-bold">CLOSE</span>
-          x
-        </button>
-      </div>
-
-      <div
-        class="grid grid-cols-1 lg:grid-cols-4 gap-10 py-20 px-6 sm:px-10 md:px-16 lg:px-24"
-      >
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 col-span-3"
-        >
-          <div class="min-w-max">
-            <ul class="font-serif font-semibold text-[25px] space-y-6">
-              <li
-                class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
-              >
-                <a href="/administration.html">Administration</a>
-              </li>
-              <li
-                class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
-              >
-                <a href="/record.html">The Record</a>
-              </li>
-              <li
-                class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
-              >
-                <a href="/issues.html">The Issues</a>
-              </li>
-            </ul>
-          </div>
-          <div class="min-w-max">
-            <ul class="font-serif font-semibold text-[25px] space-y-6 w-auto">
-              <li
-                class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
-              >
-                <a href="/briefingroom.html">Briefing Room</a>
-              </li>
-              <li
-                class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
-              >
-                <a href="">Executive Offices</a>
-              </li>
-              <li
-                class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
-              >
-                <a href="">Move On Nepal</a>
-              </li>
-            </ul>
-          </div>
-          <div class="min-w-max">
-            <ul class="font-serif font-semibold text-[25px] space-y-6">
-              <li
-                class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
-              >
-                <a href="/moments.html">The Moments</a>
-              </li>
-              <li
-                class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
-              >
-                <a href="">The Story</a>
-              </li>
-              <li
-                class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
-              >
-                <a href="">Nepali</a>
-              </li>
-            </ul>
-          </div>
+          <button
+            id="closeMenu"
+            class="text-6xl font-thin text-gray-800 hover:text-red-700 grid"
+          >
+            <span class="text-[12px] font-bold">CLOSE</span>
+            x
+          </button>
         </div>
 
-        <div class="w-auto col-span-1 justify-self-end border-l p-6">
-          <div class="space-y-1">
-            <div class="py-2 space-y-3 text-sm text-gray-600">
-              <p>Privacy Policy</p>
-              <p>Copyright Policy</p>
-              <p>Accessibility Statement</p>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-4 gap-10 py-20 px-6 sm:px-10 md:px-16 lg:px-24"
+        >
+          <div
+            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 col-span-3"
+          >
+            <div class="min-w-max">
+              <ul class="font-serif font-semibold text-[25px] space-y-6">
+                <li
+                  class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
+                >
+                  <a href="/administration.html">Administration</a>
+                </li>
+                <li
+                  class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
+                >
+                  <a href="/record.html">The Record</a>
+                </li>
+                <li
+                  class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
+                >
+                  <a href="/issues.html">The Issues</a>
+                </li>
+              </ul>
             </div>
-            <div class="space-x-4 w-24 pt-4">
-              <i
-                class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
-              ></i>
-              <i
-                class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
-              ></i>
-              <i
-                class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
-              ></i>
+            <div class="min-w-max">
+              <ul class="font-serif font-semibold text-[25px] space-y-6 w-auto">
+                <li
+                  class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
+                >
+                  <a href="/briefingroom.html">Briefing Room</a>
+                </li>
+                <li
+                  class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
+                >
+                  <a href="">Executive Offices</a>
+                </li>
+                <li
+                  class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
+                >
+                  <a href="">Move On Nepal</a>
+                </li>
+              </ul>
             </div>
-            <div class="space-x-4 w-24">
-              <i
-                class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
-              ></i>
-              <i
-                class="fa-brands fa-threads hover:text-red-700 cursor-pointer"
-              ></i>
-              <i
-                class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
-              ></i>
+            <div class="min-w-max">
+              <ul class="font-serif font-semibold text-[25px] space-y-6">
+                <li
+                  class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
+                >
+                  <a href="/moments.html">The Moments</a>
+                </li>
+                <li
+                  class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
+                >
+                  <a href="">The Story</a>
+                </li>
+                <li
+                  class="border-b border-b-gray-300 w-fit hover:text-red-700 hover:border-b-red-700"
+                >
+                  <a href="">Nepali</a>
+                </li>
+              </ul>
             </div>
+          </div>
 
-            <div class="pt-10">
-              <h4 class="text-sm font-serif font-semibold">The White House</h4>
-              <p
-                class="text-left text-md w-52 font-thin font-serif text-gray-600"
-              >
-                1600 Pennsylvania Ave NW Washington, DC 20500
-              </p>
+          <div
+            class="w-auto col-span-1 justify-self-end border-l p-6 hidden lg:block"
+          >
+            <div class="space-y-1">
+              <div class="py-2 space-y-3 text-sm text-gray-600">
+                <p>Privacy Policy</p>
+                <p>Copyright Policy</p>
+                <p>Accessibility Statement</p>
+              </div>
+              <div class="space-x-4 w-24 pt-4">
+                <i
+                  class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+                ></i>
+                <i
+                  class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+                ></i>
+                <i
+                  class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+                ></i>
+              </div>
+              <div class="space-x-4 w-24">
+                <i
+                  class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
+                ></i>
+                <i
+                  class="fa-brands fa-threads hover:text-red-700 cursor-pointer"
+                ></i>
+                <i
+                  class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+                ></i>
+              </div>
+
+              <div class="pt-10">
+                <h4 class="text-sm font-serif font-semibold">
+                  The White House
+                </h4>
+                <p
+                  class="text-left text-md w-52 font-thin font-serif text-gray-600"
+                >
+                  1600 Pennsylvania Ave NW Washington, DC 20500
+                </p>
+              </div>
             </div>
           </div>
         </div>

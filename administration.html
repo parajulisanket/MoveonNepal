@@ -19,12 +19,10 @@
     <title>Administration</title>
   </head>
   <body>
-    <!-- navigaiton bar -->
-    <div
-      class="bg-gradient-to-r from-[#021a45] to-[#00479e] justify-center h-10 flex items-center"
-    >
+    <!-- Notification Banner -->
+    <div class="bg-gradient-to-r from-[#020a1b] to-[#003366] p-4">
       <p
-        class="text-[20px] text-white font-extralight md:text-[13px] font-inter tracking-widest"
+        class="text-[10px] text-white font-extralight text-center sm:text-[9px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-inter tracking-wide leading-relaxed max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto"
       >
         This is historical material “frozen in time”. The website is no longer
         updated and links to external websites and some internal pages may not
@@ -32,9 +30,11 @@
       </p>
     </div>
 
+    <!-- Navigation Bar -->
     <nav
-      class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16"
+      class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg"
     >
+      <!-- Logo Section (Centered Logo) -->
       <a href="./index.html" class="flex-shrink-0 cursor-pointer">
         <h2
           class="text-[18px] px-6 font-serif font-semibold text-[#021a45] hover:text-red-700 tracking-wider"
@@ -43,6 +43,7 @@
         </h2>
       </a>
 
+      <!-- Logo Image -->
       <a
         href="./index.html"
         class="absolute left-1/2 transform -translate-x-1/2 top-2"
@@ -54,7 +55,8 @@
         />
       </a>
 
-      <div class="flex items-center space-x-6 pr-6">
+      <!-- Navigation Links (Desktop View: Large screens) -->
+      <div class="flex items-center space-x-6 pr-6 hidden xl:flex">
         <ul class="flex space-x-6 text-[15px]">
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
@@ -64,12 +66,12 @@
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
           >
-            <a href="./record.html"> The Record</a>
+            <a href="./record.html">The Record</a>
           </li>
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
           >
-            <a href="./issues.html">The Issues </a>
+            <a href="./issues.html">The Issues</a>
           </li>
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
@@ -79,123 +81,161 @@
           <li
             class="text-blue-600 border-b-[0.5px] border-blue-300 hover:text-red-600 hover:border-red-700 cursor-pointer"
           >
-            <a href="./">Nepali </a>
+            <a href="./">Nepali</a>
           </li>
         </ul>
+
+        <!-- Menu Link for Desktop -->
         <a
           href="./menu.html"
-          class="text-[12px] font-semibold border-y-2 border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
+          class="text-[12px] font-semibold border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
+        >
+          MENÚ
+        </a>
+      </div>
+
+      <!-- Menu Link for Mobile and Small Laptop View (visible on screens smaller than 1024px) -->
+      <div class="xl:hidden flex items-center">
+        <a
+          href="./menu.html"
+          class="text-[12px] font-semibold border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
         >
           MENÚ
         </a>
       </div>
     </nav>
 
-    <!-- main contetnt -->
+    <!-- main content -->
     <div class="text-center max-w-3xl mx-auto mt-32">
-      <h1 class="font-serif font-bold text-[45px] text-[#192f4b] mx-auto">
+      <h1
+        class="font-serif font-bold text-[28px] sm:text-[32px] md:text-[45px] text-[#192f4b] mx-auto"
+      >
         Breaking News: Latest Updates on National and International Events
       </h1>
       <p
-        class="mt-9 font-extrathin font-serif text-[#192f4b] mx-auto tracking-widest justify-left"
+        class="mt-9 font-extrathin font-serif text-[14px] sm:text-[16px] md:text-[18px] text-[#192f4b] mx-auto tracking-widest justify-left"
       >
         Stay informed with real-time coverage of breaking stories. From politics
         to global events, we provide you with the most recent developments.
       </p>
     </div>
-    <div class="flex justify-evenly flex-wrap mt-10 px-10">
+
+    <!-- Responsive grid layout -->
+    <div
+      class="grid grid-cols-1 md:grid-cols-3 gap-x-4 gap-y-4 md:gap-x-8 md:gap-y-8 mt-10 px-5 sm:px-10"
+    >
       <!-- Box 1 -->
       <div
         class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
       >
-        <div class="w-72 h-64 mx-auto overflow-hidden rounded-lg">
+        <div
+          class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
+        >
           <img
             src="./assets/admin1.jpeg"
             alt="Image 1"
             class="w-full h-full object-cover"
           />
         </div>
-        <h2 class="mt-2 text-[12px]">BREAKING NEWS</h2>
+        <h2 class="mt-2 text-[12px] text-center">BREAKING NEWS</h2>
       </div>
 
       <!-- Box 2 -->
       <div
         class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
       >
-        <div class="w-72 h-64 mx-auto overflow-hidden rounded-lg">
+        <div
+          class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
+        >
           <img
             src="./assets/admin2.jpeg"
             alt="Image 2"
             class="w-full h-full object-cover"
           />
         </div>
-        <h2 class="mt-2 text-[12px]">GLOBAL EVENTS</h2>
+        <h2 class="mt-2 text-[12px] text-center">GLOBAL EVENTS</h2>
       </div>
 
       <!-- Box 3 -->
       <div
         class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
       >
-        <div class="w-72 h-64 mx-auto overflow-hidden rounded-lg">
+        <div
+          class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
+        >
           <img
             src="./assets/admin3.png"
             alt="Image 3"
             class="w-full h-full object-cover"
           />
         </div>
-        <h2 class="mt-2 text-[12px]">ECONOMIC UPDATES</h2>
+        <h2 class="mt-2 text-[12px] text-center">ECONOMIC UPDATES</h2>
       </div>
 
       <!-- Box 4 -->
       <div
         class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
       >
-        <div class="w-72 h-64 mx-auto overflow-hidden rounded-lg">
+        <div
+          class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
+        >
           <img
             src="./assets/admin5.png"
             alt="Image 4"
             class="w-full h-full object-cover"
           />
         </div>
-        <h2 class="mt-2 text-[12px]">POLITICS</h2>
+        <h2 class="mt-2 text-[12px] text-center">POLITICS</h2>
       </div>
 
-      <div class="flex gap-8 mt-10">
-        <!-- Box 5 -->
+      <!-- Box 5 -->
+      <div
+        class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
+      >
         <div
-          class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
+          class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
         >
-          <div class="w-72 h-64 mx-auto overflow-hidden rounded-lg">
-            <img
-              src="./assets/cabinate.jpeg"
-              alt="Image 4"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <h2 class="mt-4 text-[12px]">THE CABINATE</h2>
+          <img
+            src="./assets/cabinate.jpeg"
+            alt="Image 5"
+            class="w-full h-full object-cover"
+          />
         </div>
-        <!-- Box 6 -->
+        <h2 class="mt-2 text-[12px] text-center">THE CABINATE</h2>
+      </div>
+
+      <!-- Box 6 -->
+      <div
+        class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
+      >
         <div
-          class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
+          class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
         >
-          <div class="w-72 h-64 mx-auto overflow-hidden rounded-lg">
-            <img
-              src="./assets/sports.jpeg"
-              alt="Image 4"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <h2 class="mt-4 text-[12px]">SPORTS</h2>
+          <img
+            src="./assets/sports.jpeg"
+            alt="Image 6"
+            class="w-full h-full object-cover"
+          />
         </div>
+        <h2 class="mt-2 text-[12px] text-center">SPORTS</h2>
       </div>
     </div>
+
     <!-- footer -->
-    <footer class="h-[450px] bg-white relative">
-      <div class="w-full flex flex-col items-center py-20">
+    <footer class="bg-white relative">
+      <!-- Divider -->
+      <div class="w-full flex justify-center pt-14">
         <hr class="w-5/6 border-t border-gray-300" />
       </div>
-      <div class="flex justify-between px-32">
-        <div class="w-full h-20 flex space-x-36">
+
+      <!-- Footer Content -->
+      <div
+        class="hidden sm:flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-between items-start lg:items-center px-8 md:px-16 lg:px-32 py-8 md:py-12 lg:py-16 gap-y-8 md:gap-y-12 lg:space-y-0"
+      >
+        <!-- Links - Left Column -->
+        <div
+          class="flex flex-col lg:flex-row space-y-6 md:space-y-8 lg:space-y-0 lg:space-x-36 w-full lg:w-auto"
+        >
           <div class="text-sm">
             <ul class="space-y-4">
               <li
@@ -225,53 +265,57 @@
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">The Administration</a>
+                <a href="#">The Administration</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">Executive Office</a>
+                <a href="#">Executive Offices</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">The White House</a>
+                <a href="#">The White House</a>
               </li>
               <li
                 class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">Nepali</a>
+                <a href="#">Español</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="w-full h-20 justify-end flex space-x-20">
-          <div class="text-[12px] text-gray-600">
-            <ul class="space-y-2">
+
+        <!-- Contact and Address - Right Column -->
+        <div
+          class="flex flex-col items-start md:items-center lg:items-start space-y-8 md:space-y-10 lg:space-y-0 lg:flex-row lg:space-x-20 w-full lg:w-auto"
+        >
+          <div class="text-sm text-gray-600">
+            <ul class="space-y-4">
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Contact Us</a>
+                <a href="#">Contact Us</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Copyright Policy</a>
+                <a href="#">Copyright Policy</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Accessibility Statement</a>
+                <a href="#">Accessibility Statement</a>
               </li>
             </ul>
           </div>
-          <div class="space-y-1">
-            <div class="space-x-4 w-24">
+          <div class="flex flex-col items-center text-center space-y-6 md:mt-6">
+            <div class="flex justify-center space-x-4">
               <i
                 class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
               ></i>
@@ -281,8 +325,6 @@
               <i
                 class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
               ></i>
-            </div>
-            <div class="space-x-4 w-24">
               <i
                 class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
               ></i>
@@ -293,21 +335,122 @@
                 class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
               ></i>
             </div>
-
-            <div class="pt-10">
+            <div>
               <h4 class="text-sm font-serif font-semibold">The White House</h4>
-              <p
-                class="text-left text-sm w-48 font-thin font-serif text-gray-600"
-              >
-                1600 Kathamndu Ave NW Bagmati, DC 20500
+              <p class="text-sm font-thin font-serif text-gray-600">
+                1600 Baneshower Ave NW<br />
+                Kathmandu, DC 20500
               </p>
             </div>
-            <div class="pt-4 font-serif text-xl text-yellow-800">
-              <h2 class="font-bold hover:text-red-700 cursor-pointer">
-                W H<span class="font-medium">.GOV</span>
-              </h2>
-            </div>
+            <h2
+              class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif"
+            >
+              W H<span class="font-medium">.GOV</span>
+            </h2>
           </div>
+        </div>
+      </div>
+
+      <!-- Mobile View -->
+      <div class="sm:hidden flex flex-col items-start space-y-6 px-6 py-10">
+        <div>
+          <ul class="space-y-4">
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./record.html">The Record</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./issues.html">The Issues</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./briefingroom.html">Briefing Room</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">The Administration</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Executive Offices</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">The White House</a>
+            </li>
+            <li
+              class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Español</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="space-y-3 text-sm text-gray-600">
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Contact Us</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Copyright Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Accessibility Statement</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex space-x-4">
+          <i
+            class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+          ></i>
+          <i class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"></i>
+          <i class="fa-brands fa-threads hover:text-red-700 cursor-pointer"></i>
+          <i
+            class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+          ></i>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
+          <p class="text-sm font-thin font-serif text-gray-600">
+            1600 Baneshower Ave NW<br />
+            Kathmandu, DC 20500
+          </p>
+          <h2
+            class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif"
+          >
+            W H<span class="font-medium">.GOV</span>
+          </h2>
         </div>
       </div>
     </footer>

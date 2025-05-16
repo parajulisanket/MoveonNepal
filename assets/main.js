@@ -71,3 +71,23 @@ document.addEventListener("DOMContentLoaded", () => {
     frame.src = "";
   });
 });
+
+const scrollContainer = document.getElementById("scrollContainer");
+const moveLeft = document.getElementById("moveLeft");
+const moveRight = document.getElementById("moveRight");
+
+// Scroll left when clicking the left arrow
+moveLeft.addEventListener("click", () => {
+  scrollContainer.scrollBy({
+    left: -800,
+    behavior: "smooth",
+  });
+});
+
+// Scroll right when clicking the right arrow
+moveRight.addEventListener("click", () => {
+  scrollContainer.scrollBy({
+    left: 800,
+    behavior: "smooth",
+  });
+});

@@ -61,7 +61,7 @@
       >
         <a href="./index.html" class="flex-shrink-0 cursor-pointer">
           <h2
-            class="hidden sm:block text-[16px] sm:text-[18px] px-4 sm:px-6 font-serif font-semibold text-[#021a45] hover:text-red-700 tracking-wider"
+            class=" text-white hidden sm:block text-[16px] sm:text-[18px] px-4 sm:px-6 font-serif font-semibold tracking-wider"
           >
             MOVE ON NEPAL
           </h2>
@@ -456,12 +456,20 @@
     </div>
 
     <!-- footer -->
-    <footer class="h-[450px] bg-white relative">
-      <div class="w-full flex flex-col items-center py-20">
+    <footer class="bg-white relative">
+      <!-- Divider -->
+      <div class="w-full flex justify-center pt-14">
         <hr class="w-5/6 border-t border-gray-300" />
       </div>
-      <div class="flex justify-between px-32">
-        <div class="w-full h-20 flex space-x-36">
+
+      <!-- Footer Content -->
+      <div
+        class="hidden sm:flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-between items-start lg:items-center px-8 md:px-16 lg:px-32 py-8 md:py-12 lg:py-16 gap-y-8 md:gap-y-12 lg:space-y-0"
+      >
+        <!-- Links - Left Column -->
+        <div
+          class="flex flex-col lg:flex-row space-y-6 md:space-y-8 lg:space-y-0 lg:space-x-36 w-full lg:w-auto"
+        >
           <div class="text-sm">
             <ul class="space-y-4">
               <li
@@ -491,53 +499,52 @@
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">The Administration</a>
+                <a href="#">The Administration</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">Executive Office</a>
+                <a href="#">Executive Offices</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="">Move on Nepal</a>
-              </li>
-              <li
-                class="text-blue-500 border-b border-blue-300 hover:text-red-700 hover:border-red-700 w-fit"
-              >
-                <a href="">Nepali</a>
+                <a href="#">Move on Nepal</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="w-full h-20 justify-end flex space-x-20">
-          <div class="text-[12px] text-gray-600">
-            <ul class="space-y-2">
+
+        <!-- Contact and Address - Right Column -->
+        <div
+          class="flex flex-col items-start md:items-center lg:items-start space-y-8 md:space-y-10 lg:space-y-0 lg:flex-row lg:space-x-20 w-full lg:w-auto"
+        >
+          <div class="text-sm text-gray-600">
+            <ul class="space-y-4">
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Contact Us</a>
+                <a href="#">Contact Us</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Privacy Policy</a>
+                <a href="#">Privacy Policy</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Copyright Policy</a>
+                <a href="#">Copyright Policy</a>
               </li>
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
-                <a href="">Accessibility Statement</a>
+                <a href="#">Accessibility Statement</a>
               </li>
             </ul>
           </div>
-          <div class="space-y-1">
-            <div class="space-x-4 w-24">
+          <div class="flex flex-col items-center text-center space-y-6 md:mt-6">
+            <div class="flex justify-center space-x-4">
               <i
                 class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
               ></i>
@@ -547,8 +554,6 @@
               <i
                 class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
               ></i>
-            </div>
-            <div class="space-x-4 w-24">
               <i
                 class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
               ></i>
@@ -559,21 +564,117 @@
                 class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
               ></i>
             </div>
-
-            <div class="pt-10">
+            <div>
               <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
-              <p
-                class="text-left text-sm w-48 font-thin font-serif text-gray-600"
-              >
-                1600 Kathamndu Ave NW Bagmati, DC 20500
+              <p class="text-sm font-thin font-serif text-gray-600">
+                1600 Baneshower, Kathmandu<br />
+                Nepal, NP 20500
               </p>
             </div>
-            <div class="pt-4 font-serif text-xl text-yellow-800">
-              <h2 class="font-bold hover:text-red-700 cursor-pointer">
-                W H<span class="font-medium">.GOV</span>
-              </h2>
-            </div>
+            <h2
+              class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif"
+            >
+              N P<span class="font-medium">.GOV</span>
+            </h2>
           </div>
+        </div>
+      </div>
+
+      <!-- Mobile View -->
+      <div class="sm:hidden flex flex-col items-start space-y-6 px-6 py-10">
+        <div>
+          <ul class="space-y-4">
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./record.html">The Record</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./issues.html">The Issues</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./briefingroom.html">Briefing Room</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">The Administration</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Executive Offices</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Move on Nepal</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <ul class="space-y-3 text-sm text-gray-600">
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Contact Us</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Copyright Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Accessibility Statement</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex space-x-4">
+          <i
+            class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+          ></i>
+          <i class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"></i>
+          <i class="fa-brands fa-threads hover:text-red-700 cursor-pointer"></i>
+          <i
+            class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+          ></i>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
+          <p class="text-sm font-thin font-serif text-gray-600">
+            1600 Baneshower, KATHMANDU<br />
+            NEPAL, NP 20500
+          </p>
+          <h2
+            class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif"
+          >
+            N P<span class="font-medium">.GOV</span>
+          </h2>
         </div>
       </div>
     </footer>

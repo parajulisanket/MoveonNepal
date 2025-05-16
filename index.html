@@ -14,11 +14,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
     <link rel="icon" href="./assets/logo.png" type="image/png" />
     <title>Home</title>
     <meta charset="UTF-8" />
@@ -69,20 +68,20 @@
   <div class="flex items-center space-x-6 pr-6 hidden xl:flex"> 
     <ul class="flex space-x-6 text-[15px]">
       <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
-        <a href="./administration.html">Administration</a>
+        <a href="./media.html">Media</a>
       </li>
       <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
-        <a href="./record.html">The Record</a>
+        <a href="./moments.html">Movement</a>
       </li>
       <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
-        <a href="./issues.html">The Issues</a>
+        <a href="./mission.html">Mission</a>
       </li>
-      <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
+      <!-- <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
         <a href="./briefingroom.html">Briefing Room</a>
       </li>
       <li class="text-blue-600 border-b-[0.5px] border-blue-300 hover:text-red-600 hover:border-red-700 cursor-pointer">
         <a href="./">Nepali</a>
-      </li>
+      </li> -->
     </ul>
     
     <!-- Menu Link for Desktop -->
@@ -119,7 +118,7 @@
       text-center lg:text-left z-20"
   >
     <h1
-      class="text-white text-[24px] sm:text-[18px] md:text-[22px] lg:text-[26px] xl:text-[30px] font-bold mb-2 font-lato tracking-widest"
+      class="text-white text-[24px] sm:text-[18px] md:text-[22px] lg:text-[26px] xl:text-[30px] cat-card-title mb-2  tracking-widest"
     >
       The Rundown
     </h1>
@@ -132,15 +131,14 @@
 </div>
 
 <!-- Part 2 -->
-<div class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] relative z-30 overflow-x-auto scrollbar-hide">
-  <!-- Flex container for horizontal scrolling in mobile and grid for larger screens -->
+<div class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] relative z-30 overflow-x-auto lg:overflow-x-visible scrollbar-hide">
   <div class="flex flex-nowrap lg:grid lg:grid-cols-4 gap-4 bg-gradient-to-b relative from-[#040b1e] to-[#020a1b] lg:px-20 md:px-10 sm:px-10">
     <!-- Card 1 -->
-    <a href="./record.html">
-      <div class="bg-[#9fb0c2] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden lg:-mt-16 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 relative z-40">
+    <a href="./media.html">
+      <div class="z-30 bg-[#9fb0c2] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden lg:-mt-16 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 relative z-40">
         <div class="p-4 sm:p-6">
-          <h3 class="text-xl sm:text-2xl font-bold text-gray-800 tracking-widest pb-2">Press Releases</h3>
-          <p class="text-black text-[12px] sm:text-[14px] font-serif tracking-wider">Formal policy announcements and remarks</p>
+          <h3 class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Media</h3>
+          <p class="text-black text-[12px] sm:text-[14px] font-serif tracking-wider">Explore speeches, briefings, and media capturing impactful national moments.</p>
         </div>
         <div class="relative">
           <iframe
@@ -156,8 +154,8 @@
     <a href="./moments.html">
       <div class="bg-[#f4f4f4] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden relative lg:-mt-9 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 z-40">
         <div class="p-4 sm:p-6">
-          <h3 class="text-xl sm:text-2xl font-bold text-gray-800 tracking-widest pb-2">Media Coverage</h3>
-          <p class="text-black text-[12px] sm:text-[14px] font-serif tracking-wider">Aggregated press or media appearances</p>
+          <h3 class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Movement</h3>
+          <p class="text-black text-[12px] sm:text-[14px] font-serif tracking-wider">Capturing historic events, personal stories, and unforgettable public moments.</p>
         </div>
         <div class="relative">
           <video class="w-full h-60 sm:h-80 object-cover" autoplay loop muted>
@@ -171,8 +169,8 @@
     <a href="./record.html">
       <div class="bg-[#7dbcff] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden relative lg:-mt-16 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 z-40">
         <div class="p-4 sm:p-6">
-          <h3 class="text-xl sm:text-2xl font-bold text-gray-800 tracking-widest pb-2">Story</h3>
-          <p class="text-black text-[12px] sm:text-[14px] font-serif tracking-wider">Long-form pieces, interviews, human interest stories.</p>
+          <h3 class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Mission</h3>
+          <p class="text-black text-[12px] sm:text-[14px] font-serif tracking-wider">Our mission drives progress, unity, equity, and national well-being daily.</p>
         </div>
         <div class="relative">
           <iframe
@@ -189,8 +187,8 @@
     <a href="./record.html">
       <div class="bg-[#ffdaa3] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden relative  lg:-mt-9 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 z-40">
         <div class="p-4 sm:p-6">
-          <h3 class="text-xl sm:text-2xl font-bold text-gray-800 tracking-widest pb-2">Economic Updates</h3>
-          <p class="text-black text-[12px] sm:text-[14px] font-serif tracking-wider">Focus on finance, economy, job data and many more</p>
+          <h3 class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Podcast</h3>
+          <p class="text-black text-[12px] sm:text-[14px] font-serif tracking-wider">Voices, ideas, and policies shared through meaningful national dialogue weekly.</p>
         </div>
         <div class="relative">
           <iframe
@@ -244,7 +242,7 @@
     class="bg-white/90 lg:h-[400px] w-11/12 sm:w-4/5 md:w-3/5 lg:w-1/2 p-4 sm:p-6 h-auto flex flex-col justify-center items-center space-y-6"
   >
     <!-- Spotlight Title -->
-    <p class="text-[12px] sm:text-[14px] md:text-[16px] text-gray-800 font-semibold tracking-widest text-center uppercase">
+    <p class="text-[12px] sm:text-[14px] md:text-[16px] text-gray-800 cat-card-title tracking-widest text-center uppercase">
       IN THE SPOTLIGHT
     </p>
 
@@ -313,7 +311,7 @@
 <!-- last part -->
 <div class="bg-[#f1f6fc]">
   <div class="flex justify-between px-6 sm:px-10 md:px-12 py-6 sm:py-10 md:py-12">
-    <h2 class="text-xl sm:text-2xl md:text-3xl font-semibold tracking-widest">
+    <h2 class="text-xl sm:text-2xl md:text-3xl cat-card-title tracking-widest">
       TOP STORIES AND CATEGORIES
     </h2>
     <div class="hover:text-red-700 space-x-4 cursor-pointer flex">
@@ -333,7 +331,7 @@
           </div>
           <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
             <h3
-              class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 tracking-widest pb-1 sm:pb-2"
+              class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
             >
               POLITICS
             </h3>
@@ -354,7 +352,7 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
-            class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 tracking-widest pb-1 sm:pb-2"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             ECONOMY
           </h3>
@@ -375,7 +373,7 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
-            class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 tracking-widest pb-1 sm:pb-2"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             DISASTERS ALERTS
           </h3>
@@ -396,7 +394,7 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
-            class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 tracking-widest pb-1 sm:pb-2"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             INTERNATIONAL 
           </h3>
@@ -416,7 +414,7 @@
           </div>
           <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
             <h3
-              class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 tracking-widest pb-1 sm:pb-2"
+              class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
             >
               POLITICS
             </h3>
@@ -437,7 +435,7 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
-            class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 tracking-widest pb-1 sm:pb-2"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             ECONOMY
           </h3>
@@ -458,7 +456,7 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
-            class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 tracking-widest pb-1 sm:pb-2"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             DISASTERS ALERTS
           </h3>
@@ -479,7 +477,7 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
-            class="text-base sm:text-lg md:text-xl font-semibold text-gray-800 tracking-widest pb-1 sm:pb-2"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             INTERNATIONAL
           </h3>
@@ -511,23 +509,24 @@
             <a href="./index.html">Home</a>
           </li>
           <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
-            <a href="./record.html">The Record</a>
+            <a href="./media.html">Media</a>
           </li>
           <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
-            <a href="./issues.html">The Issues</a>
+            <a href="./moments.html">Movement</a>
           </li>
           <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
-            <a href="./briefingroom.html">Briefing Room</a>
+            <a href="./mission.html">Mission</a>
           </li>
         </ul>
       </div>
       <div class="text-sm">
         <ul class="space-y-4">
           <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
-            <a href="#">The Administration</a>
+            <a href="./record.html">The Record</a>
           </li>
           <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
-            <a href="#">Executive Offices</a>
+            <a href="./briefingroom.html">The Briefingroom
+            </a>
           </li>
           <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
             <a href="#">Move on Nepal</a>
@@ -567,8 +566,8 @@
         <div>
           <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
           <p class="text-sm font-thin font-serif text-gray-600">
-            1600 Baneshower, Kathmandu<br />
-            Nepal, NP 20500
+            44600 Kathmandu,<br />
+            Nepal
           </p>
         </div>
         <h2 class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif">
@@ -586,19 +585,19 @@
           <a href="./index.html">Home</a>
         </li>
         <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
-          <a href="./record.html">The Record</a>
+          <a href="./media.html">Media</a>
         </li>
         <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
-          <a href="./issues.html">The Issues</a>
+          <a href="./moments.html">Movement</a>
         </li>
         <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
-          <a href="./briefingroom.html">Briefing Room</a>
+          <a href="./mission.html">Mission</a>
         </li>
         <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
-          <a href="#">The Administration</a>
+          <a href="./record.html">The Records</a>
         </li>
         <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
-          <a href="#">Executive Offices</a>
+          <a href="./briefingroom.html">The Briefingroom</a>
         </li>
         <li class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit">
           <a href="#">Move on Nepal</a>
@@ -635,8 +634,8 @@
     <div class="space-y-3">
       <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
       <p class="text-sm font-thin font-serif text-gray-600">
-        1600 Baneshower, KATHMANDU<br />
-        NEPAL, NP 20500
+        44600 Kathmandu,<br />
+        Nepal
       </p>
       <h2 class="font-bold text-lg text-yellow-800 hover:text-red-700 cursor-pointer font-serif">
         N P<span class="font-medium">.GOV</span>

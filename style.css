@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 @keyframes revealOverlay {
   0% {
     transform: translateY(0);
@@ -14,10 +16,24 @@
 }
 
 .scrollbar-hide {
-  scrollbar-width: none; /* For Firefox */
-  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, and Opera */
+  display: none;
+}
+body {
+  font-family: "Merriweather", serif;
+}
+
+h1,
+h2 {
+  font-family: "Prompt", sans-serif;
+}
+
+.cat-card-title {
+  font-family: "Prompt", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
 }

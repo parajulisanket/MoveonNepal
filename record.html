@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="./assets/scotus.js"></script>
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -37,14 +38,13 @@
     <!-- Notification Banner -->
     <div class="bg-gradient-to-r from-[#020a1b] to-[#003366] p-4">
       <p
-        class="text-[10px] text-white font-extralight text-center sm:text-[9px] md:text-[10px] lg:text-[12px] xl:text-[14px] font-inter tracking-wide leading-relaxed max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto"
+        class="text-[10px] nav text-white font-extralight text-center sm:text-[9px] md:text-[10px] lg:text-[11px] xl:text-[13px] tracking-wide leading-relaxed max-w-[90%] md:max-w-[80%] lg:max-w-[70%] mx-auto"
       >
         This is historical material “frozen in time”. The website is no longer
         updated and links to external websites and some internal pages may not
         work.
       </p>
     </div>
-
     <div class="relative overflow-hidden">
       <!-- Background Image -->
       <img
@@ -80,7 +80,7 @@
 
         <!-- Navigation Links -->
         <div class="hidden xl:flex items-center space-x-6 pr-6">
-          <ul class="flex space-x-6 text-[15px] text-white">
+          <ul class="flex space-x-6 text-[15px] text-white nav">
             <li
               class="border-b-[1px] border-gray-500 hover:border-white cursor-pointer"
             >
@@ -111,7 +111,7 @@
           <!-- Menu Button for Desktop -->
           <a
             href="./menu.html"
-            class="text-[12px] font-semibold border-y-[3px] text-white border-double border-white border-l-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
+            class="text-[12px] nav  border-y-[3px] text-white border-double border-white border-l-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
           >
             MENÚ
           </a>
@@ -121,7 +121,7 @@
         <div class="xl:hidden flex items-center">
           <a
             href="./menu.html"
-            class="text-[12px] font-semibold border-y-[3px] text-white border-double border-white border-l-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
+            class="text-[12px] nav border-y-[3px] text-white border-double border-white border-l-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
           >
             MENÚ
           </a>
@@ -146,7 +146,7 @@
 
       <!-- Text Section -->
       <div
-        class="absolute bottom-10 sm:bottom-16 md:bottom-32 left-1/2 transform -translate-x-1/2 md:right-32 lg:right-96 mt-4 z-10 text-center md:text-left"
+        class="nav absolute bottom-10 sm:bottom-16 md:bottom-32 left-1/2 transform -translate-x-1/2 md:right-32 lg:right-96 mt-4 z-10 text-center md:text-left"
       >
         <h3
           id="line1"
@@ -217,7 +217,7 @@
         class="relative z-20 flex flex-col items-center w-full px-4 sm:px-6 md:px-8"
       >
         <h2
-          class="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest mb-16 text-center"
+          class="cat-card-title text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold tracking-widest mb-16 text-center"
         >
           BUILDING THE ECONOMY<br />
           FROM THE MIDDLE OUT,<br />
@@ -344,7 +344,7 @@
         <div
           class="flex justify-center bg-[#e7c190] hover:bg-white rounded-full my-20 w-auto p-4 cursor-pointer"
         >
-          <p class="text-[10px] sm:text-[11px] md:text-[12px] tracking-wider">
+          <p class="cat-card-title text-[10px] sm:text-[11px] md:text-[12px] tracking-wider">
             VIEW ALL ACCOMPLISHMENTS
           </p>
         </div>
@@ -367,7 +367,7 @@
           class="flex flex-col lg:flex-row space-y-6 md:space-y-8 lg:space-y-0 lg:space-x-36 w-full lg:w-auto"
         >
           <div class="text-sm">
-            <ul class="space-y-4">
+            <ul class="space-y-4 nav">
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
@@ -391,7 +391,7 @@
             </ul>
           </div>
           <div class="text-sm">
-            <ul class="space-y-4">
+            <ul class="space-y-4 nav">
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
@@ -416,7 +416,7 @@
           class="flex flex-col items-start md:items-center lg:items-start space-y-8 md:space-y-10 lg:space-y-0 lg:flex-row lg:space-x-20 w-full lg:w-auto"
         >
           <div class="text-sm text-gray-600">
-            <ul class="space-y-4">
+            <ul class="space-y-4 nav">
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
               >
@@ -479,7 +479,7 @@
       <!-- Mobile View -->
       <div class="sm:hidden flex flex-col items-start space-y-6 px-6 py-10">
         <div>
-          <ul class="space-y-4">
+          <ul class="space-y-4 nav">
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
@@ -519,7 +519,7 @@
         </div>
 
         <div>
-          <ul class="space-y-3 text-sm text-gray-600">
+          <ul class="space-y-3 text-sm text-gray-600 nav">
             <li
               class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
             >

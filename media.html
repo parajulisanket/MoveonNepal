@@ -57,7 +57,7 @@
 
       <!-- Navigation Links (Desktop View: Large screens) -->
       <div class="flex items-center space-x-6 pr-6 hidden xl:flex">
-        <ul class="nav flex space-x-6 text-[15px]">
+        <ul class="flex nav space-x-6 text-[15px]">
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
           >
@@ -73,37 +73,214 @@
           >
             <a href="./mission.html">Mission</a>
           </li>
-          <!-- <li
-            class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
-          >
-            <a href="./briefingroom.html">Briefing Room</a>
-          </li> -->
-          <!-- <li
-            class="text-blue-600 border-b-[0.5px] border-blue-300 hover:text-red-600 hover:border-red-700 cursor-pointer"
-          >
-            <a href="./">Nepali</a>
-          </li> -->
+          <!-- <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
+        <a href="./briefingroom.html">Briefing Room</a>
+      </li>
+      <li class="text-blue-600 border-b-[0.5px] border-blue-300 hover:text-red-600 hover:border-red-700 cursor-pointer">
+        <a href="./">Nepali</a>
+      </li> -->
         </ul>
-
-        <!-- Menu Link for Desktop -->
-        <a
-          href="./menu.html"
+        <!-- Menu Link for Desktop (now a button) -->
+        <button
+          id="openMenuDesktop"
           class="nav text-[12px] border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
         >
           MENÚ
-        </a>
+        </button>
       </div>
 
-      <!-- Menu Link for Mobile and Small Laptop View (visible on screens smaller than 1024px) -->
-      <div class="xl:hidden flex items-center">
-        <a
-          href="./menu.html"
-          class="nav text-[12px] border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
+      <div class="xl:hidden flex nav items-center">
+        <button
+          id="openMenuMobile"
+          class="text-[12px] nav border-y-[3px] border-double border-black border-l-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-red-600 transition-transform duration-400 ease-in-out hover:scale-110"
         >
           MENÚ
-        </a>
+        </button>
       </div>
     </nav>
+
+    <!-- Desktop Menu Overlay (White House style, responsive, reference image) -->
+    <div
+      id="menuPanelDesktop"
+      class="fixed top-0 left-0 h-full w-full bg-white z-50 transform translate-x-full transition-transform duration-500 ease-in-out hidden xl:flex"
+    >
+      <div class="h-full w-full flex flex-col xl:flex-row overflow-y-auto">
+        <!-- Header Row: Logo left, Close right -->
+        <div
+          class="w-full flex items-start justify-between px-8 pt-8 absolute top-0 left-0 z-50"
+        >
+          <a href="/index.html">
+            <img
+              src="./assets/logo.png"
+              class="h-14 w-14 object-contain"
+              alt="Logo"
+            />
+          </a>
+          <button
+            id="closeMenuDesktop"
+            class="flex flex-col items-center group cursor-pointer"
+            aria-label="Close"
+          >
+            <span class="nav text-xs text-red-700 tracking-widest mb-1"
+              >CLOSE</span
+            >
+            <span
+              class="text-4xl text-red-700 group-hover:scale-110 transition-transform duration-200"
+              >&times;</span
+            >
+          </button>
+        </div>
+        <!-- Main Content Grid (Menu + Sidebar) -->
+        <div
+          class="flex-1 flex flex-col justify-center items-center min-h-screen"
+        >
+          <div
+            class="w-full flex justify-center items-start pb-10 px-4 sm:px-8 md:px-16"
+            style="padding-top: 110px"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 w-full max-w-xs sm:max-w-sm md:max-w-5xl mt-10 mobile:mt-20"
+            >
+              <div>
+                <ul
+                  class="font-[Merriweather] text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] font-bold space-y-8 sm:space-y-10"
+                >
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/media.html">Media</a>
+                  </li>
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/moments.html">Movement</a>
+                  </li>
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/mission.html">Mission</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul
+                  class="font-[Merriweather] text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] font-bold space-y-8 sm:space-y-10"
+                >
+                  <li
+                    class="border-b border-[#bfcbe0] pb-1 cursor-pointer hover:text-red-700 hover:border-red-700 w-fit"
+                  >
+                    <a href="/record.html">Podcast</a>
+                  </li>
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/briefingroom.html">Briefingroom</a>
+                  </li>
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/index.html">Move on Nepal</a>
+                    <!-- <span class="text-lg">&#8250;</span> -->
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul
+                  class="font-[Merriweather] text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] font-bold space-y-8 sm:space-y-10"
+                >
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/record.html">The Records</a>
+                  </li>
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="#">The Story</a>
+                  </li>
+                  <!-- <li class="border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                <a href="#" class="text-blue-700 font-bold">Español</a>
+              </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div
+          class="xl:w-[340px] w-full bg-white flex flex-col items-start justify-start px-8 pt-32 pb-10 relative min-w-[260px] max-w-[100vw]"
+        >
+          <div
+            class="border-l flex flex-col w-full items-center justify-center h-full space-y-8 mt-2 hidden xl:flex"
+          >
+            <div class="space-y-2 text-center">
+              <p
+                class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+              >
+                Privacy Policy
+              </p>
+              <p
+                class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+              >
+                Copyright Policy
+              </p>
+              <p
+                class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+              >
+                Accessibility Statement
+              </p>
+            </div>
+            <div
+              class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mb-2"
+            >
+              <i
+                class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+              ></i>
+            </div>
+            <div
+              class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mt-2"
+            >
+              <i
+                class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-threads hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+              ></i>
+            </div>
+            <div class="mt-8 text-center">
+              <h4
+                class="text-[#1a2a4a] text-base font-[Merriweather] font-bold mb-1"
+              >
+                Move on Nepal
+              </h4>
+              <p
+                class="text-[#1a2a4a] text-base font-[Merriweather] font-normal leading-snug"
+              >
+                44600 Kathmandu,<br />
+                Nepal
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @media (max-width: 639px) {
+        #menuPanelDesktop .grid {
+          margin-top: 10rem !important; /* Increased from 3.5rem to 5rem */
+        }
+      }
+    </style>
 
     <!-- main content -->
     <div
@@ -125,14 +302,14 @@
 
     <!-- Responsive grid layout -->
     <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-4 gap-y-4 lg:gap-x-8 lg:gap-y-8 mt-10 px-5 sm:px-10"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-4 lg:gap-x-4 lg:gap-y-6 mt-10 px-5 sm:px-10"
     >
       <!-- Boxes in the first row -->
       <div
         class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
       >
         <div
-          class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
+          class="w-60 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
         >
           <img
             src="./assets/admin1.jpeg"
@@ -147,7 +324,7 @@
         class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
       >
         <div
-          class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
+          class="w-60 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
         >
           <img
             src="./assets/admin2.jpeg"
@@ -162,7 +339,7 @@
         class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
       >
         <div
-          class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
+          class="w-60 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
         >
           <img
             src="./assets/admin3.png"
@@ -177,7 +354,7 @@
         class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
       >
         <div
-          class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
+          class="w-60 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
         >
           <img
             src="./assets/admin5.png"
@@ -190,14 +367,14 @@
 
       <!-- Second row aligned in flex (horizontal) -->
       <div
-        class="col-span-full flex flex-col sm:flex-row justify-center gap-4 sm:gap-8 md:gap-28"
+        class="col-span-full flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 md:gap-10"
       >
         <!-- Box 5 -->
         <div
           class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
         >
           <div
-            class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
+            class="w-60 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
           >
             <img
               src="./assets/cabinate.jpeg"
@@ -213,7 +390,7 @@
           class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
         >
           <div
-            class="w-40 h-36 sm:w-72 sm:h-64 md:w-60 md:h-52 mx-auto overflow-hidden rounded-lg"
+            class="w-60 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
           >
             <img
               src="./assets/sports.jpeg"
@@ -451,5 +628,6 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/menu.js"></script>
   </body>
 </html>

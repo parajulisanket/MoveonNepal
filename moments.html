@@ -58,7 +58,7 @@
     >
       <a href="./index.html" class="flex-shrink-0 cursor-pointer">
         <h2
-          class="hidden sm:block lg:text-[18px] text-[16px] px-4 sm:px-6 font-serif font-semibold text-[#021a45] tracking-wider"
+          class=" sm:block lg:text-[18px] text-[16px] px-4 sm:px-6 font-serif font-semibold text-white tracking-wider"
         >
           MOVE ON NEPAL
         </h2>
@@ -75,33 +75,225 @@
         />
       </a>
 
-      <div class="flex items-center space-x-6 pr-6">
-        <ul class="nav hidden lg:flex space-x-6 text-[15px]">
-          <li
-            class="text-white border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer"
-          >
+      <!-- Navigation Links (Desktop View: Large screens) -->
+      <div class="flex items-center space-x-6 pr-6 hidden xl:flex" id="desktopMenuLinks">
+        <ul class="flex nav space-x-6 text-[15px]">
+          <li class="text-white border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer">
             <a href="./media.html">Media</a>
           </li>
-          <li
-            class="text-white border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer"
-          >
+          <li class="text-white border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer">
             <a href="./moments.html">Movement</a>
           </li>
-          <li
-            class="text-white border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer"
-          >
+          <li class="text-white border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer">
             <a href="./mission.html">Mission</a>
           </li>
+          <!-- <li class="border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer">
+        <a href="./briefingroom.html">Briefing Room</a>
+      </li>
+      <li class="text-blue-600 border-b-[0.5px] border-blue-300 hover:border-white cursor-pointer">
+        <a href="./">Nepali</a>
+      </li> -->
         </ul>
-        <!-- Menu Link for Desktop and all views -->
-        <a
-          href="./menu.html"
-          class="nav text-[12px]  border-y-[3px] border-double border-white border-l-0 border-r-0 text-white cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
+        <!-- Menu Link for Desktop (now a button) -->
+        <button
+          id="openMenuDesktop"
+          class="text-white nav text-[12px] border-y-[3px] border-double border-white border-l-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
         >
           MENÚ
-        </a>
+        </button>
+      </div>
+
+      <div class="xl:hidden flex nav items-center">
+        <button
+          id="openMenuMobile"
+          class="text-white text-[12px] nav border-y-[3px] border-double border-white border-l-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
+        >
+          MENÚ
+        </button>
       </div>
     </nav>
+    <!-- Desktop Menu Overlay (White House style, responsive, reference image) -->
+    <div
+      id="menuPanelDesktop"
+      class="fixed top-0 left-0 h-full w-full bg-white z-50 transform translate-x-full transition-transform duration-500 ease-in-out hidden xl:flex"
+    >
+      <div class="h-full w-full flex flex-col xl:flex-row overflow-y-auto">
+        <!-- Header Row: Logo left, Close right -->
+        <div
+          class="w-full flex items-start justify-between px-8 pt-8 absolute top-0 left-0 z-50"
+        >
+          <a href="/index.html">
+            <img
+              src="./assets/logo.png"
+              class="h-14 w-14 object-contain"
+              alt="Logo"
+            />
+          </a>
+          <button
+            id="closeMenuDesktop"
+            class="flex flex-col items-center group cursor-pointer"
+            aria-label="Close"
+          >
+            <span class="nav text-xs text-red-700 tracking-widest mb-1"
+              >CLOSE</span
+            >
+            <span
+              class="text-4xl text-red-700 group-hover:scale-110 transition-transform duration-200"
+              >&times;</span
+            >
+          </button>
+        </div>
+        <!-- Main Content Grid (Menu + Sidebar) -->
+        <div
+          class="flex-1 flex flex-col justify-center items-center min-h-screen"
+        >
+          <div
+            class="w-full flex justify-center items-start pb-10 px-4 sm:px-8 md:px-16"
+            style="padding-top: 110px"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 w-full max-w-xs sm:max-w-sm md:max-w-5xl mt-10 mobile:mt-20"
+            >
+              <div>
+                <ul
+                  class="font-[Merriweather] text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] font-bold space-y-8 sm:space-y-10"
+                >
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/media.html">Media</a>
+                  </li>
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/moments.html">Movement</a>
+                  </li>
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/mission.html">Mission</a>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul
+                  class="font-[Merriweather] text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] font-bold space-y-8 sm:space-y-10"
+                >
+                  <li
+                    class="border-b border-[#bfcbe0] pb-1 cursor-pointer hover:text-red-700 hover:border-red-700 w-fit"
+                  >
+                    <a href="/record.html">Podcast</a>
+                  </li>
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/briefingroom.html">Briefingroom</a>
+                  </li>
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/index.html">Move on Nepal</a>
+                    <!-- <span class="text-lg">&#8250;</span> -->
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <ul
+                  class="font-[Merriweather] text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] font-bold space-y-8 sm:space-y-10"
+                >
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="/record.html">The Records</a>
+                  </li>
+                  <li
+                    class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                  >
+                    <a href="#">The Story</a>
+                  </li>
+                  <!-- <li class="border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
+                <a href="#" class="text-blue-700 font-bold">Español</a>
+              </li> -->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Sidebar -->
+        <div
+          class="xl:w-[340px] w-full bg-white flex flex-col items-start justify-start px-8 pt-32 pb-10 relative min-w-[260px] max-w-[100vw]"
+        >
+          <div
+            class="border-l flex flex-col w-full items-center justify-center h-full space-y-8 mt-2 hidden xl:flex"
+          >
+            <div class="space-y-2 text-center">
+              <p
+                class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+              >
+                Privacy Policy
+              </p>
+              <p
+                class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+              >
+                Copyright Policy
+              </p>
+              <p
+                class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+              >
+                Accessibility Statement
+              </p>
+            </div>
+            <div
+              class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mb-2"
+            >
+              <i
+                class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+              ></i>
+            </div>
+            <div
+              class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mt-2"
+            >
+              <i
+                class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-threads hover:text-red-700 cursor-pointer"
+              ></i>
+              <i
+                class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+              ></i>
+            </div>
+            <div class="mt-8 text-center">
+              <h4
+                class="text-[#1a2a4a] text-base font-[Merriweather] font-bold mb-1"
+              >
+                Move on Nepal
+              </h4>
+              <p
+                class="text-[#1a2a4a] text-base font-[Merriweather] font-normal leading-snug"
+              >
+                44600 Kathmandu,<br />
+                Nepal
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      @media (max-width: 639px) {
+        #menuPanelDesktop .grid {
+          margin-top: 10rem !important;
+        }
+      }
+    </style>
     <!-- main body -->
     <section
       id="center-content"
@@ -113,7 +305,7 @@
           class="block sm:hidden absolute inset-0 bg-[#001038]/80 z-10 rounded-lg"
         ></div>
         <h1
-          class="cat-card-title text-2xl sm:text-4xl md:text-5xl  mb-3 sm:mb-4 tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] text-center z-20"
+          class="cat-card-title text-2xl sm:text-4xl md:text-5xl mb-3 sm:mb-4 tracking-[0.15em] sm:tracking-[0.2em] md:tracking-[0.3em] text-center z-20"
         >
           MOVEMENT
         </h1>
@@ -220,6 +412,7 @@
 
     <!-- Link your JS at the end -->
     <script src="./assets/main.js"></script>
+    <script src="./assets/menu.js"></script>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const centerContent = document.getElementById("center-content");
@@ -231,24 +424,31 @@
 
         exploreBtn.addEventListener("click", () => {
           centerContent.classList.add("translate-y-[-100px]", "opacity-0");
-          if (navBar) navBar.classList.add("translate-y-[-100px]", "opacity-0");
           setTimeout(() => {
             centerContent.classList.add("hidden");
-            if (navBar) navBar.classList.add("hidden");
             closeExploreBtn.classList.remove("hidden");
           }, 500);
         });
 
         closeExploreBtn.addEventListener("click", () => {
           centerContent.classList.remove("hidden");
-          if (navBar) navBar.classList.remove("hidden");
           setTimeout(() => {
             centerContent.classList.remove("translate-y-[-100px]", "opacity-0");
-            if (navBar)
-              navBar.classList.remove("translate-y-[-100px]", "opacity-0");
           }, 10);
           closeExploreBtn.classList.add("hidden");
         });
+
+        // Ensure menu links are visible on xl screens
+        function handleResize() {
+          const menuLinks = document.getElementById("desktopMenuLinks");
+          if (window.innerWidth >= 1280) {
+            menuLinks.classList.remove("hidden");
+          } else {
+            menuLinks.classList.add("hidden");
+          }
+        }
+        window.addEventListener("resize", handleResize);
+        handleResize();
       });
     </script>
   </body>

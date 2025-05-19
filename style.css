@@ -15,6 +15,7 @@
   animation: revealOverlay 2s ease-out forwards;
 }
 
+/* to hide scrollbar */
 .scrollbar-hide {
   scrollbar-width: none;
   -ms-overflow-style: none;
@@ -23,6 +24,8 @@
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* fonts for body and headings */
 body {
   font-family: "Merriweather", serif;
 }

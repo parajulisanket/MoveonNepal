@@ -309,67 +309,67 @@
       </div>
     </section>
 
-    <div class="absolute inset-0 w-full h-full z-10 pointer-events-none">
-      <!-- Adjust right-side video positions to avoid overlap -->
-      <iframe
-        class="absolute top-36 left-8 w-[120px] h-[120px] sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
-        src="https://www.youtube.com/embed/iljwpwHWl3s?autoplay=1&mute=1&loop=1&playlist=iljwpwHWl3s&controls=0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-      ></iframe>
-      <!-- Move this video to center above the middle content -->
-      <iframe
-        class="absolute left-1/2 top-[18%] -translate-x-1/2 w-[120px] h-[120px] sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
-        src="https://www.youtube.com/embed/RQcspgfANoc?start=7&autoplay=1&mute=1&loop=1&playlist=RQcspgfANoc&controls=0&modestbranding=1&showinfo=0&rel=0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        class="absolute top-1/2 left-4 -translate-y-1/2 w-[110px] h-[110px] sm:w-[130px] sm:h-[120px] md:w-[150px] md:h-[130px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
-        src="https://www.youtube.com/embed/eAHE0ifn0Gs?autoplay=1&mute=1&loop=1&playlist=eAHE0ifn0Gs&controls=0&modestbranding=1&showinfo=0&rel=0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        class="absolute bottom-24 left-16 w-[120px] h-[120px] sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
-        src="https://www.youtube.com/embed/iljwpwHWl3s?autoplay=1&mute=1&loop=1&playlist=iljwpwHWl3s&controls=0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-      ></iframe>
-      <video
-        src="./assets/media.mp4"
-        class="absolute bottom-10 right-10 w-[120px] h-[120px] sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
-        autoplay
-        loop
-        muted
-        data-yt="https://youtu.be/example6"
-      ></video>
-      <!-- Move this video to center below the middle content -->
-      <iframe
-        class="absolute left-1/2 bottom-[14%] -translate-x-1/2 w-[110px] h-[110px] sm:w-[130px] sm:h-[120px] md:w-[150px] md:h-[130px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
-        src="https://www.youtube.com/embed/iljwpwHWl3s?autoplay=1&mute=1&loop=1&playlist=iljwpwHWl3s&controls=0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        class="absolute top-1/3 right-56 w-[110px] h-[110px] sm:w-[130px] sm:h-[120px] md:w-[150px] md:h-[130px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
-        src="https://www.youtube.com/embed/RQcspgfANoc?start=7&autoplay=1&mute=1&loop=1&playlist=RQcspgfANoc&controls=0&modestbranding=1&showinfo=0&rel=0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-      ></iframe>
-      <iframe
-        class="absolute bottom-1/2 right-8 translate-y-1/2 w-[120px] h-[120px] sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
-        src="https://www.youtube.com/embed/RQcspgfANoc?start=7&autoplay=1&mute=1&loop=1&playlist=RQcspgfANoc&controls=0&modestbranding=1&showinfo=0&rel=0"
-        allow="autoplay; encrypted-media"
-        allowfullscreen
-      ></iframe>
-      <!-- <video
-        src="./assets/media.mp4"
-        class="absolute bottom-1/3 right-16 translate-y-1/2 w-[120px] h-[120px] sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
-        autoplay
-        loop
-        muted
-        data-yt="https://youtu.be/example7"> </video> -->
+    <div class="absolute inset-0 w-full h-full z-10 pointer-events-none sm:static sm:pointer-events-auto">
+      <div class="flex flex-col gap-6 items-center justify-center h-full w-full overflow-y-auto sm:overflow-visible px-2 py-8 sm:block scrollbar-hide" id="moments-videos-container">
+        <!-- Video 1 -->
+        <iframe
+          class="w-[140px] h-[140px] mt-16 sm:mt-0 sm:absolute sm:top-36 sm:left-8 sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300 "
+          src="https://www.youtube.com/embed/iljwpwHWl3s?autoplay=1&mute=1&loop=1&playlist=iljwpwHWl3s&controls=0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <!-- Video 2 -->
+        <iframe
+          class="w-[140px] h-[140px] sm:absolute sm:left-1/2 sm:top-[18%] sm:-translate-x-1/2 sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
+          src="https://www.youtube.com/embed/RQcspgfANoc?start=7&autoplay=1&mute=1&loop=1&playlist=RQcspgfANoc&controls=0&modestbranding=1&showinfo=0&rel=0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <!-- Video 3 -->
+        <iframe
+          class="w-[130px] h-[130px] sm:absolute sm:top-1/2 sm:left-4 sm:-translate-y-1/2 sm:w-[130px] sm:h-[120px] md:w-[150px] md:h-[130px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
+          src="https://www.youtube.com/embed/eAHE0ifn0Gs?autoplay=1&mute=1&loop=1&playlist=eAHE0ifn0Gs&controls=0&modestbranding=1&showinfo=0&rel=0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <!-- Video 4 -->
+        <iframe
+          class="w-[140px] h-[140px] sm:absolute sm:bottom-24 sm:left-16 sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
+          src="https://www.youtube.com/embed/iljwpwHWl3s?autoplay=1&mute=1&loop=1&playlist=iljwpwHWl3s&controls=0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <!-- Video 5 -->
+        <video
+          src="./assets/media.mp4"
+          class="w-[140px] h-[140px] sm:absolute sm:bottom-10 sm:right-10 sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
+          autoplay
+          loop
+          muted
+          data-yt="https://youtu.be/example6"
+        ></video>
+        <!-- Video 6 -->
+        <iframe
+          class="w-[130px] h-[130px] sm:absolute sm:left-1/2 sm:bottom-[14%] sm:-translate-x-1/2 sm:w-[130px] sm:h-[120px] md:w-[150px] md:h-[130px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
+          src="https://www.youtube.com/embed/iljwpwHWl3s?autoplay=1&mute=1&loop=1&playlist=iljwpwHWl3s&controls=0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <!-- Video 7 -->
+        <iframe
+          class="w-[130px] h-[130px] sm:absolute sm:top-1/3 sm:right-56 sm:w-[130px] sm:h-[120px] md:w-[150px] md:h-[130px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
+          src="https://www.youtube.com/embed/RQcspgfANoc?start=7&autoplay=1&mute=1&loop=1&playlist=RQcspgfANoc&controls=0&modestbranding=1&showinfo=0&rel=0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+        <!-- Video 8 -->
+        <iframe
+          class="w-[140px] h-[140px] sm:absolute sm:bottom-1/2 sm:right-8 sm:translate-y-1/2 sm:w-[140px] sm:h-[130px] md:w-[160px] md:h-[140px] rounded-lg shadow-lg object-cover moments-video pointer-events-auto transition-all duration-300"
+          src="https://www.youtube.com/embed/RQcspgfANoc?start=7&autoplay=1&mute=1&loop=1&playlist=RQcspgfANoc&controls=0&modestbranding=1&showinfo=0&rel=0"
+          allow="autoplay; encrypted-media"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
 
     <!-- YouTube Modal -->

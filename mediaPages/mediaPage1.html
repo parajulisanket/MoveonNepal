@@ -14,19 +14,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="style.css" />
-
-    <link rel="icon" href="./assets/logomain.png" type="image/png" />
-    <title>media</title>
+    <script src="../assets/menu.js"></script>
+    <link rel="icon" href="../assets/logomain.png" type="image/png" />
+    <title>Breaking News</title>
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav
-      class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg"
+      class="z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg"
     >
       <!-- Logo Section (left Logo) -->
-      <a href="./index.html" class="flex-shrink-0 cursor-pointer">
+      <a href="../index.html" class="flex-shrink-0 cursor-pointer">
         <img
-          src="./assets/logo1.png"
+          src="../assets/logo1.png"
           class="h-12 sm:h-20 px-2 sm:px-6"
           alt="Logo"
         />
@@ -38,17 +38,17 @@
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
           >
-            <a href="./media.html">Media</a>
+            <a href="../media.html">Media</a>
           </li>
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
           >
-            <a href="./movement.html">Movement</a>
+            <a href="../movement.html">Movement</a>
           </li>
           <li
             class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer"
           >
-            <a href="./mission.html">Mission</a>
+            <a href="../mission.html">Mission</a>
           </li>
           <!-- <li class="border-b-[0.5px] border-gray-400 hover:text-red-600 hover:border-red-700 cursor-pointer">
         <a href="./briefingroom.html">Briefing Room</a>
@@ -90,7 +90,7 @@
         >
           <a href="/index.html">
             <img
-              src="./assets/logomain.png"
+              src="../assets/logomain.png"
               class="h-16 object-contain"
               alt="Logo"
             />
@@ -185,7 +185,7 @@
             </div>
           </div>
         </div>
-        
+
         <!-- Sidebar -->
         <div
           class="xl:w-[340px] w-full bg-white flex flex-col items-start justify-start px-8 pt-32 pb-10 relative min-w-[260px] max-w-[100vw]"
@@ -257,134 +257,181 @@
     <style>
       @media (max-width: 639px) {
         #menuPanelDesktop .grid {
-          margin-top: 10rem !important; /* Increased from 3.5rem to 5rem */
+          margin-top: 10rem !important; 
         }
       }
     </style>
+<!-- breaking news merquee -->
+      <style>
+    /* Custom animation for scrolling */
+    @keyframes scrollLeft {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
 
-    <!-- main content -->
-    <div
-      class="text-center max-w-3xl mx-auto mt-20 sm:mt-24 md:mt-32 px-4 sm:px-6"
-    >
-      <h1
-        class="font-serif font-bold text-[20px] xs:text-[22px] sm:text-[26px] md:text-[32px] lg:text-[40px] text-[#192f4b] mx-auto"
-      >
-        Nepal’s Future, Told Today: Stories That Inspire Action
-      </h1>
-      <p
-        class="mt-5 sm:mt-7 md:mt-9 font-extralight font-serif text-[12px] xs:text-[13px] sm:text-[15px] md:text-[17px] lg:text-[18px] text-[#192f4b] mx-auto tracking-widest text-left sm:text-center"
-      >
-        Amplifying bold stories, digital voices, and youth-driven narratives
-        from Nepal. We spotlight changemakers, drive civic dialogue, and inspire
-        national progress.
-      </p>
+    .scrolling-text {
+      animation: scrollLeft 35s linear infinite;
+    }
+  </style>
+</head>
+<body class="bg-gray-100">
+
+<div class="w-full sticky top-0 z-40 overflow-hidden whitespace-nowrap relative bg-gradient-to-tr from-[#020a1b] to-[#020a1b]/30">
+    <div class="nav scrolling-text text-white  text-sm sm:text-base flex gap-10 py-2 px-4">
+      <span>Poudel sworn in as new Nepal Rastra Bank governor.</span>
+      <span>Rapti Highway closed for six hours daily to expedite road widening.</span>
+      <span>Pathibhara cable car protests to resume.</span>
+      <span>Nepal is counting its monkeys to tame rising trouble in villages.</span>
+      <span>School teachers reject education bill, threaten stronger protests.</span>
     </div>
+  </div>
+  <!-- part 1 -->
 
-    <!-- Responsive grid layout -->
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-4 lg:gap-x-4 lg:gap-y-6 mt-10 px-5 sm:px-10"
-    >
-      <!-- Boxes in the first row -->
-      <a
-        href="./mediaPages/mediaPage1.html"
-        class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-      >
-        <div
-          class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
-        >
-          <img
-            src="./assets/admin1.jpeg"
-            alt="Image 1"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <h2 class="mt-2 text-[12px] text-center">BREAKING NEWS</h2>
-      </a>
+  <section class="max-w-7xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Top Stories</h2>
 
-      <div
-        class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-      >
-        <div
-          class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
-        >
-          <img
-            src="./assets/admin2.jpeg"
-            alt="Image 2"
-            class="w-full h-full object-cover"
-          />
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Story Card -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img src="../assets/mediapart_img1.jpeg" alt="Story Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-gray-900">Famed Marsi rice sees new planting season in Chhumchaur</h3>
+          <p class="text-sm text-gray-600 mt-2">Once famous for growing the world’s highest-altitude rice, Chhumchaur reclaims its agricultural identity as farmers revive traditional Marsi cultivation.</p>
+          <a href="#" class="text-red-600 text-sm font-medium mt-3 inline-block">Read More →</a>
         </div>
-        <h2 class="mt-2 text-[12px] text-center">GLOBAL EVENTS</h2>
       </div>
 
-      <div
-        class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-      >
-        <div
-          class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
-        >
-          <img
-            src="./assets/admin3.png"
-            alt="Image 3"
-            class="w-full h-full object-cover"
-          />
+      <!-- Duplicate this card with different content for other top stories -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img src="../assets/mediapart_img2.jpeg" alt="Story Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-gray-900">Experts witness climate toll on Himalayas from mountain flight</h3>
+          <p class="text-sm text-gray-600 mt-2">Environment minister leads aerial tour to highlight climate impact.</p>
+          <a href="#" class="text-red-600 text-sm font-medium mt-3 inline-block">Read More →</a>
         </div>
-        <h2 class="mt-2 text-[12px] text-center">ECONOMIC UPDATES</h2>
       </div>
 
-      <div
-        class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-      >
-        <div
-          class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
-        >
-          <img
-            src="./assets/admin5.png"
-            alt="Image 4"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <h2 class="mt-2 text-[12px] text-center">POLITICS</h2>
-      </div>
-
-      <!-- Second row aligned in flex (horizontal) -->
-      <div
-        class="col-span-full flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 md:gap-10"
-      >
-        <!-- Box 5 -->
-        <div
-          class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-        >
-          <div
-            class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
-          >
-            <img
-              src="./assets/cabinate.jpeg"
-              alt="Image 5"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <h2 class="mt-2 text-[12px] text-center">THE CABINET</h2>
-        </div>
-
-        <!-- Box 6 -->
-        <div
-          class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-        >
-          <div
-            class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
-          >
-            <img
-              src="./assets/sports.jpeg"
-              alt="Image 6"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <h2 class="mt-2 text-[12px] text-center">SPORTS</h2>
+      <!-- Add more cards as needed -->
+      <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition-shadow duration-300">
+        <img src="../assets/mediapart_img3.jpeg" alt="Story Image" class="w-full h-48 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-gray-900">Rapti Highway closed for six hours daily to expedite road widening</h3>
+          <p class="text-sm text-gray-600 mt-2">Vehicles barred from operating on Chokhola-Ramri section from 11am to 5pm for a week.</p>
+          <a href="#" class="text-red-600 text-sm font-medium mt-3 inline-block">Read More →</a>
         </div>
       </div>
     </div>
+  </section>
 
-    <!-- footer -->
+  <!-- part 2 -->
+
+    <section class="max-w-6xl mx-auto px-4 py-10">
+    <div class="bg-white rounded-2xl shadow-md p-6">
+      
+      <!-- Header -->
+    <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-4">
+      <div>
+        <h2 class="text-2xl font-bold text-red-700 flex items-center gap-2">
+        <span class="inline-block w-3 h-3 bg-red-600 rounded-full animate-pulse"></span>
+        Ongoing Event
+        </h2>
+        <p class="text-gray-800 mt-1 font-semibold">
+             Poudel sworn in as new Nepal Rastra Bank governor
+        </p>
+      </div>
+        <button id="openLiveVideo" class="bg-red-600 text-white px-4 py-2 rounded-md text-sm hover:bg-red-700 transition">
+            🔴 Live: Click to Watch
+        </button>
+
+        <!-- Modal Overlay -->
+        <div id="liveVideoModal" class="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50 hidden">
+            <div class="bg-white rounded-lg shadow-lg max-w-2xl w-full h-auto relative">
+                <button id="closeLiveVideo" class="absolute top-2 right-2 text-gray-600 hover:text-red-600 text-2xl font-bold">&times;</button>
+                <div class="aspect-w-16 aspect-h-9 w-full">
+                    <iframe src="https://www.youtube.com/embed/EerQZVcA3GA?autoplay=1" title="Live Video" allowfullscreen class="w-full h-80 rounded-b-lg"></iframe>
+                </div>
+            </div>
+        </div>
+        <script>
+            const openBtn = document.getElementById('openLiveVideo');
+            const modal = document.getElementById('liveVideoModal');
+            const closeBtn = document.getElementById('closeLiveVideo');
+            openBtn.onclick = () => { modal.classList.remove('hidden'); };
+            closeBtn.onclick = () => { modal.classList.add('hidden'); };
+            modal.addEventListener('click', e => {
+                if (e.target === modal) modal.classList.add('hidden');
+            });
+        </script>
+      </div>
+
+      <!-- Summary -->
+      <p class="text-gray-700 text-sm sm:text-base mb-6">Cabinet on Tuesday appointed Poudel, ending months-long deadlock between Congress and UML over central bank leadership.</p>
+
+      <!-- Updates List -->
+      <div>
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Latest Updates:</h3>
+        <ul class="space-y-2 text-sm text-gray-700 list-disc pl-5">
+          <li>Indian tourists welcome, not their cash: The paradox of spending in Nepal</li>
+          <li>Nepal is counting its monkeys to tame rising trouble in villages</li>
+          <li>Pathibhara cable car protests to resume</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- part 3 -->
+ <section class="max-w-4xl mx-auto px-4 py-10">
+    <h2 class="text-2xl font-bold text-gray-800 mb-6">Latest Updates Feed</h2>
+
+    <div class="border-l-2 border-red-600 pl-6 space-y-8">
+      
+      <!-- Timeline Item -->
+      <div class="relative">
+        <div class="flex items-center gap-2">
+            <div class="w-2 h-2 sm:w-3 sm:h-3 md:w-4 md:h-4 bg-red-600 rounded-full"></div>
+            <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800">
+                Suicide blast targeting school bus kills five in Pakistan’s Balochistan
+            </h3>
+        </div>
+        <p class="text-sm text-gray-700 mb-1">
+Pakistan’s military and Prime Minister Shehbaz Sharif swiftly released statements condemning the violence and accusing “Indian terror proxies” of involvement in the attack. Five deaths are reported.
+        </p>
+        <a href="https://kathmandupost.com/" class="text-blue-600 text-sm hover:underline flex items-center gap-1">📎 Kathamndu Post</a>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="relative">
+         <div class="flex items-center gap-2">
+            <div class="w-3 h-3 bg-red-600 rounded-full"></div>
+           <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800">Under attack by Trump, South Africa's Ramaphosa responds with trade deal offer</h3>
+        </div>
+        <p class="text-sm text-gray-700 mb-1">
+     The United States is its second-biggest trading partner after China, and the aid cut has already resulted in a drop in testing for HIV patients, with pregnant women, youth and infants the worst-affected.
+        </p>
+        <a href="https://kathmandupost.com/" class="text-blue-600 text-sm hover:underline flex items-center gap-1">📎 Kathamndu Post</a>
+      </div>
+
+      <!-- Timeline Item -->
+      <div class="relative">
+  <div class="flex items-center gap-2">
+            <div class="w-3 h-3 bg-red-600 rounded-full"></div>
+             <h3 class="text-base sm:text-lg md:text-xl font-semibold text-gray-800">Pathibhara cable car protests to resume</h3>
+        </div>
+        <p class="text-sm text-gray-700 mb-1">
+   To stop construction at the holy site, agitating groups threaten to internationalise the issue.
+        </p>
+        <a href="https://kathmandupost.com/" class="text-blue-600 text-sm hover:underline flex items-center gap-1">📎 Kathamndu Post</a>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- footer part  -->
     <footer class="bg-white relative">
       <!-- Divider -->
       <div class="w-full flex justify-center pt-14">
@@ -404,22 +451,22 @@
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./index.html">Home</a>
+                <a href="../index.html">Home</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./movement.html">Movement</a>
+                <a href="../movement.html">Movement</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./media.html">Media</a>
+                <a href="../media.html">Media</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./mission.html">Mission</a>
+                <a href="../mission.html">Mission</a>
               </li>
             </ul>
           </div>
@@ -428,12 +475,12 @@
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./record.html">The Record</a>
+                <a href="../record.html">The Record</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./briefingroom.html">The Briefingroom</a>
+                <a href="../briefingroom.html">The Briefingroom</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
@@ -509,7 +556,7 @@
             >
               Developed by
               <img
-                src="./assets/kit.png"
+                src="../assets/kit.png"
                 alt="KIT logo"
                 class="m-2 w-20 h-full inline-block"
               />
@@ -525,32 +572,32 @@
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./index.html">Home</a>
+              <a href="../index.html">Home</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./media.html">Media</a>
+              <a href="../media.html">Media</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./mission.html">Mission</a>
+              <a href="../mission.html">Mission</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./movement.html">Movement</a>
+              <a href="../movement.html">Movement</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./record.html">The Records</a>
+              <a href="../record.html">The Records</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./briefingroom.html">The Briefingroom</a>
+              <a href="../briefingroom.html">The Briefingroom</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
@@ -613,7 +660,7 @@
           <h2 class="text-sm text-gray-600 hover:text-blue-700 cursor-pointer">
             Developed by
             <img
-              src="./assets/kit.png"
+              src="../assets/kit.png"
               alt="KIT logo"
               class="m-2 w-20 h-full inline-block"
             />
@@ -621,6 +668,5 @@
         </div>
       </div>
     </footer>
-    <script src="./assets/menu.js"></script>
   </body>
 </html>

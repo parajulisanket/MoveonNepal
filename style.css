@@ -31,7 +31,7 @@ body {
 }
 
 h1,
-h2 {
+h2, h3 {
   font-family: "Prompt", sans-serif;
 }
 
@@ -45,3 +45,8 @@ h2 {
   font-family: "Prompt", sans-serif;
   font-weight: 400;
 }
+
+/* p{
+  font-family: "Merriweather", serif;
+  word-spacing: 2px;
+} */

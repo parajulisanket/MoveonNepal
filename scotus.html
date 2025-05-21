@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
@@ -62,7 +63,7 @@
         </a>
 
         <!-- Navigation Links -->
-        <div class="hidden xl:flex items-center space-x-6 pr-6">
+        <div class="nav hidden xl:flex items-center space-x-6 pr-6">
           <ul
             class="flex space-x-2 sm:space-x-6 text-[11px] sm:text-[15px] text-white"
           >
@@ -219,6 +220,11 @@
               class="border-l flex flex-col w-full items-center justify-center h-full space-y-8 mt-2 hidden xl:flex"
             >
               <div class="space-y-2 text-center">
+                <a
+                  href="./contactus.html"
+                  class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+                  >Contact Us</a
+                >
                 <p
                   class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
                 >
@@ -637,10 +643,10 @@
       >
         <!-- Links - Left Column -->
         <div
-          class="flex flex-col lg:flex-row space-y-6 md:space-y-8 lg:space-y-0 lg:space-x-36 w-full lg:w-auto"
+          class="nav flex flex-col lg:flex-row space-y-6 md:space-y-8 lg:space-y-0 lg:space-x-36 w-full lg:w-auto"
         >
-          <div class="text-sm">
-            <ul class="space-y-4">
+          <div class="text-sm ">
+            <ul class="space-y-4 ">
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
@@ -688,7 +694,7 @@
         <div
           class="flex flex-col items-start md:items-center lg:items-start md:items-start space-y-8 md:space-y-10 lg:space-y-0 lg:flex-row lg:space-x-20 w-full lg:w-auto"
         >
-          <div class="text-sm text-gray-600">
+          <div class="text-sm text-gray-600 nav">
             <ul class="space-y-4">
               <li
                 class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
@@ -761,7 +767,7 @@
       </div>
 
       <!-- Mobile View -->
-      <div class="sm:hidden flex flex-col items-start space-y-4 px-6 py-10">
+      <div class="sm:hidden flex flex-col items-start space-y-4 px-6 py-10 nav">
         <div>
           <ul class="space-y-4">
             <li

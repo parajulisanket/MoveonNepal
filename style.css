@@ -53,9 +53,9 @@ h3 {
 } */
 
 /* style for left sticky mission, ,movement, media part */
-.left-sticky {
+.writing-mode-vertical {
   writing-mode: sideways-lr;
   text-orientation: mixed;
   letter-spacing: 0.2rem;
+  transition: opacity 0.3s ease-in-out;
 }
-

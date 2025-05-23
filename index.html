@@ -194,10 +194,14 @@
     }
   }
 </style>
-
 <!-- nav ends here and contain begins here -->
 
 <!-- Part 1 -->
+ <!-- Sticky vertical section label -->
+<div class="fixed top-1/2 left-0 z-50 transform -translate-y-1/2 writing-mode-vertical text-white text-sm sm:text-md md:text-lg font-bold tracking-widest bg-blue-700 py-5 bg-[#1a2a4a] text-white px-2 py-1 rounded-r-lg hover:bg-[#983017]">
+  <span id="section-label">MEDIA</span>
+</div>
+
 <div id="media" class="relative z-10 sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
   <div class="relative w-full h-full overflow-hidden">
     <!-- Background Image -->
@@ -229,7 +233,7 @@
 </div>
 
 <!-- Part 2 -->
-<div class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] relative z-30 overflow-x-auto lg:overflow-x-visible scrollbar-hide">
+<div id="media" class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] relative z-30 overflow-x-auto lg:overflow-x-visible scrollbar-hide">
   <div class="flex flex-nowrap lg:grid lg:grid-cols-4 gap-4 bg-gradient-to-b relative from-[#040b1e] to-[#020a1b] lg:px-20 md:px-10 sm:px-10">
     <!-- Card 1 -->
     <a href="">
@@ -304,7 +308,7 @@
     
 
 <!-- part-3 -->
-<div class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] h-auto relative">
+<div id="movement" class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] h-auto relative">
   <div class="relative py-24 px-4 sm:px-8 md:px-12 lg:px-20 z-10"> 
     
     <!-- Responsive iframe container -->
@@ -333,7 +337,7 @@
       <iframe
         id="video-iframe"
         class="absolute top-0 left-0 w-full h-full z-30"
-        src=""
+        src="https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&loop=1&playlist=kzi1ik6qjZs"
         title="Nepal parliament in deadlock over speaker replacement dispute"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -342,28 +346,11 @@
         style="display:none;"
       ></iframe>
     </div>
-
-    <script>
-      // Video play logic
-      document.addEventListener('DOMContentLoaded', function () {
-        const playBtn = document.getElementById('play-btn');
-        const thumbnail = document.getElementById('video-thumbnail');
-        const iframe = document.getElementById('video-iframe');
-        playBtn.addEventListener('click', function () {
-          // Hide thumbnail and play button
-          thumbnail.style.display = 'none';
-          playBtn.style.display = 'none';
-          // Show iframe and set src with autoplay
-          iframe.style.display = 'block';
-            iframe.src = "https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&loop=1&playlist=kzi1ik6qjZs";
-        });
-      });
-    </script>
   </div>
 </div>
 
 <!-- Part 4 -->
-<div class="relative">
+<div id="mission" class="relative">
   <!-- Background Image -->
   <img
     src="./assets/parliament1.jpeg"
@@ -445,8 +432,10 @@
 </div>
 </div>
 
+
+
 <!-- last part -->
-<div class="bg-[#f1f6fc]">
+<div id="moveonstories" class="bg-[#f1f6fc]">
   <div class="flex justify-between px-6 sm:px-10 md:px-12 py-6 sm:py-10 md:py-12">
     <h2 class="text-xl sm:text-2xl md:text-3xl cat-card-title tracking-widest">
       MOVE ON STORIES
@@ -906,10 +895,5 @@
     </footer>
     <script src="./assets/main.js"></script>
     <script src="./assets/menu.js"></script>
-    <!-- Left-side Anchor Link -->
-<!-- <a href="./media.html" class="left-sticky cat-card-title fixed left-0 top-1/2 -translate-y-1/2 z-50 bg-[#1a2a4a] text-white px-4 py-2 rounded-r-lg  text-lg  tracking-widest hover:bg-[#983017] transition-colors duration-300 hidden lg:flex flex-col items-center justify-center">
-  Media
-</a> -->
-
   </body>
 </html>

@@ -91,3 +91,58 @@ moveRight.addEventListener("click", () => {
     behavior: "smooth",
   });
 });
+
+// Intersection Observer for section labels
+
+const label = document.getElementById("section-label");
+
+const sectionMap = {
+  media: "MEDIA",
+  movement: "MOVEMENT",
+  mission: "MISSION",
+  moveonstories: "STORIES",
+};
+
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        const id = entry.target.id;
+        if (sectionMap[id]) {
+          label.textContent = sectionMap[id];
+          label.style.opacity = "1";
+        } else {
+          // Hide if after mission
+          label.style.opacity = "0";
+        }
+      }
+    });
+  },
+  {
+    root: null,
+    threshold: 0.5,
+  }
+);
+
+// Observe all tracked sections + sentinel
+document
+  .querySelectorAll("#media, #movement, #mission, #moveonstories")
+  .forEach((section) => {
+    observer.observe(section);
+  });
+
+// part 3 video part script
+
+document.addEventListener("DOMContentLoaded", function () {
+  const playBtn = document.getElementById("play-btn");
+  const thumbnail = document.getElementById("video-thumbnail");
+  const iframe = document.getElementById("video-iframe");
+  playBtn.addEventListener("click", function () {
+    thumbnail.style.display = "none";
+    playBtn.style.display = "none";
+
+    iframe.style.display = "block";
+    iframe.src =
+      "https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&loop=1&playlist=kzi1ik6qjZs";
+  });
+});

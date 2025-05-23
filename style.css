@@ -31,7 +31,8 @@ body {
 }
 
 h1,
-h2, h3 {
+h2,
+h3 {
   font-family: "Prompt", sans-serif;
 }
 
@@ -50,3 +51,11 @@ h2, h3 {
   font-family: "Merriweather", serif;
   word-spacing: 2px;
 } */
+
+/* style for left sticky mission, ,movement, media part */
+.left-sticky {
+  writing-mode: sideways-lr;
+  text-orientation: mixed;
+  letter-spacing: 0.2rem;
+}
+

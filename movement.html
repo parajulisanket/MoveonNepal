@@ -57,49 +57,27 @@
         >
       </a>
 
-      <!-- Navigation Links (Desktop View: Large screens) -->
+      <!-- Menu Links for Desktop -->
       <div
-        class="flex items-center space-x-6 pr-6 hidden xl:flex"
-        id="desktopMenuLinks"
+        id="openMenuMobile"
+        aria-label="Open menu"
+        class="flex nav items-center"
       >
-        <ul class="flex nav space-x-6 text-[15px]">
-          <li
-            class="text-white border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer"
-          >
-            <a href="./media.html">Media</a>
-          </li>
-          <li
-            class="text-white border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer"
-          >
-            <a href="./movement.html">Movement</a>
-          </li>
-          <li
-            class="text-white border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer"
-          >
-            <a href="./mission.html">Mission</a>
-          </li>
-          <!-- <li class="border-b-[0.5px] border-gray-400 hover:border-white cursor-pointer">
-        <a href="./briefingroom.html">Briefing Room</a>
-      </li>
-      <li class="text-blue-600 border-b-[0.5px] border-blue-300 hover:border-white cursor-pointer">
-        <a href="./">Nepali</a>
-      </li> -->
-        </ul>
-        <!-- Menu Link for Desktop (now a button) -->
+        <p class="text-white text-[15px] cursor-pointer hidden sm:block">
+          MENU
+        </p>
         <button
-          id="openMenuDesktop"
-          class="text-white nav text-[12px] border-y-[3px] border-double border-white border-l-0 border-t-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
+          class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-0 group"
         >
-          MENÚ
-        </button>
-      </div>
-
-      <div class="xl:hidden flex nav items-center">
-        <button
-          id="openMenuMobile"
-          class="text-white text-[12px] nav border-y-[3px] border-double border-white border-l-0 border-t-0 border-r-0 cursor-pointer transition-transform duration-400 ease-in-out hover:scale-110"
-        >
-          MENÚ
+          <span
+            class="block w-6 h-[1.5px] bg-white mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-white"
+          ></span>
+          <span
+            class="block w-4 h-[1.5px] bg-white mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-white"
+          ></span>
+          <span
+            class="block w-6 h-[1.5px] bg-white transition-all duration-300 self-start group-hover:w-7 group-hover:bg-white"
+          ></span>
         </button>
       </div>
     </nav>

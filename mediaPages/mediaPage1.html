@@ -33,43 +33,25 @@
     <span class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017]">MOVE ON NEPAL</span>
   </a>
 
-      <!-- Navigation Links (Desktop View: Large screens) -->
-      <div class="flex items-center space-x-6 pr-6 hidden xl:flex">
-        <ul class="flex nav space-x-6 text-[15px]">
-          <li
-            class="border-b-[0.5px] border-gray-400 hover:text-[#983017] hover:border-red-700 cursor-pointer"
-          >
-            <a href="../media.html">Media</a>
-          </li>
-          <li
-            class="border-b-[0.5px] border-gray-400 hover:text-[#983017] hover:border-red-700 cursor-pointer"
-          >
-            <a href="../movement.html">Movement</a>
-          </li>
-          <li
-            class="border-b-[0.5px] border-gray-400 hover:text-[#983017] hover:border-red-700 cursor-pointer"
-          >
-            <a href="../mission.html">Mission</a>
-          </li>
-        </ul>
+    
         <!-- Menu Link for Desktop (now a button) -->
-        <button
-          id="openMenuDesktop"
-          class="nav text-[12px] border-y-[3px] border-double border-black border-l-0 border-t-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-[#983017] transition-transform duration-400 ease-in-out hover:scale-110"
-        >
-          MENÚ
-        </button>
-      </div>
+  <button id="openMenuDesktop" aria-label="Open menu" class="hidden nav text-[12px] cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-0 group">
+      <span class="block w-6 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+      <span class="block w-4 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+      <span class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+    </button>
 
-      <div class="xl:hidden flex nav items-center">
-        <button
-          id="openMenuMobile"
-          class="text-[12px] nav border-y-[3px] border-double border-black border-l-0 border-t-0 border-r-0 cursor-pointer hover:border-red-700 hover:text-[#983017] transition-transform duration-400 ease-in-out hover:scale-110"
-        >
-          MENÚ
-        </button>
-      </div>
+     
+  <div id="openMenuMobile" aria-label="Open menu"  class="flex nav items-center hover:text-red-700">
+    <p class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block">MENU</p>
+    <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-0 group">
+      <span class="block w-6 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+      <span class="block w-4 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+      <span class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+    </button>
+  </div>
     </nav>
+
 
     <!-- Desktop Menu Overlay ( responsive) -->
     <div
@@ -270,7 +252,7 @@
     }
 
     .scrolling-text {
-      animation: scrollLeft 15s linear infinite;
+      animation: scrollLeft 20s linear infinite;
     }
   </style>
 </head>

@@ -35,6 +35,7 @@
         animation: zoomOut 5s ease-in-out forwards;
       }
     </style>
+    <script src="./assets/menu.js"></script>
   </head>
 
 <!-- Navigation Bar -->
@@ -196,407 +197,211 @@
 </style>
 <!-- nav ends here and contain begins here -->
 
-<!-- Part 1 -->
- <!-- Sticky vertical section label -->
-<div id="section-label-container" class="fixed top-1/2 left-0 z-50 transform -translate-y-1/2 writing-mode-vertical text-white text-sm sm:text-md md:text-lg font-bold tracking-widest bg-blue-700 py-5 bg-[#1a2a4a] text-white px-2 py-1 rounded-r-lg hover:bg-[#983017]">
-  <span id="section-label">MEDIA</span>
-</div>
-
-<div id="media" class="relative z-10 sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
-  <div class="relative w-full h-full overflow-hidden">
-    <!-- Background Image -->
-    <img
-      src="./assets/singhadurbar.jpeg"
-      alt="Durbar Image"
-      class="w-full h-full object-cover z-0 zoom-out"
-    />
-    <div class="absolute inset-0 bg-gradient-to-tl from-[#020a1b] to-transparent"></div>
-  </div>
-
-  <!-- Rundown Section -->
-  <div class="absolute bottom-[30px] lg:bottom-[350px] xl:bottom-[250px] left-1/2 lg:left-auto lg:right-[5%] transform lg:transform-none -translate-x-1/2 lg:translate-x-0 p-4 rounded w-full max-w-[600px] 
-      sm:w-full sm:max-w-[90%]
-      lg:w-[40%] xl:w-[35%]
-      text-center lg:text-left z-20"
-  >
-    <h1
-      class=" text-white text-[24px] sm:text-[18px] md:text-[22px] lg:text-[26px] xl:text-[30px] cat-card-title mb-2  tracking-widest"
-    >
-      The Rundown
-    </h1>
-    <p
-      class="text-white text-[18px] md:text-center md:m-auto sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-justify lg:text-left font-serif mx-auto lg:mx-0"
-    >
-      A daily or weekly brief summarizing top headlines.
-    </p>
-  </div>
-</div>
-
-<!-- Part 2 -->
-<div id="media" class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] relative z-30 overflow-x-auto lg:overflow-x-visible scrollbar-hide">
-  <div class="flex flex-nowrap lg:grid lg:grid-cols-4 gap-4 bg-gradient-to-b relative from-[#040b1e] to-[#020a1b] lg:px-20 md:px-10 sm:px-10">
-    <!-- Card 1 -->
-    <a href="">
-      <div class="z-30 bg-[#9fb0c2] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden lg:-mt-20 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 relative z-40">
-        <div class="p-4 sm:p-6">
-          <h3 class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Tiktok</h3>
-          <p class="text-black text-[10px] sm:text-sm font-serif tracking-wider">Explore speeches, briefings, and media capturing impactful national moments.</p>
-        </div>
-        <div class="relative">
-          <iframe
-            class="w-full h-60 sm:h-80 object-cover"
-            src="https://www.youtube.com/embed/iljwpwHWl3s?autoplay=1&mute=1&loop=1&playlist=iljwpwHWl3s&controls=0"
-            allow="autoplay; encrypted-media"
-          ></iframe>
-        </div>
-      </div>
-    </a>
-
-    <!-- Card 2 -->
-    <a href="">
-      <div class="bg-[#f4f4f4] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden relative lg:-mt-10 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 z-40">
-        <div class="p-4 sm:p-6">
-          <h3 class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Reels</h3>
-          <p class="text-black text-[10px] sm:text-sm font-serif tracking-wider">Capturing historic events, personal stories, and unforgettable public moments.</p>
-        </div>
-        <div class="relative">
-          <video class="w-full h-60 sm:h-80 object-cover" autoplay loop muted>
-            <source src="./assets/media.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>
-    </a>
-
-    <!-- Card 3 -->
-    <a href="">
-      <div class="bg-[#7dbcff] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden relative lg:-mt-20 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 z-40">
-        <div class="p-4 sm:p-6">
-          <h3 class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Podcast</h3>
-          <p class="text-black text-[10px] sm:text-sm font-serif tracking-wider">Inspiriing talks with Nepali business leaders, politicians, creators, and other influential voices.</p>
-        </div>
-        <div class="relative">
-          <iframe
-            class="w-full h-60 sm:h-80 object-cover"
-            src="https://www.youtube.com/embed/EerQZVcA3GA?autoplay=1&mute=1&loop=1&playlist=EerQZVcA3GA&controls=0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </a>
-
-    <!-- Card 4 -->
-    <a href="">
-      <div class="bg-[#ffdaa3] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden relative  lg:-mt-10 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 z-40">
-        <div class="p-4 sm:p-6">
-          <h3 class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Youtube</h3>
-          <p class="text-black text-[10px] sm:text-sm font-serif tracking-wider">global video-sharing platform where users upload, watch, and interact with content ranging from tutorials to entertainment.</p>
-        </div>
-        <div class="relative">
-          <iframe
-            class="w-full h-60 sm:h-80 object-cover"
-            src="https://www.youtube.com/embed/RQcspgfANoc?start=7&autoplay=1&mute=1&loop=1&playlist=RQcspgfANoc&controls=0&modestbranding=1&showinfo=0&rel=0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </a>
-  </div>
-</div>
-
-    
-
-<!-- part-3 -->
-<div id="movement" class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] h-auto relative">
-  <div class="relative py-24 px-4 sm:px-8 md:px-12 lg:px-20 z-10"> 
-    
-    <!-- Responsive iframe container -->
-    <div class="relative w-full pt-[56.25%] group" id="video-section">
-      <!-- Video thumbnail overlay -->
-      <img
-        src="https://img.youtube.com/vi/kzi1ik6qjZs/hqdefault.jpg"
-        alt="Nepal parliament in deadlock over speaker replacement dispute"
-        class="absolute top-0 left-0 w-full h-full object-cover z-10"
-        id="video-thumbnail"
-        style="cursor:pointer;"
-      />
-      <!-- Play button -->
-      <button
-        id="play-btn"
-        aria-label="Play video"
-        class="absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2   p-5  transition"
-        style="cursor:pointer;"
-      >
-        <span class="flex items-center justify-center px-6 py-2 sm:px-8 sm:py-3 bg-red-600 rounded-lg text-white shadow-lg hover:bg-red-700 transition-all duration-200 ease-in-out whitespace-nowrap">
-          <i class="fa-solid fa-play  text-sm sm:text-xl"></i>
-        </span>
-      </button>
-      <!-- Iframe, hidden initially -->
-      <iframe
-        id="video-iframe"
-        class="absolute top-0 left-0 w-full h-full z-30"
-        src="https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&loop=1&playlist=kzi1ik6qjZs"
-        title="Nepal parliament in deadlock over speaker replacement dispute"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        style="display:none;"
-      ></iframe>
+<section class="w-full bg-white font-[]Merriweather] font-normal text-[#1a2a4a] tracking-wide">
+  <!-- About Hero -->
+<div class="w-full text-white py-12 px-4 md:px-0 flex flex-col items-center relative overflow-hidden">
+    <img src="./assets/aboutus.avif" alt="About Us Hero" class="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none" style="z-index:0;">
+    <div class="relative z-10 w-full flex flex-col items-center">
+    <div class="max-w-3xl w-full">
+      <h1 class="text-4xl cat-card-title text-red-700 mb-6 tracking-widest ">About Us</h1>
+      <p class="text-black text-lg leading-relaxed mb-4">  MoveOn Nepal is a powerful, youth-driven new-media platform and campaign movement committed to telling the stories of Nepal and Nepalis around the world. More than just a digital publisher, we amplify the voices of changemakers and innovators, drive conversations on key political and economic issues, promote business mindsets, and inspire action toward a better future. We focus on telling bold, impactful stories about Nepal's entrepreneurial spirit and the vision for the country’s future. Our content highlights the journeys of Nepali business leaders, startups, and innovators shaping Nepal’s economy.</p>
+      <p class="text-black text-lg leading-relaxed">  We also advocate for the holistic development of Nepal’s infrastructure, including tourism, fintech, technological advancements, urban development, and public-private sector growth. In addition to being a vibrant media platform, we actively engage in economic agenda-led political campaigns that focus on national growth, governance, youth participation, and public policy to drive Nepal’s economic progress. Our goal is clear: to promote real entrepreneurship, inspire the next generation of entrepreneurs and changemakers, and cultivate active citizens who will contribute to Nepal's success in the coming decades, both within the country and across the global diaspora.</p>
+    </div>
     </div>
   </div>
-</div>
 
-<!-- Part 4 -->
-<div id="mission" class="relative">
-  <!-- Background Image -->
-  <img
-    src="./assets/parliament1.jpeg"
-    alt="parliament"
-    class="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] object-cover"
-  />
+  <!-- Mission Block -->
+  <div class="w-full flex justify-center bg-[#0a2458] py-8 px-4">
+    <div class="max-w-2xl w-full flex flex-col items-center">
+      <h2 class="text-2xl  cat-card-title text-white mb-2 tracking-widest">Our Mission</h2>
+      <div class="rounded p-4 text-center text-lg font-medium text-white w-full mb-4">To elevate Nepal and Nepali voices, leading bold conversation about Neplai' future. We believe in Storytelling that moves, and action that matters.</div>
+    </div>
+  </div>
 
-  <!-- people to watch  Content -->
-  <div
-  class="absolute top-1/2 left-0 w-full flex justify-center items-center flex-col space-y-6 p-4 md:p-8 transform -translate-y-1/2"
->
-  <div
-    class="bg-white/90 lg:h-[400px] w-full sm:w-11/12 md:w-4/5 lg:w-3/5 p-4 sm:p-6 h-auto flex flex-col justify-center items-center space-y-6"
-  >
-    <!-- Spotlight Title -->
-    <p class="text-[12px] sm:text-[14px] md:text-[16px] text-gray-800 cat-card-title tracking-widest text-center uppercase">
-      People to Watch
-    </p>
+  <!-- What We Do -->
+  <div class="w-full flex justify-center py-8 px-4">
+    <div class="max-w-2xl w-full">
+      <h3 class="text-xl  cat-card-title text-red-700 mb-2 tracking-wider">What we do</h3>
+      <ul class="list-disc ml-6 text-base space-y-1">
+        <li>Media and Storytelling</li>
+        <li>Campaigns and Community Impact</li>
+        <li>Encouraging the Youth</li>
+      </ul>
+    </div>
+  </div>
+<hr class="w-3/4 mx-auto border-t border-gray-300 my-8" />
 
-    <!-- Cards in a Grid Layout for Mobile -->
-    <div class="grid grid-cols-2 gap-2 md:flex md:justify-between md:items-center md:gap-4 lg:gap-6 w-full">
-      <!-- Card 1 -->
-       <a href="./missionpages/missionPage1.html">
-      <div class="flex flex-col items-center text-center cursor-pointer group">
-        <img
-          src="./assets/rishi.jpg"
-          alt="Image 1"
-          class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-20 lg:h-20 rounded-full object-cover"
-        />
-        <div class="cursor-pointer nav">
-          <p class="mt-2 text-[10px] sm:text-[12px] md:text-sm text-gray-600 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">Journalist</p>
-          <p class="text-[12px] sm:text-sm md:text-base text-gray-800 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">Rishi Dhamala</p>
+  <!-- Advisory Board -->
+  <div class="w-full flex flex-col items-center py-8 px-4">
+    <div class="max-w-6xl w-full">
+      <h2 class="text-2xl cat-card-title text-red-700 mb-6 text-center tracking-widest">Advisory Board</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 py-10">
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin1.jpeg" class="w-28 h-28 object-cover rounded" alt="Advisory Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">ELISABETH VON CAPELLER</div>
+            <div class="text-xs text-gray-600">Advisory Board Member, NEF</div>
+          </div>
         </div>
-      </div>
-      </a>
-
-      <!-- Card 2 -->
-      <div class="flex flex-col items-center text-center cursor-pointer group">
-        <img
-          src="./assets/ram.jpg"
-          alt="Image 2"
-          class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full object-cover"
-        />
-        <div class="cursor-pointer nav">
-          <p class="mt-2 text-[10px] sm:text-[12px] md:text-sm text-gray-600 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">President</p>
-          <p class="text-[12px] sm:text-sm md:text-base text-gray-800 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">Ramchandra Paudel</p>
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin2.jpeg" class="w-28 h-28 object-cover rounded" alt="Advisory Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">SHEN RAIJHANANDAR</div>
+            <div class="text-xs text-gray-600">Advisory Board Member, NEF</div>
+          </div>
         </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="flex flex-col items-center text-center cursor-pointer group nav">
-        <img
-          src="./assets/parchandey.webp"
-          alt="Image 3"
-          class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full object-cover"
-        />
-        <p class="mt-2 text-[10px] sm:text-[12px] md:text-sm text-gray-600 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">
-          Prime Minister
-        </p>
-        <p class="text-[12px] sm:text-sm md:text-base text-gray-800  group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">
-          Puspa Kamal Dahal
-        </p>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="flex flex-col items-center text-center cursor-pointer group nav">
-        <img
-          src="./assets/ranju.jfif"
-          alt="Image 4"
-          class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-20 lg:h-20 rounded-full object-cover"
-        />
-        <p class="mt-2 text-[10px] sm:text-[12px] md:text-sm text-gray-600 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">
-          Youth Leader
-        </p>
-        <p class="text-[12px] sm:text-sm md:text-base text-gray-800 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">
-          Ranju Darshana
-        </p>
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin3.png" class="w-28 h-28 object-cover rounded" alt="Advisory Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">FRANÇOIS–XAVIER LÉGER</div>
+            <div class="text-xs text-gray-600">Advisory Board Member, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin4.jpg" class="w-28 h-28 object-cover rounded" alt="Advisory Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">GIUSEPPE SAVINO</div>
+            <div class="text-xs text-gray-600">Advisory Board Member, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin5.png" class="w-28 h-28 object-cover rounded" alt="Advisory Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">KENICHI YOKOYAMA</div>
+            <div class="text-xs text-gray-600">Advisory Board Member, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/ram.jpg" class="w-28 h-28 object-cover rounded" alt="Advisory Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">KUL CHANDRA GAUTAM</div>
+            <div class="text-xs text-gray-600">Advisory Board Member, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/rishi.jpg" class="w-28 h-28 object-cover rounded" alt="Advisory Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">MAHENDRA KRISHNA SHRESTHA</div>
+            <div class="text-xs text-gray-600">Advisory Board Member, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/ranju.jfif" class="w-28 h-28 object-cover rounded" alt="Advisory Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">PRATIVA PANDEY</div>
+            <div class="text-xs text-gray-600">Advisory Board Member, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/parchandey.webp" class="w-28 h-28 object-cover rounded" alt="Advisory Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">SALON SHETHA</div>
+            <div class="text-xs text-gray-600">Advisory Board Member, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/ram.jpg" class="w-28 h-28 object-cover rounded" alt="Advisory Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">SHRADHA GAUTAM</div>
+            <div class="text-xs text-gray-600">Advisory Board Member, NEF</div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-</div>
 
+  <hr class="w-3/4 mx-auto border-t border-gray-300 my-8" />
 
-
-<!-- last part -->
-<div id="moveonstories" class="bg-[#f1f6fc]">
-  <div class="flex justify-between px-6 sm:px-10 md:px-12 py-6 sm:py-10 md:py-12">
-    <h2 class="text-xl sm:text-2xl md:text-3xl cat-card-title tracking-widest">
-      MOVE ON STORIES
-    </h2>
-    <div class="hover:text-red-700 space-x-4 cursor-pointer flex">
-      <i class="fas fa-arrow-left" id="moveLeft"></i>
-      <i class="fas fa-arrow-right" id="moveRight"></i>
-    </div>
-</div>
-<div id="scrollContainer" class="overflow-x-auto px-6 sm:px-10 md:px-12 py-6 sm:py-10 md:py-12 lg:pb-20 pt-0 scrollbar-hide">
-    <div  class="flex gap-4 sm:gap-6 md:gap-8 w-max ">
-      <!-- Card 1 -->
-      <a href="./scotus.html">
-        <div
-          class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px]  z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-        >
-          <div class="relative">
-            <img src="./assets/politics1.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-          </div>
-          <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-            <h3
-              class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-            >
-              POLITICS
-            </h3>
-            <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-              Stay informed on political, new policies, party alliances, and government decisions from Kathmandu to the provinces.
-            </p>
+  <!-- Executive Board -->
+  <div class="w-full flex flex-col items-center py-8 px-4">
+    <div class="max-w-6xl w-full">
+      <h2 class="text-2xl cat-card-title text-red-700 mb-6 text-center tracking-widest">Executive Board</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 py-10">
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin1.jpeg" class="w-28 h-28 object-cover rounded" alt="Executive Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">ALPA BAHAN SHAKYA</div>
+            <div class="text-xs text-gray-600">Executive Board Member, NEF</div>
           </div>
         </div>
-      </a>
-
-      <!-- Card 2 -->
-      <a href="./scotus.html">
-      <div
-        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="relative">
-          <img src="./assets/card2.gif" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-        </div>
-        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-          <h3
-            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-          >
-            ECONOMY
-          </h3>
-          <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-            Explore updates on inflation, trade, remittance, economic recovery, and budget announcements.
-          </p>
-        </div>
-      </div>
-      </a>
-
-      <!-- Card 3 -->
-      <a href="./scotus.html">
-      <div
-        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="relative">
-          <img src="./assets/card3.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-        </div>
-        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-          <h3
-            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-          >
-            BUSINESS
-          </h3>
-          <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-            Breaking business news including stock movements, financial trends, and corporate developments in Nepal.
-          </p>
-        </div>
-      </div>
-      </a>
-
-      <!-- Card 4 -->
-      <a href="./scotus.html">
-      <div
-        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="relative">
-          <img src="./assets/card4.webp" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-        </div>
-        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-          <h3
-            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-          >
-            GLOBAL NEPALI
-          </h3>
-          <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-              Insight into the lives of Nepali migrants, diaspora news, and their impact on Nepal's economy and culture.
-          </p>
-        </div>
-      </div>
-      </a>
-      <!-- card-5 -->
-      <a href="./scotus.html">
-        <div
-          class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-        >
-          <div class="relative">
-            <img src="./assets/politics1.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-          </div>
-          <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-            <h3
-              class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-            >
-              TECH
-            </h3>
-            <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-                News and insights on tech startups, innovation hubs, and digital transformation shaping Nepal’s future.
-            </p>
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin2.jpeg" class="w-28 h-28 object-cover rounded" alt="Executive Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">SHAVISTA TULADHAR</div>
+            <div class="text-xs text-gray-600">Executive Board Member, NEF</div>
           </div>
         </div>
-      </a>
-
-      <!-- Card 6 -->
-      <a href="./scotus.html">
-      <div
-        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="relative">
-          <img src="./assets/card2.gif" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin3.png" class="w-28 h-28 object-cover rounded" alt="Executive Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">SUDIP BHAUJ</div>
+            <div class="text-xs text-gray-600">Executive Board Member, NEF</div>
+          </div>
         </div>
-        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-          <h3
-            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-          >
-            TRENDS
-          </h3>
-          <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-              Track the latest trends in pop culture, technology, fashion, and social media shaping daily life and conversations.
-          </p>
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin4.jpg" class="w-28 h-28 object-cover rounded" alt="Executive Board Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">SULEY SHAKYA</div>
+            <div class="text-xs text-gray-600">Executive Board Member, NEF</div>
+          </div>
         </div>
       </div>
-      </a>
-
-      <!-- Card 7 -->
-      <a href="./scotus.html">
-      <div
-        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="relative">
-          <img src="./assets/card3.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-        </div>
-        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-          <h3
-            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-          >
-            DISASTERS ALERTS
-          </h3>
-          <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-            Real-time coverage of earthquakes, landslides, and emergency updates affecting Nepal’s regions.
-          </p>
-        </div>
-      </div>
-      </a>
-
     </div>
   </div>
-</div>
+<hr class="w-3/4 mx-auto border-t border-gray-300 my-8" />
+  <!-- Team -->
+  <div class="w-full flex flex-col items-center py-8 px-4">
+    <div class="max-w-6xl w-full">
+      <h2 class="text-2xl cat-card-title text-red-700 mb-6 text-center tracking-widest">Team</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 py-10">
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin1.jpeg" class="w-28 h-28 object-cover rounded" alt="Team Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">AMAN PANT</div>
+            <div class="text-xs text-gray-600">Senior Fellow, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin2.jpeg" class="w-28 h-28 object-cover rounded" alt="Team Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">APIEKSHYA SHAH</div>
+            <div class="text-xs text-gray-600">Senior Fellow, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin3.png" class="w-28 h-28 object-cover rounded" alt="Team Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">BIBEK RAJ KANDEL</div>
+            <div class="text-xs text-gray-600">Senior Fellow, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin4.jpg" class="w-28 h-28 object-cover rounded" alt="Team Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">BIBHAKAR SHAKYA</div>
+            <div class="text-xs text-gray-600">Senior Distinguished Fellow, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/admin5.png" class="w-28 h-28 object-cover rounded" alt="Team Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">SUJAN THAPA</div>
+            <div class="text-xs text-gray-600">Senior Fellow, NEF</div>
+          </div>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="./assets/ram.jpg" class="w-28 h-28 object-cover rounded" alt="Team Member" />
+          <div class="mt-2 text-center">
+            <div class="font-semibold text-base">SUMAN BASNET</div>
+            <div class="text-xs text-gray-600">Senior Distinguished Fellow, NEF</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
 
    <!-- footer -->
     <footer class="bg-white relative">
@@ -894,7 +699,8 @@
         </div>
       </div>
     </footer>
-    <script src="./assets/main.js"></script>
-    <script src="./assets/menu.js"></script>
-  </body>
+
+
+
+</body>
 </html>

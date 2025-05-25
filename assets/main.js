@@ -146,3 +146,37 @@ document.addEventListener("DOMContentLoaded", function () {
       "https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&mute=1&controls=0&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&loop=1&playlist=kzi1ik6qjZs";
   });
 });
+
+// Language switcher script
+document.addEventListener("DOMContentLoaded", () => {
+  const toggle = document.getElementById("lang-toggle");
+  const indicator = document.getElementById("toggle-indicator");
+
+  let currentLang = "en"; // default
+  const translatableIds = ["title", "description", "cta", "tiktok", "youtube", "reels", "Podcast","tiktok_detail", "reels_detail", "Podcast_detail", "youtube_detail", "people_to_watch", "journalists", "presidents", "prime_ministers", "youth_leaders", "journalists_name", "presidents_name", "prime_ministers_name", "youth_leaders_name"]; 
+
+  function updateLanguage(lang) {
+    translatableIds.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element && translations[lang][id]) {
+        element.innerText = translations[lang][id];
+      }
+    });
+  }
+
+  toggle.addEventListener("click", () => {
+    if (currentLang === "en") {
+      currentLang = "np";
+      indicator.style.left = "calc(100% - 2.75rem)";
+      indicator.textContent = "NEP";
+    } else {
+      currentLang = "en";
+      indicator.style.left = "0.25rem";
+      indicator.textContent = "ENG";
+    }
+
+    updateLanguage(currentLang);
+  });
+
+  updateLanguage(currentLang);
+});

@@ -13,44 +13,70 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-
-    <link rel="icon" href="./assets/logomain.png" type="image/png" />
-    <title>media</title>
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../assets/menu.js"></script>
+    <script src="../assets/main.js"></script>
+    <link rel="icon" href="../assets/logomain.png" type="image/png" />
+    <title>Ramchandra poudel</title>
   </head>
   <body>
     <!-- Navigation Bar -->
     <nav
-      class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg"
+      class="z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg"
     >
       <!-- Logo Section (left Logo) -->
       <a
-        href="./index.html"
+        href="../index.html"
         class="flex items-center flex-shrink-0 cursor-pointer"
       >
-        <img src="./assets/logomain.png" class="h-8 sm:h-12 px-0" alt="Logo" />
+        <img src="../assets/logomain.png" class="h-8 sm:h-12 px-0" alt="Logo" />
         <span
           class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017]"
           >MOVE ON NEPAL</span
         >
       </a>
 
-        <!-- Menu Link for Desktop (now a button) -->
-    <button id="openMenuDesktop" aria-label="Open menu" class="hidden nav text-[12px] cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
-      <span class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-      <span class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-      <span class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-    </button>
+      <!-- Menu Link for Desktop (now a button) -->
+      <button
+        id="openMenuDesktop"
+        aria-label="Open menu"
+        class="hidden nav text-[12px] cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-0 group"
+      >
+        <span
+          class="block w-6 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
+        ></span>
+        <span
+          class="block w-4 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
+        ></span>
+        <span
+          class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
+        ></span>
+      </button>
 
-
-     <div id="openMenuMobile" aria-label="Open menu"  class="flex nav items-center hover:text-red-700">
-    <p class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block">MENU</p>
-    <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
-      <span class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-      <span class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-      <span class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-    </button>
-  </div>
+      <div
+        id="openMenuMobile"
+        aria-label="Open menu"
+        class="flex nav items-center hover:text-red-700"
+      >
+        <p
+          class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block"
+        >
+          MENU
+        </p>
+        <button
+          class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group"
+        >
+          <span
+            class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
+          ></span>
+          <span
+            class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
+          ></span>
+          <span
+            class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
+          ></span>
+        </button>
+      </div>
     </nav>
 
     <!-- Desktop Menu Overlay ( responsive) -->
@@ -67,7 +93,7 @@
         >
           <a href="/index.html">
             <img
-              src="./assets/logomain.png"
+              src="../assets/logomain.png"
               class="h-16 object-contain"
               alt="Logo"
             />
@@ -87,32 +113,32 @@
           </button>
         </div>
         <!-- Main Content Grid (Menu + Sidebar) -->
-   <div class="flex-1 flex flex-col justify-center items-center min-h-screen">
+  <div class="flex-1 flex flex-col justify-center items-center min-h-screen">
       <div class="w-full flex justify-center items-start pb-10 px-4 sm:px-8 md:px-16 pt-8 sm:pt-[110px]">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 w-full max-w-xs sm:max-w-sm md:max-w-5xl mt-2 sm:mt-10">
           <div>
             <ul class="font-[Merriweather] font-bold text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] space-y-8 sm:space-y-10">
               <li class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer">
-                <a href="/media.html">Media</a>
+                <a href="../media.html">Media</a>
               </li>
               <li class="w-fit border-b border-[#bfcbe0] pb-1  hover:text-red-700 hover:border-red-700 cursor-pointer">
-                <a href="/movement.html">Movement</a>
+                <a href="../movement.html">Movement</a>
               </li>
               <li class="w-fit border-b border-[#bfcbe0] pb-1  hover:text-red-700 hover:border-red-700 cursor-pointer">
-                <a href="/mission.html">Mission</a>
+                <a href="../mission.html">Mission</a>
               </li>
             </ul>
           </div>
           <div>
             <ul class="font-[Merriweather] font-bold text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem]  space-y-8 sm:space-y-10">
               <li class="border-b border-[#bfcbe0] pb-1  cursor-pointer hover:text-red-700 hover:border-red-700 w-fit">
-                <a href="/record.html">Podcast</a>
+                <a href="../record.html">Podcast</a>
               </li>
               <li class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer">
-                <a href="/record.html">The Records</a>
+                <a href="../record.html">The Records</a>
               </li>
               <li class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer">
-                <a href="/briefingroom.html">The Briefingroom</a>
+                <a href="../briefingroom.html">The Briefingroom</a>
                 <!-- <span class="text-lg">&#8250;</span> -->
               </li>
             </ul>
@@ -120,10 +146,10 @@
           <div>
             <ul class="font-[Merriweather] font-bold text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] space-y-8 sm:space-y-10">
               <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
-                <a href="/aboutUs.html">About us</a>
+                <a href="../aboutUs.html">About us</a>
               </li>
               <li class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer">
-                <a href="/index.html">Move on Nepal</a>
+                <a href="../index.html">Move on Nepal</a>
               </li>
             </ul>
           </div>
@@ -140,7 +166,7 @@
           >
             <div class="space-y-2 text-center">
               <a
-                href="./contactus.html"
+                href="../contactus.html"
                 class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
                 >Contact Us</a
               >
@@ -207,134 +233,139 @@
     <style>
       @media (max-width: 639px) {
         #menuPanelDesktop .grid {
-          margin-top: 10rem !important; /* Increased from 3.5rem to 5rem */
+          margin-top: 10rem !important;
         }
       }
     </style>
 
-    <!-- main content -->
-    <div
-      class="text-center max-w-3xl mx-auto mt-20 sm:mt-24 md:mt-32 px-4 sm:px-6"
-    >
-      <h1
-        class="font-serif font-bold text-[20px] xs:text-[22px] sm:text-[26px] md:text-[32px] lg:text-[40px] text-[#192f4b] mx-auto"
-      >
-        Nepal’s Future, Told Today: Stories That Inspire Action
-      </h1>
-      <p
-        class="mt-5 sm:mt-7 md:mt-9 font-extralight font-serif text-[12px] xs:text-[13px] sm:text-[15px] md:text-[17px] lg:text-[18px] text-[#192f4b] mx-auto tracking-widest text-left sm:text-center"
-      >
-        Amplifying bold stories, digital voices, and youth-driven narratives
-        from Nepal. We spotlight changemakers, drive civic dialogue, and inspire
-        national progress.
-      </p>
-    </div>
-
-    <!-- Responsive grid layout -->
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-2 gap-y-4 lg:gap-x-4 lg:gap-y-6 mt-10 px-5 sm:px-10"
-    >
-      <!-- Boxes in the first row -->
-      <a
-        href="./mediaPages/mediaPage1.html"
-        class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-      >
-        <div
-          class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
-        >
-          <img
-            src="./assets/admin1.jpeg"
-            alt="Image 1"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <h2 class="mt-2 text-[12px] text-center">BREAKING NEWS</h2>
-      </a>
-
+    <!-- main part -->
+    <section class="px-4 py-10 font-serif space-y-20">
+      <!-- Profile Header -->
       <div
-        class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
+        class="max-w-4xl mx-auto flex flex-col items-center text-center mb-8 space-y-4"
       >
-        <div
-          class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
+        <h1
+          class="text-3xl text-[#0a2458] font-bold tracking-wider font-[Merriweather]"
         >
-          <img
-            src="./assets/admin2.jpeg"
-            alt="Image 2"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <h2 class="mt-2 text-[12px] text-center">GLOBAL EVENTS</h2>
+        RAMCHANDRA POUDEL
+        </h1>
+        <p class="text-gray-600 text-sm nav">PRESIDENT</p>
+        <p
+          class="text-gray-700 text-[15px] leading-relaxed italic tracking-wide max-w-2xl"
+        >
+        Ramchandra Paudel is the current President of Nepal, a veteran democratic leader with decades of experience in national politics. Known for his dedication to parliamentary democracy, he has played a pivotal role in Nepal's political transformation through peaceful advocacy, party leadership, and constitutional engagement.
+        </p>
+        <img
+          src="../assets/ramchandrapoudelmain.jpg"
+          alt="Ramchandra Poudel"
+          class="w-full max-w-xs sm:max-w-md md:max-w-lg lg:max-w-2xl h-auto rounded-lg object-cover shadow-md mb-4"
+        />
       </div>
 
-      <div
-        class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-      >
-        <div
-          class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
-        >
+      <!-- images  -->
+      <div class="my-10 max-w-5xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
           <img
-            src="./assets/admin3.png"
-            alt="Image 3"
-            class="w-full h-full object-cover"
+            src="../assets/ramchandra1.jpg"
+            alt="ramchandra poudel 1"
+            class="w-full h-56 object-cover rounded-lg shadow"
+          />
+          <img
+            src="../assets/ramchnadra2.png"
+            alt="ramchandra poudel 2"
+            class="w-full h-56 object-cover rounded-lg shadow"
+          />
+          <img
+            src="../assets/ram.jpg"
+            alt="ramchandra poudel 3"
+            class="w-full h-56 object-cover rounded-lg shadow"
+          />
+          <img
+            src="../assets/ramchandra4.jpg"
+            alt="Ramchandra Poudel 4"
+            class="w-full h-56 object-cover rounded-lg shadow"
           />
         </div>
-        <h2 class="mt-2 text-[12px] text-center">ECONOMIC UPDATES</h2>
       </div>
 
-      <div
-        class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-      >
-        <div
-          class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
-        >
-          <img
-            src="./assets/admin5.png"
-            alt="Image 4"
-            class="w-full h-full object-cover"
-          />
-        </div>
-        <h2 class="mt-2 text-[12px] text-center">POLITICS</h2>
-      </div>
+      <!-- Related Stories or Videos -->
 
-      <!-- Second row aligned in flex (horizontal) -->
-      <div
-        class="col-span-full flex flex-col sm:flex-row justify-center gap-2 sm:gap-4 md:gap-10"
-      >
-        <!-- Box 5 -->
-        <div
-          class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-        >
-          <div
-            class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
+      <div class="my-10 max-w-5xl mx-auto">
+        <div class="relative gap-4">
+          <!-- Video iframe, initially paused and hidden -->
+          <iframe
+            id="Video"
+            class="w-full h-56 sm:h-[500px] rounded-lg shadow hidden"
+            src="https://youtube.com/embed/NDtgAzRnCNI?si=1&autoplay=0&mute=1&controls=0&loop=1&playlist=NDtgAzRnCNI&enablejsapi=1"
+            frameborder="0"
+            allow="autoplay"
+            allowfullscreen
+          ></iframe>
+          <!-- Play button overlay -->
+          <button
+            id="playBtn"
+            aria-label="Play video"
+            class="absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2 p-5 transition"
+            style="cursor: pointer"
           >
-            <img
-              src="./assets/cabinate.jpeg"
-              alt="Image 5"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <h2 class="mt-2 text-[12px] text-center">THE CABINET</h2>
-        </div>
-
-        <!-- Box 6 -->
-        <div
-          class="text-left transform transition-transform duration-300 hover:-translate-y-3 hover:text-red-800"
-        >
-          <div
-            class="w-72 h-44 sm:w-80 sm:h-72 md:w-72 md:h-60 mx-auto overflow-hidden rounded-lg"
-          >
-            <img
-              src="./assets/sports.jpeg"
-              alt="Image 6"
-              class="w-full h-full object-cover"
-            />
-          </div>
-          <h2 class="mt-2 text-[12px] text-center">SPORTS</h2>
+            <span
+              class="flex items-center justify-center px-6 py-2 sm:px-8 sm:py-3 bg-red-600 rounded-lg text-white shadow-lg hover:bg-red-700 transition-all duration-200 ease-in-out whitespace-nowrap"
+            >
+              <i class="fa-solid fa-play text-sm sm:text-xl"></i>
+            </span>
+          </button>
+          <!-- Thumbnail image as placeholder -->
+          <img
+            id="videoThumb"
+            src="../assets/ramchandra1.jpg"
+            alt="Video thumbnail"
+            class="w-full h-56 sm:h-[500px] rounded-lg shadow object-cover"
+          />
         </div>
       </div>
-    </div>
+      <script>
+        // Play button logic
+        document.getElementById("playBtn").onclick = function () {
+          document.getElementById("playBtn").style.display = "none";
+          document.getElementById("videoThumb").style.display = "none";
+          var iframe = document.getElementById("Video");
+          iframe.classList.remove("hidden");
+          // Play via YouTube API
+          iframe.contentWindow.postMessage(
+            '{"event":"command","func":"playVideo","args":""}',
+            "*"
+          );
+        };
+      </script>
 
-   <!-- footer -->
+      <!-- about dhamala -->
+      <div class="max-w-2xl mx-auto text-gray-700 space-y-6 font-[Merriweather] tracking-wider">
+        <p class="text-[15px] leading-relaxed">
+          <span class="text-7xl text-yellow-700">R</span> am Chandra Paudel, born on 15 October 1944 in Satiswara village of Tanahun district, is the third and current President of Nepal. He assumed office on 13 March 2023, following a distinguished political career spanning over six decades.
+        </p>
+
+        <h3 class="text-lg">Political Career</h3>
+        <p class="text-[15px] leading-relaxed">
+          Ram Chandra Paudel’s political journey began at the young age of 16, deeply inspired by the imprisonment of Nepal’s first elected Prime Minister, B.P. Koirala, in 1960. This event ignited his passion for democracy and social justice. Paudel became actively involved in student politics and played a pivotal role in founding the Nepal Student Union in 1970, which later became one of the strongest student wings of the Nepali Congress.His political career progressed steadily, and he went on to hold several key leadership positions in the government.  
+        </p>
+        <p class="text-[15px] leading-relaxed">He served as the Speaker of the House of Representatives from 1994 to 1999, demonstrating strong parliamentary leadership. Between 1999 and 2002, he held the post of Deputy Prime Minister and Minister for Home Affairs, and later served as the Minister for Peace and Reconstruction from 2007 to 2008, during the critical post-conflict period. From 2011 to 2013, Paudel also led the parliamentary opposition, further reinforcing his legacy as a statesman committed to democratic ideals. His decades-long dedication to public service culminated in his election as the President of Nepal in 2023, representing a broad political coalition led by the Nepali Congress.</p>
+        <h3 class="text-lg">Publications and Honors</h3>
+        <p class="text-[15px] leading-relaxed">
+            An accomplished writer, Paudel has authored several works on political theory and social issues, including:</p>  
+            <ul class="list-disc list-inside ml-4 space-y-1 text-sm">
+                <li>What Nepali Congress Says (1976)</li>
+                <li>Satyagraha – Why and How (1984)</li>
+                <li>Democratic Socialism – A Study (1990)</li>
+                <li>Journey of Faith (1996)</li>
+                <li>Abhisapta Itihas (2004)</li>
+                <li>Socialism – In New Context (2012)</li>
+                <li>Agricultural Revolution and Socialism (2013)</li>
+            </ul>
+            <p class="text-[15px] leading-relaxed">In recognition of his contributions to enhancing Nepal-Japan relations, he was awarded the Grand Cordon of the Order of the Rising Sun in 2020.</p>
+            <p  class="text-[15px] leading-relaxed">President Ram Chandra Paudel's life reflects a steadfast commitment to democratic values, social justice, and national development, marking him as a significant figure in Nepal's contemporary history.</p>
+        </div>
+    </section>
+       <!-- footer -->
     <footer class="bg-white relative">
       <!-- Divider -->
       <div class="w-full flex justify-center pt-14">
@@ -354,22 +385,22 @@
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./index.html">Home</a>
+                <a href="../index.html">Home</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./media.html">Media</a>
+                <a href="../media.html">Media</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./movement.html">Movement</a>
+                <a href="../movement.html">Movement</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./mission.html">Mission</a>
+                <a href="../mission.html">Mission</a>
               </li>
             </ul>
           </div>
@@ -383,7 +414,7 @@
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./scotus.html">Politics</a>
+                <a href="../scotus.html">Politics</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
@@ -432,7 +463,7 @@
               <li
                 class="hover:text-red-700 "
               >
-                <a href="/contactus.html">Contact Us</a>
+                <a href="../contactus.html">Contact Us</a>
               </li>
                 <div>
               <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
@@ -478,7 +509,7 @@
       </div>
       <div class="px-20 py-5 nav flex-col md:flex-row justify-evenly items-center text-gray-600 text-sm space-x-0 md:space-x-8 space-y-4 md:space-y-0 hidden md:flex">
           <div class="hover:text-red-700 ">
-        <a href="/privacyPolicy.html">Privacy Policy</a>
+        <a href="../privacyPolicy.html">Privacy Policy</a>
           </div>
           <div class="hover:text-red-700 ">
         <a href="#">Copyright Policy</a>
@@ -489,7 +520,7 @@
         <div class="text-gray-600  cursor-pointer">
           Developed by
           <a href="https://kantipurinfotech.com/"><img
-            src="./assets/kit.png"
+            src="../assets/kit.png"
             alt="KIT logo"
             class="w-20 h-full inline-block ml-2"
           /></a>
@@ -503,22 +534,22 @@
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./index.html">Home</a>
+              <a href="../index.html">Home</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./media.html">Media</a>
+              <a href="../media.html">Media</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./movement.html">Movement</a>
+              <a href="../movement.html">Movement</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./mission.html">Mission</a>
+              <a href="../mission.html">Mission</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
@@ -528,7 +559,7 @@
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./scotus.html">Politics</a>
+              <a href="../scotus.html">Politics</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
@@ -569,12 +600,12 @@
             <li
               class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
             >
-              <a href="/contactus.html">Contact Us</a>
+              <a href="../contactus.html">Contact Us</a>
             </li>
             <li
               class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
             >
-              <a href="/privacyPolicy.html">Privacy Policy</a>
+              <a href="../privacyPolicy.html">Privacy Policy</a>
             </li>
             <li
               class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
@@ -622,7 +653,7 @@
           <h2 class="text-sm text-gray-600 hover:text-blue-700 cursor-pointer">
             Developed by
             <a href="https://kantipurinfotech.com/"><img
-              src="./assets/kit.png"
+              src="../assets/kit.png"
               alt="KIT logo"
               class="m-2 w-20 h-full inline-block"
             /></a>
@@ -630,6 +661,5 @@
         </div>
       </div>
     </footer>
-    <script src="./assets/menu.js"></script>
   </body>
 </html>

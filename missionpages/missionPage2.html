@@ -30,53 +30,35 @@
         class="flex items-center flex-shrink-0 cursor-pointer"
       >
         <img src="../assets/logomain.png" class="h-8 sm:h-12 px-0" alt="Logo" />
-        <span
-          class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017]"
-          >MOVE ON NEPAL</span
-        >
+            <span class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017] hidden sm:inline">MOVE ON NEPAL</span>
       </a>
 
-      <!-- Menu Link for Desktop (now a button) -->
-      <button
-        id="openMenuDesktop"
-        aria-label="Open menu"
-        class="hidden nav text-[12px] cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-0 group"
-      >
-        <span
-          class="block w-6 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-        ></span>
-        <span
-          class="block w-4 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-        ></span>
-        <span
-          class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-        ></span>
-      </button>
+<!-- Language Switcher -->
+  <div class="flex items-center space-x-6">
+ <div class="flex justify-end">
+  <div class="relative w-24 h-10 bg-[#0a2458] rounded-full cursor-pointer flex items-center px-1" id="lang-toggle">
+    <div id="toggle-indicator"
+         class="absolute left-1 w-10 h-8 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-xs font-semibold z-10">
+      ENG
+    </div>
+    <div class="flex justify-between w-full text-xs font-semibold text-white px-2 z-0">
+      <span>ENG</span>
+      <span>NEP</span>
+    </div>
+  </div>
+</div>
 
-      <div
-        id="openMenuMobile"
-        aria-label="Open menu"
-        class="flex nav items-center hover:text-red-700"
-      >
-        <p
-          class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block"
-        >
-          MENU
-        </p>
-        <button
-          class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group"
-        >
-          <span
-            class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-          ></span>
-          <span
-            class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-          ></span>
-          <span
-            class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-          ></span>
-        </button>
-      </div>
+
+    <!-- menu -->
+    <div id="openMenuMobile" aria-label="Open menu" class="flex nav items-center hover:text-red-700">
+      <p class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block">MENU</p>
+      <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
+        <span class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+        <span class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+        <span class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+      </button>
+    </div>
+  </div>
     </nav>
 
     <!-- Desktop Menu Overlay ( responsive) -->
@@ -245,13 +227,15 @@
         class="max-w-4xl mx-auto flex flex-col items-center text-center mb-8 space-y-4"
       >
         <h1
+        id="ramchandra_poudel"
           class="text-3xl text-[#0a2458] font-bold tracking-wider font-[Merriweather]"
         >
         RAMCHANDRA POUDEL
         </h1>
-        <p class="text-gray-600 text-sm nav">PRESIDENT</p>
+        <p id="ramchandra_poudel_p" class="text-gray-600 text-sm nav">PRESIDENT</p>
         <p
-          class="text-gray-700 text-[15px] leading-relaxed italic tracking-wide max-w-2xl"
+        id="ramchandra_poudel_detail"  
+        class="text-gray-700 text-[15px] leading-relaxed italic tracking-wide max-w-2xl"
         >
         Ramchandra Paudel is the current President of Nepal, a veteran democratic leader with decades of experience in national politics. Known for his dedication to parliamentary democracy, he has played a pivotal role in Nepal's political transformation through peaceful advocacy, party leadership, and constitutional engagement.
         </p>
@@ -338,31 +322,31 @@
         };
       </script>
 
-      <!-- about dhamala -->
+      <!-- about ram chandra poudel -->
       <div class="max-w-2xl mx-auto text-gray-700 space-y-6 font-[Merriweather] tracking-wider">
-        <p class="text-[15px] leading-relaxed">
+        <p id="ramchandra_poudel_description" class="text-[15px] leading-relaxed">
           <span class="text-7xl text-yellow-700">R</span> am Chandra Paudel, born on 15 October 1944 in Satiswara village of Tanahun district, is the third and current President of Nepal. He assumed office on 13 March 2023, following a distinguished political career spanning over six decades.
         </p>
 
-        <h3 class="text-lg">Political Career</h3>
-        <p class="text-[15px] leading-relaxed">
+        <h3 id="ram_politics" class="text-lg">Political Career</h3>
+        <p id="ram_politics_detail" class="text-[15px] leading-relaxed">
           Ram Chandra Paudel’s political journey began at the young age of 16, deeply inspired by the imprisonment of Nepal’s first elected Prime Minister, B.P. Koirala, in 1960. This event ignited his passion for democracy and social justice. Paudel became actively involved in student politics and played a pivotal role in founding the Nepal Student Union in 1970, which later became one of the strongest student wings of the Nepali Congress.His political career progressed steadily, and he went on to hold several key leadership positions in the government.  
         </p>
-        <p class="text-[15px] leading-relaxed">He served as the Speaker of the House of Representatives from 1994 to 1999, demonstrating strong parliamentary leadership. Between 1999 and 2002, he held the post of Deputy Prime Minister and Minister for Home Affairs, and later served as the Minister for Peace and Reconstruction from 2007 to 2008, during the critical post-conflict period. From 2011 to 2013, Paudel also led the parliamentary opposition, further reinforcing his legacy as a statesman committed to democratic ideals. His decades-long dedication to public service culminated in his election as the President of Nepal in 2023, representing a broad political coalition led by the Nepali Congress.</p>
-        <h3 class="text-lg">Publications and Honors</h3>
-        <p class="text-[15px] leading-relaxed">
+        <p id="ram_politics_details" class="text-[15px] leading-relaxed">He served as the Speaker of the House of Representatives from 1994 to 1999, demonstrating strong parliamentary leadership. Between 1999 and 2002, he held the post of Deputy Prime Minister and Minister for Home Affairs, and later served as the Minister for Peace and Reconstruction from 2007 to 2008, during the critical post-conflict period. From 2011 to 2013, Paudel also led the parliamentary opposition, further reinforcing his legacy as a statesman committed to democratic ideals. His decades-long dedication to public service culminated in his election as the President of Nepal in 2023, representing a broad political coalition led by the Nepali Congress.</p>
+        <h3 id="ram_publication" class="text-lg">Publications and Honors</h3>
+        <p id="ram_publication_detail" class="text-[15px] leading-relaxed">
             An accomplished writer, Paudel has authored several works on political theory and social issues, including:</p>  
             <ul class="list-disc list-inside ml-4 space-y-1 text-sm">
-                <li>What Nepali Congress Says (1976)</li>
-                <li>Satyagraha – Why and How (1984)</li>
-                <li>Democratic Socialism – A Study (1990)</li>
-                <li>Journey of Faith (1996)</li>
-                <li>Abhisapta Itihas (2004)</li>
-                <li>Socialism – In New Context (2012)</li>
-                <li>Agricultural Revolution and Socialism (2013)</li>
+                <li id="publication_detail1">What Nepali Congress Says (1976)</li>
+                <li id="publication_detail2">Satyagraha – Why and How (1984)</li>
+                <li id="publication_detail3">Democratic Socialism – A Study (1990)</li>
+                <li id="publication_detail4">Journey of Faith (1996)</li>
+                <li id="publication_detail5">Abhisapta Itihas (2004)</li>
+                <li id="publication_detail6">Socialism – In New Context (2012)</li>
+                <li id="publication_detail7">Agricultural Revolution and Socialism (2013)</li>
             </ul>
-            <p class="text-[15px] leading-relaxed">In recognition of his contributions to enhancing Nepal-Japan relations, he was awarded the Grand Cordon of the Order of the Rising Sun in 2020.</p>
-            <p  class="text-[15px] leading-relaxed">President Ram Chandra Paudel's life reflects a steadfast commitment to democratic values, social justice, and national development, marking him as a significant figure in Nepal's contemporary history.</p>
+            <p id="publication_last1" class="text-[15px] leading-relaxed">In recognition of his contributions to enhancing Nepal-Japan relations, he was awarded the Grand Cordon of the Order of the Rising Sun in 2020.</p>
+            <p id="publication_last2"  class="text-[15px] leading-relaxed">President Ram Chandra Paudel's life reflects a steadfast commitment to democratic values, social justice, and national development, marking him as a significant figure in Nepal's contemporary history.</p>
         </div>
     </section>
        <!-- footer -->
@@ -661,5 +645,7 @@
         </div>
       </div>
     </footer>
+    <script src="../assets/eng_to_nepali.js"></script>
+    <script src="../assets/main.js"></script>
   </body>
 </html>

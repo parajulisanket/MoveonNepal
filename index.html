@@ -47,24 +47,24 @@
       class="h-8 sm:h-12 px-0"
       alt="Logo"
     />
-    <span class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017]">MOVE ON NEPAL</span>
+    <span class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017] hidden sm:inline">MOVE ON NEPAL</span>
   </a>
 
   <!-- Language Switcher -->
   <div class="flex items-center space-x-6">
-    <div class="flex items-center justify-end">
-  <!-- Language Toggle Switch -->
-    <div class="relative w-24 h-10 bg-[#0a2458] rounded-full cursor-pointer flex items-center px-1" id="lang-toggle">
-    <!-- Slider circle -->
-    <div id="toggle-indicator" class="absolute left-1 w-10 h-8 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-xs font-semibold z-10">ENG</div>
-    
-    <!-- Labels underneath for layout -->
+ <div class="flex justify-end">
+  <div class="relative w-24 h-10 bg-[#0a2458] rounded-full cursor-pointer flex items-center px-1" id="lang-toggle">
+    <div id="toggle-indicator"
+         class="absolute left-1 w-10 h-8 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-xs font-semibold z-10">
+      ENG
+    </div>
     <div class="flex justify-between w-full text-xs font-semibold text-white px-2 z-0">
       <span>ENG</span>
       <span>NEP</span>
-      </div>
-      </div>
     </div>
+  </div>
+</div>
+
 
     <!-- menu -->
     <div id="openMenuMobile" aria-label="Open menu" class="flex nav items-center hover:text-red-700">
@@ -333,7 +333,7 @@
 </div>
 
 <!-- Part 4 -->
-<div id="mission" class="relative">
+<div  class="relative">
   <!-- Background Image -->
   <img
     src="./assets/parliament1.jpeg"
@@ -428,7 +428,7 @@
 <!-- last part -->
 <div id="moveonstories" class="bg-[#f1f6fc]">
   <div class="flex justify-between px-6 sm:px-10 md:px-12 py-6 sm:py-10 md:py-12">
-    <h2 class="text-xl sm:text-2xl md:text-3xl cat-card-title tracking-widest">
+    <h2 id="move_on_stories" class="text-xl sm:text-2xl md:text-3xl cat-card-title tracking-widest">
       MOVE ON STORIES
     </h2>
     <div class="hover:text-red-700 space-x-4 cursor-pointer flex">
@@ -447,12 +447,15 @@
             <img src="./assets/politics1.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
           </div>
           <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-            <h3
+            <h3 
+              id="politics"
               class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
             >
               POLITICS
             </h3>
-            <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+            <p
+              id="politics_detail" 
+            class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
               Stay informed on political, new policies, party alliances, and government decisions from Kathmandu to the provinces.
             </p>
           </div>
@@ -469,11 +472,14 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
+          id="Economy"
             class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             ECONOMY
           </h3>
-          <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+          <p
+          id="economy_detail" 
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
             Explore updates on inflation, trade, remittance, economic recovery, and budget announcements.
           </p>
         </div>
@@ -490,11 +496,14 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
+          id="business"
             class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             BUSINESS
           </h3>
-          <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+          <p 
+          id="business_detail"
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
             Breaking business news including stock movements, financial trends, and corporate developments in Nepal.
           </p>
         </div>
@@ -511,11 +520,14 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
+          id="global_nepali"
             class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             GLOBAL NEPALI
           </h3>
-          <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+          <p 
+          id="global_nepali_detail"
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
               Insight into the lives of Nepali migrants, diaspora news, and their impact on Nepal's economy and culture.
           </p>
         </div>
@@ -531,11 +543,14 @@
           </div>
           <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
             <h3
+            id="tech"
               class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
             >
               TECH
             </h3>
-            <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+            <p 
+            id="tech_detail" 
+            class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
                 News and insights on tech startups, innovation hubs, and digital transformation shaping Nepal’s future.
             </p>
           </div>
@@ -552,11 +567,14 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
+          id="trends"
             class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             TRENDS
           </h3>
-          <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+          <p 
+          id="trends_detail"
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
               Track the latest trends in pop culture, technology, fashion, and social media shaping daily life and conversations.
           </p>
         </div>
@@ -573,11 +591,14 @@
         </div>
         <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
           <h3
+          id="disaster"
             class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
           >
             DISASTERS ALERTS
           </h3>
-          <p class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+          <p 
+          id="disaster_detail"
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
             Real-time coverage of earthquakes, landslides, and emergency updates affecting Nepal’s regions.
           </p>
         </div>
@@ -884,8 +905,8 @@
         </div>
       </div>
     </footer>
-    <script src="./assets/main.js"></script>
     <script src="./assets/eng_to_nepali.js"></script>
+    <script src="./assets/main.js"></script>
     <script src="./assets/menu.js"></script>
   </body>
 </html>

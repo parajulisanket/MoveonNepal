@@ -38,17 +38,35 @@
       class="h-8 sm:h-12 px-0"
       alt="Logo"
     />
-    <span class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017]">MOVE ON NEPAL</span>
+        <span class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017] hidden sm:inline">MOVE ON NEPAL</span>
   </a>
 
 
-  <div id="openMenuMobile" aria-label="Open menu"  class="flex nav items-center hover:text-red-700">
-    <p class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block">MENU</p>
-    <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
-      <span class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-      <span class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-      <span class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-    </button>
+<!-- Language Switcher -->
+  <div class="flex items-center space-x-6">
+ <div class="flex justify-end">
+  <div class="relative w-24 h-10 bg-[#0a2458] rounded-full cursor-pointer flex items-center px-1" id="lang-toggle">
+    <div id="toggle-indicator"
+         class="absolute left-1 w-10 h-8 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-xs font-semibold z-10">
+      ENG
+    </div>
+    <div class="flex justify-between w-full text-xs font-semibold text-white px-2 z-0">
+      <span>ENG</span>
+      <span>NEP</span>
+    </div>
+  </div>
+</div>
+
+
+    <!-- menu -->
+    <div id="openMenuMobile" aria-label="Open menu" class="flex nav items-center hover:text-red-700">
+      <p class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block">MENU</p>
+      <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
+        <span class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+        <span class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+        <span class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+      </button>
+    </div>
   </div>
       </nav>
       <!-- Desktop Menu Overlay ( responsive) -->
@@ -159,16 +177,18 @@
         class="absolute top-52 sm:top-56 md:top-64 left-8 sm:left-16 lg:left-24 mb-12 z-10 nav"
       >
         <h3
+        id="our"
           class="text-[#021a45] tracking-widest w-28 sm:w-36 font-bold text-lg sm:text-xl"
         >
           OUR
         </h3>
         <h1
+        id="mission"
           class="text-[#021a45] tracking-widest font-semibold text-[40px] sm:text-[60px] md:text-[80px] leading-none m-0"
         >
           MISSION
         </h1>
-        <div
+        <div id="mission_detail"
           class="text-[#021a45] max-w-auto text-center text-[7px] sm:text-[10px] md:text-[12px] tracking-wider bg-[#e7c190] p-1 sm:p-3 rounded-full hover:bg-white cursor-pointer m-1 sm:m-2"
         >
           <p>
@@ -1171,7 +1191,10 @@ Promoting Preventive Care
         </div>
       </div>
     </footer>
+<script src="./assets/eng_to_nepali.js"></script>
+<script defer src="./assets/main.js" ></script>
     <script src="./assets/menu.js"></script>
+
 <script>
   // Hide sticky nav when menu is open
   document.addEventListener("DOMContentLoaded", () => {

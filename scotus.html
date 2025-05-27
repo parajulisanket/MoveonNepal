@@ -70,29 +70,32 @@
               <span class="font-bold font-serif text-base sm:text-lg text-white tracking-wider whitespace-nowrap hidden sm:inline">MOVE ON NEPAL</span>
         </a>
 
-   <!-- Menu Links for Desktop -->
-      <div
-        id="openMenuMobile"
-        aria-label="Open menu"
-        class="flex nav items-center"
-      >
-        <p class="text-white text-[15px] cursor-pointer hidden sm:block">
-          MENU
-        </p>
-        <button
-          class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group"
-        >
-          <span
-            class="block w-6 h-[1.5px] bg-white mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-white"
-          ></span>
-          <span
-            class="block w-4 h-[1.5px] bg-white mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-white"
-          ></span>
-          <span
-            class="block w-6 h-[1.5px] bg-white transition-all duration-300 self-start group-hover:w-7 group-hover:bg-white"
-          ></span>
-        </button>
-      </div>
+  <!-- Language Switcher -->
+  <div class="flex items-center space-x-6">
+ <div class="flex justify-end">
+  <div class="relative w-24 h-10 bg-[#0a2458] rounded-full cursor-pointer flex items-center px-1" id="lang-toggle">
+    <div id="toggle-indicator"
+         class="absolute left-1 w-10 h-8 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-xs font-semibold z-10">
+      ENG
+    </div>
+    <div class="flex justify-between w-full text-xs font-semibold text-white px-2 z-0">
+      <span>ENG</span>
+      <span>NEP</span>
+    </div>
+  </div>
+</div>
+
+
+    <!-- menu -->
+ <div id="openMenuMobile" aria-label="Open menu" class="flex nav items-center hover:text-red-700">
+  <p class="text-[15px] text-gray-700 text-white cursor-pointer hidden sm:block">MENU</p>
+  <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
+    <span class="line block w-6 h-[1.5px] bg-white mb-1.5 transition-all duration-300 self-start"></span>
+    <span class="line block w-4 h-[1.5px] bg-white mb-1.5 transition-all duration-300 self-start "></span>
+    <span class="line block w-6 h-[1.5px] bg-white transition-all duration-300 self-start "></span>
+  </button>
+</div>
+  </div>
       </nav>
       
       <!-- menu part of navbar  -->
@@ -887,6 +890,8 @@
         </div>
       </div>
     </footer>
+    <script src="./assets/eng_to_nepali.js"></script>
+    <script src="./assets/main.js"></script>
     <script src="./assets/menu.js"></script>
   </body>
 </html>

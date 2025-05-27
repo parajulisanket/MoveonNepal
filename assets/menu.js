@@ -31,13 +31,12 @@
 //   }
 // });
 
-
 document.addEventListener("DOMContentLoaded", () => {
   const menuPanel = document.getElementById("menuPanelDesktop");
   const openMenuBtn = document.getElementById("openMenuDesktop");
   const openMenuMobileBtn = document.getElementById("openMenuMobile");
   const closeMenuBtn = document.getElementById("closeMenuDesktop");
-  const sectionLabel = document.getElementById("section-label-container"); 
+  const sectionLabel = document.getElementById("section-label-container");
 
   function openMenu() {
     menuPanel.classList.remove("hidden");
@@ -74,4 +73,22 @@ document.addEventListener("DOMContentLoaded", () => {
     openMenuMobileBtn.addEventListener("click", openMenu);
     closeMenuBtn.addEventListener("click", closeMenu);
   }
+});
+
+// hamburger menu
+
+const menuBtn = document.querySelector("#openMenuMobile .group");
+const lines = menuBtn.querySelectorAll(".line");
+
+menuBtn.addEventListener("mouseenter", () => {
+  lines[0].classList.add("animate-slide-left");
+  lines[1].classList.add("animate-slide-left", "delay-100");
+  lines[2].classList.add("animate-slide-left", "delay-200");
+});
+
+menuBtn.addEventListener("mouseleave", () => {
+  lines.forEach((line) => {
+    line.classList.remove("animate-slide-left", "delay-100", "delay-200");
+    void line.offsetWidth;
+  });
 });

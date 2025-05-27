@@ -33,47 +33,32 @@
             <span class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017] hidden sm:inline">MOVE ON NEPAL</span>
       </a>
 
-      <!-- Menu Link for Desktop (now a button) -->
-      <button
-        id="openMenuDesktop"
-        aria-label="Open menu"
-        class="hidden nav text-[12px] cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-0 group"
-      >
-        <span
-          class="block w-6 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-        ></span>
-        <span
-          class="block w-4 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-        ></span>
-        <span
-          class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-        ></span>
-      </button>
+  <!-- Language Switcher -->
+  <div class="flex items-center space-x-6">
+ <div class="flex justify-end">
+  <div class="relative w-24 h-10 bg-[#0a2458] rounded-full cursor-pointer flex items-center px-1" id="lang-toggle">
+    <div id="toggle-indicator"
+         class="absolute left-1 w-10 h-8 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-xs font-semibold z-10">
+      ENG
+    </div>
+    <div class="flex justify-between w-full text-xs font-semibold text-white px-2 z-0">
+      <span>ENG</span>
+      <span>NEP</span>
+    </div>
+  </div>
+</div>
 
-      <div
-        id="openMenuMobile"
-        aria-label="Open menu"
-        class="flex nav items-center hover:text-red-700"
-      >
-        <p
-          class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block"
-        >
-          MENU
-        </p>
-        <button
-          class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group"
-        >
-          <span
-            class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-          ></span>
-          <span
-            class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-          ></span>
-          <span
-            class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-          ></span>
-        </button>
-      </div>
+
+    <!-- menu -->
+    <div id="openMenuMobile" aria-label="Open menu" class="flex nav items-center hover:text-red-700">
+      <p class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block">MENU</p>
+      <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
+        <span class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+        <span class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+        <span class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+      </button>
+    </div>
+  </div>
     </nav>
 
     <!-- Desktop Menu Overlay ( responsive) -->
@@ -241,12 +226,14 @@
         class="max-w-4xl mx-auto flex flex-col items-center text-center mb-8 space-y-4"
       >
         <h1
+        id="mission_Ranju_Darshana"
           class="text-3xl text-[#0a2458] font-bold tracking-wider font-[Merriweather]"
         >
           RANJU DARSHANA
         </h1>
-        <p class="text-gray-600 text-sm nav">YOUTH LEADER</p>
+        <p id="mission_Ranju_Darshana_youth_leader" class="text-gray-600 text-sm nav">YOUTH LEADER</p>
         <p
+        id="mission_Ranju_Darshana_description"
           class="text-gray-700 text-[15px] leading-relaxed italic tracking-wide max-w-2xl"
         >
   Ranju Darshana is a young political activist and a rising voice in Nepal’s new-generation leadership. She gained national attention as a Kathmandu mayoral candidate at just 21, representing the Bibeksheel party. Her bold vision for clean and accountable politics continues to inspire youth participation in Nepal’s political scene.        </p>
@@ -333,23 +320,23 @@
         };
       </script>
 
-      <!-- about parchandey -->
+      <!-- about ranju-->
       <div class="max-w-2xl mx-auto text-gray-700 space-y-6 font-[Merriweather] trackuing-widest">
-        <p class="text-[15px] leading-relaxed">
+        <p id="mission_Ranju_Darshana_detail" class="text-[15px] leading-relaxed">
           <span class="text-7xl text-yellow-700">R</span> anju Darshana is a Nepalese youth activist and politician. She has been active in politics from very young age of seventeen. She became an iconic person after her candidacy for mayor of Kathmandu Metropolitan City in the Nepalese local level election of 2017.
         </p>
- <h3 class="text-lg">Early Life & Education</h3>
-  <p class="text-[15px] leading-relaxed">
+ <h3 id="mission_Ranju_Darshana_education" class="text-lg">Early Life & Education</h3>
+  <p id="mission_Ranju_Darshana_education_detail" class="text-[15px] leading-relaxed">
     Raised in Kathmandu, Ranju was deeply influenced by social justice issues and joined political activism as a teenager. She holds a Bachelor’s degree in Development Studies and a Master’s in Political Science, as well as a postgraduate degree in Counseling Psychology. Her academic and activist background informs her advocacy on mental health, education, and youth empowerment.
   </p>
 
-  <h3 class="text-lg ">Political Activism & Public Engagement</h3>
-  <p class="text-[15px] leading-relaxed">
+  <h3 id="mission_Ranju_Darshana_political_activism" class="text-lg ">Political Activism & Public Engagement</h3>
+  <p id="mission_Ranju_Darshana_political_activism_detail" class="text-[15px] leading-relaxed">
     Ranju became a symbol of new-generation politics, challenging the traditional leadership structure with a message of transparency and accountability. Her involvement in anti-corruption campaigns, earthquake relief efforts, and citizen rights advocacy — including her stance on gender equality in citizenship laws — reflects her commitment to grassroots activism and policy change.
   </p>
 
-  <h3 class="text-lg ">Current Role</h3>
-  <p class="text-[15px] leading-relaxed">
+  <h3 id="mission_Ranju_Darshana_current_role" class="text-lg ">Current Role</h3>
+  <p id="mission_Ranju_Darshana_current_role_detail" class="text-[15px] leading-relaxed">
     Alongside her activism, Ranju serves as a faculty member at Thames International College where she teaches Nepalese politics and history. She continues to inspire civic awareness, especially among young people, with a focus on building a more inclusive and responsible democratic society.
   </p>
 
@@ -651,5 +638,7 @@
         </div>
       </div>
     </footer>
+    <script src="../assets/eng_to_nepali.js"></script>
+    <script src="../assets/menu.js"></script>
   </body>
 </html>

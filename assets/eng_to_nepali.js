@@ -98,7 +98,43 @@ const translations = {
       "In recognition of his contributions to enhancing Nepal-Japan relations, he was awarded the Grand Cordon of the Order of the Rising Sun in 2020.",
     publication_last2:
       "President Ram Chandra Paudel's life reflects a steadfast commitment to democratic values, social justice, and national development, marking him as a significant figure in Nepal's contemporary history.",
+    mission_Puspa_kamal_Dahal: "PUSPA KUMAR DAHAL",
+    mission_Puspa_kamal_Dahal_prime_minister: "PRIME MINISTER",
+    mission_Puspa_kamal_Dahal_description:
+      "Pushpa Kamal Dahal, widely known as 'Prachanda', is a key political leader in Nepal. He led the Maoist insurgency that played a major role in ending the monarchy and establishing a republic. After joining mainstream politics, he served multiple times as Prime Minister and remains a central figure in shaping Nepal’s democratic and federal system.",
+    mission_Puspa_kamal_Dahal_detail:
+      "Pushpa Kamal Dahal, popularly known as Prachanda, is a major political figure in Nepal who played a central role in the country's transformation from monarchy to federal republic. As the leader of the Maoist insurgency during the Nepalese Civil War (1996–2006), he led a decade-long armed struggle demanding political change and social justice. After the peace process, he transitioned into democratic politics and emerged as a national leader.",
+    mission_Puspa_kamal_Dahal_communist:
+      "In the 1980s and early 1990s, Dahal played a significant role in underground communist politics. He became the General Secretary of the Communist Party of Nepal (Maoist) in 1994 and advocated for radical change in the structure of the Nepali state. On February 13, 1996, under his leadership, the Maoist party launched a 'People’s War' against the government, demanding a republic, social justice, and the end of feudalism.",
+    mission_Puspa_kamal_Dahal_communist_politics:
+      "Rise Through Communist Politics",
+    mission_Puspa_kamal_Dahal_civil_war: "Civil War & Peace Process",
+    mission_Puspa_kamal_Dahal_civil_war_detail:
+      "The Maoist insurgency lasted for ten years and claimed over 17,000 lives. Despite being labeled a militant leader, Dahal became a key negotiator during the peace process that ended the civil war in 2006. He signed the Comprehensive Peace Accord and led the Maoists into mainstream politics. The movement culminated in the abolition of the monarchy in 2008 and the establishment of the Federal Democratic Republic of Nepal.",
+    mission_Puspa_kamal_Dahal_politics_journey: "Political journey",
+    mission_Puspa_kamal_Dahal_politics_journey_detail:
+      "Dahal served as the first Prime Minister of the Federal Democratic Republic of Nepal in 2008 following the abolition of the monarchy. He has held the position of Prime Minister three times and has been instrumental in drafting Nepal's new constitution and establishing a federal system. As the chairperson of the CPN (Maoist Centre), he remains an influential figure in coalition politics and national governance.",
+    mission_Puspa_kamal_Dahal_legacy: "Legacy & Influence",
+    mission_Puspa_kamal_Dahal_legacy_detail:
+      "Despite controversies surrounding his past as a rebel leader, Dahal is regarded as a transformative force in Nepal’s political history. His journey from guerrilla commander to head of state symbolizes Nepal’s complex path to peace and democracy. He continues to be an active voice in shaping the country's political landscape and development goals.",
+    mission_Ranju_Darshana: "RANJU DARSHANA",
+    mission_Ranju_Darshana_youth_leader: "YOUTH LEADER",
+    mission_Ranju_Darshana_description:
+      "Ranju Darshana is a young political activist and a rising voice in Nepal’s new-generation leadership. She gained national attention as a Kathmandu mayoral candidate at just 21, representing the Bibeksheel party. Her bold vision for clean and accountable politics continues to inspire youth participation in Nepal’s political scene.",
+    mission_Ranju_Darshana_detail:
+      "Ranju Darshana is a Nepalese youth activist and politician. She has been active in politics from very young age of seventeen. She became an iconic person after her candidacy for mayor of Kathmandu Metropolitan City in the Nepalese local level election of 2017.",
+    mission_Ranju_Darshana_education: "Early Life & Education",
+    mission_Ranju_Darshana_education_detail:
+      "Raised in Kathmandu, Ranju was deeply influenced by social justice issues and joined political activism as a teenager. She holds a Bachelor’s degree in Development Studies and a Master’s in Political Science, as well as a postgraduate degree in Counseling Psychology. Her academic and activist background informs her advocacy on mental health, education, and youth empowerment.",
+    mission_Ranju_Darshana_political_activism:
+      "Political Activism & Public Engagement",
+    mission_Ranju_Darshana_political_activism_detail:
+      "Ranju became a symbol of new-generation politics, challenging the traditional leadership structure with a message of transparency and accountability. Her involvement in anti-corruption campaigns, earthquake relief efforts, and citizen rights advocacy — including her stance on gender equality in citizenship laws — reflects her commitment to grassroots activism and policy change.",
+    mission_Ranju_Darshana_current_role: "Current Role",
+    mission_Ranju_Darshana_current_role_detail:
+      "Alongside her activism, Ranju serves as a faculty member at Thames International College where she teaches Nepalese politics and history. She continues to inspire civic awareness, especially among young people, with a focus on building a more inclusive and responsible democratic society.",
   },
+  // Nepali translations
   np: {
     title: "रनडाउन",
     description:
@@ -194,5 +230,39 @@ const translations = {
       "नेपाल-जापान सम्बन्धलाई सुदृढ पार्नमा उनको योगदानको कदर गर्दै उनलाई २०२० मा ग्रान्ड कोर्डन अफ द अर्डर अफ द राइजिङ सनले सम्मानित गरेको थियो।",
     publication_last2:
       "राष्ट्रपति राम चन्द्र पौडेलको जीवन लोकतान्त्रिक मूल्य, सामाजिक न्याय र राष्ट्रिय विकासप्रति अडिग प्रतिबद्धताको प्रतिबिम्ब हो, जसले उनलाई नेपालको समकालीन इतिहासमा एक महत्वपूर्ण व्यक्तित्व बनाएको छ।",
+    mission_Puspa_kamal_Dahal: "पुष्पकमल दाहाल",
+    mission_Puspa_kamal_Dahal_prime_minister: "प्रधानमन्त्री",
+    mission_Puspa_kamal_Dahal_description:
+      "पुष्पकमल दाहाल, जसलाई प्रचण्ड भनेर चिनिन्छ, नेपालका प्रमुख राजनीतिक नेता हुन्। उनले माओवादी विद्रोहको नेतृत्व गरेका थिए जसले राजतन्त्र अन्त्य गर्न र गणतन्त्र स्थापना गर्न महत्त्वपूर्ण भूमिका खेलेको थियो। मुख्यधारा राजनीतिमा सामेल भएपछि उनले पटक-पटक प्रधानमन्त्रीको रूपमा सेवा गरेका छन् र नेपालको लोकतान्त्रिक र संघीय प्रणालीलाई आकार दिनमा केन्द्रिय व्यक्ति बनेका छन्।",
+    mission_Puspa_kamal_Dahal_detail:
+      "पुष्पकमल दाहाल, जसलाई प्रचण्ड भनेर चिनिन्छ, नेपालका प्रमुख राजनीतिक नेता हुन्। उनले माओवादी विद्रोहको नेतृत्व गरेका थिए जसले राजतन्त्र अन्त्य गर्न र गणतन्त्र स्थापना गर्न महत्त्वपूर्ण भूमिका खेलेको थियो। मुख्यधारा राजनीतिमा सामेल भएपछि उनले पटक-पटक प्रधानमन्त्रीको रूपमा सेवा गरेका छन् र नेपालको लोकतान्त्रिक र संघीय प्रणालीलाई आकार दिनमा केन्द्रिय व्यक्ति बनेका छन्।",
+    mission_Puspa_kamal_Dahal_communist:
+      "१९८० र ९० को दशकमा, दाहालले भूमिगत कम्युनिस्ट राजनीतिमा महत्त्वपूर्ण भूमिका खेले। उनले १९९४ मा नेपाल कम्युनिस्ट पार्टी (माओवादी) को महासचिवको रूपमा काम गरे र नेपालको राज्य संरचनामा मौलिक परिवर्तनको वकालत गरे। १३ फेब्रुअरी १९९६ मा, उनको नेतृत्वमा माओवादी पार्टीले सरकारविरुद्ध 'जनयुद्ध' सुरु गर्यो, जसले गणतन्त्र, सामाजिक न्याय र सामन्तवाद अन्त्य गर्ने माग राख्यो।",
+    mission_Puspa_kamal_Dahal_communist_politics: "कम्युनिस्ट राजनीतिमा उदय",
+    mission_Puspa_kamal_Dahal_civil_war: "सिविल युद्ध र शान्ति प्रक्रिया",
+    mission_Puspa_kamal_Dahal_civil_war_detail:
+      "माओवादी विद्रोहले दश वर्षसम्म चलेको थियो र यसले १७,००० भन्दा बढी मानिसहरूको ज्यान लिएको थियो। विद्रोही नेता भनेर चिनिएका दाहाल शान्ति प्रक्रियामा प्रमुख वार्ताकार बने, जसले २००६ मा सिभिल वार अन्त्य गर्यो। उनले समग्र शान्ति सम्झौतामा हस्ताक्षर गरे र माओवादीलाई मुख्यधारा राजनीतिमा ल्याए। यो आन्दोलनले राजतन्त्रको उन्मूलन र २००८ मा संघीय लोकतान्त्रिक गणतन्त्र नेपालको स्थापना गर्यो।",
+    mission_Puspa_kamal_Dahal_politics_journey: "राजनीतिक यात्रा",
+    mission_Puspa_kamal_Dahal_politics_journey_detail:
+      "राजतन्त्रको उन्मूलनपछि २००८ मा दाहाल संघीय लोकतान्त्रिक गणतन्त्र नेपालको पहिलो प्रधानमन्त्री बने। उनले तीन पटक प्रधानमन्त्रीको रूपमा सेवा गरेका छन् र नेपालको नयाँ संविधान लेख्न र संघीय प्रणाली स्थापना गर्न महत्त्वपूर्ण भूमिका खेलेका छन्। नेपाल कम्युनिस्ट पार्टी (माओवादी केन्द्र) का अध्यक्षका रूपमा, उनी गठबन्धन राजनीतिमा र राष्ट्रिय शासनमा प्रभावशाली व्यक्ति बनेका छन्।",
+    mission_Puspa_kamal_Dahal_legacy: "विरासत र प्रभाव",
+    mission_Puspa_kamal_Dahal_legacy_detail:
+      "पुष्पकमल दाहालको विरासत नेपालका राजनीतिक परिदृश्यमा गहिरो छाप छोडेको छ। उनले माओवादी विद्रोहको नेतृत्व गरेर र शान्ति प्रक्रियामा महत्त्वपूर्ण भूमिका खेलेर नेपालको लोकतान्त्रिक र संघीय प्रणालीलाई आकार दिन महत्त्वपूर्ण योगदान गरेका छन्। उनका निर्णय र नीतिहरूले नेपालको विकास र सामाजिक न्यायमा दीर्घकालीन प्रभाव पार्नेछ।",
+    mission_Ranju_Darshana: "रञ्जु दर्शन",
+    mission_Ranju_Darshana_youth_leader: "युवा नेता",
+    mission_Ranju_Darshana_description:
+      "रञ्जु दर्शन एक प्रमुख युवा नेता हुन् जसले नेपालको राजनीतिक परिदृश्यमा सक्रिय भूमिका खेल्छन्। उनी सामाजिक न्याय, समानता र समावेशी विकासका लागि वकालत गर्दै आएका छन्।",
+    mission_Ranju_Darshana_detail:
+      "रञ्जु दर्शन एक प्रमुख युवा नेता हुन् जसले नेपालको राजनीतिक परिदृश्यमा सक्रिय भूमिका खेल्छन्। उनी सामाजिक न्याय, समानता र समावेशी विकासका लागि वकालत गर्दै आएका छन्। उनले युवा सशक्तिकरण र समावेशी नीतिहरूको पक्षमा आवाज उठाउँदै आएका छन्।",
+    mission_Ranju_Darshana_education: "सामान्य जीवन र शिक्षा",
+    mission_Ranju_Darshana_education_detail:
+      "रञ्जु दर्शनले काठमाडौं विश्वविद्यालयबाट स्नातक र स्नातकोत्तर डिग्री प्राप्त गरेकी छन्। उनले आफ्नो शिक्षा जीवनमा सामाजिक न्याय र मानव अधिकारका मुद्दाहरूमा ध्यान केन्द्रित गरेकी छन्। उनले विभिन्न युवा संगठनहरूमा सक्रिय रहँदै सामाजिक परिवर्तनका लागि काम गरिरहेकी छन्।",
+    mission_Ranju_Darshana_political_activism:
+      "राजनीतिक सक्रियता र सार्वजनिक संलग्नता",
+    mission_Ranju_Darshana_political_activism_detail:
+      "काठमाडौंमा हुर्किएकी रञ्जु सामाजिक न्यायका मुद्दाहरूबाट गहिरो रूपमा प्रभावित भइन् र किशोरावस्थामा राजनीतिक सक्रियतामा सामेल भइन्। उनले विकास अध्ययनमा स्नातक र राजनीतिशास्त्रमा स्नातकोत्तर डिग्री, साथै परामर्श मनोविज्ञानमा स्नातकोत्तर डिग्री हासिल गरेकी छिन्। उनको शैक्षिक र कार्यकर्ता पृष्ठभूमिले मानसिक स्वास्थ्य, शिक्षा र युवा सशक्तिकरणमा उनको वकालतलाई सूचित गर्दछ।",
+    mission_Ranju_Darshana_current_role: "वर्तमान भूमिका र प्रभाव",
+    mission_Ranju_Darshana_current_role_detail:
+      "रञ्जु दर्शनले नेपाल कम्युनिस्ट पार्टी (माओवादी केन्द्र) को केन्द्रीय सदस्यको रूपमा काम गर्दै आएकी छन्। उनले युवा सशक्तिकरण, शिक्षा र मानसिक स्वास्थ्यका मुद्दाहरूमा ध्यान केन्द्रित गर्दै आएकी छन्। उनी सामाजिक न्याय र समानता प्रवर्द्धन गर्ने नीतिहरूको पक्षमा सक्रिय रूपमा वकालत गर्दै आएकी छन्।",
   },
 };

@@ -32,48 +32,32 @@
         <img src="../assets/logomain.png" class="h-8 sm:h-12 px-0" alt="Logo" />
             <span class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017] hidden sm:inline">MOVE ON NEPAL</span>
       </a>
+  <!-- Language Switcher -->
+  <div class="flex items-center space-x-6">
+ <div class="flex justify-end">
+  <div class="relative w-24 h-10 bg-[#0a2458] rounded-full cursor-pointer flex items-center px-1" id="lang-toggle">
+    <div id="toggle-indicator"
+         class="absolute left-1 w-10 h-8 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-xs font-semibold z-10">
+      ENG
+    </div>
+    <div class="flex justify-between w-full text-xs font-semibold text-white px-2 z-0">
+      <span>ENG</span>
+      <span>NEP</span>
+    </div>
+  </div>
+</div>
 
-      <!-- Menu Link for Desktop (now a button) -->
-      <button
-        id="openMenuDesktop"
-        aria-label="Open menu"
-        class="hidden nav text-[12px] cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-0 group"
-      >
-        <span
-          class="block w-6 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-        ></span>
-        <span
-          class="block w-4 h-[1.5px] bg-black mb-1 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-        ></span>
-        <span
-          class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-        ></span>
+
+    <!-- menu -->
+    <div id="openMenuMobile" aria-label="Open menu" class="flex nav items-center hover:text-red-700">
+      <p class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block">MENU</p>
+      <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
+        <span class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+        <span class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+        <span class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
       </button>
-
-      <div
-        id="openMenuMobile"
-        aria-label="Open menu"
-        class="flex nav items-center hover:text-red-700"
-      >
-        <p
-          class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block"
-        >
-          MENU
-        </p>
-        <button
-          class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group"
-        >
-          <span
-            class="block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-          ></span>
-          <span
-            class="block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-          ></span>
-          <span
-            class="block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
-          ></span>
-        </button>
-      </div>
+    </div>
+  </div>
     </nav>
 
     <!-- Desktop Menu Overlay ( responsive) -->
@@ -236,18 +220,20 @@
     </style>
 
     <!-- main part -->
-    <section class="px-4 py-10 font-serif space-y-20">
+    <section class="px-4 py-10  space-y-20">
       <!-- Profile Header -->
       <div
         class="max-w-4xl mx-auto flex flex-col items-center text-center mb-8 space-y-4"
       >
         <h1
+        id="mission_Puspa_kamal_Dahal"
           class="text-3xl text-[#0a2458] font-bold tracking-wider font-[Merriweather]"
         >
           PUSPA KUMAR DAHAL
         </h1>
-        <p class="text-gray-600 text-sm nav">PRIME MINISTER</p>
+        <p id="mission_Puspa_kamal_Dahal_prime_minister" class="text-gray-600 text-sm nav">PRIME MINISTER</p>
         <p
+        id="mission_Puspa_kamal_Dahal_description"
           class="text-gray-700 text-[15px] leading-relaxed italic tracking-wide max-w-2xl"
         >
             Pushpa Kamal Dahal, widely known as "Prachanda," is a key political leader in Nepal. He led the Maoist insurgency that played a major role in ending the monarchy and establishing a republic. After joining mainstream politics, he served multiple times as Prime Minister and remains a central figure in shaping Nepal’s democratic and federal system.
@@ -337,26 +323,26 @@
 
       <!-- about parchandey -->
       <div class="max-w-2xl mx-auto text-gray-700 space-y-6 font-[Merriweather] trackuing-widest">
-        <p class="text-[15px] leading-relaxed">
+        <p id="mission_Puspa_kamal_Dahal_detail" class="text-[15px] leading-relaxed">
           <span class="text-7xl text-yellow-700">P</span> ushpa Kamal Dahal, popularly known as Prachanda, is a major political figure in Nepal who played a central role in the country's transformation from monarchy to federal republic. As the leader of the Maoist insurgency during the Nepalese Civil War (1996–2006), he led a decade-long armed struggle demanding political change and social justice. After the peace process, he transitioned into democratic politics and emerged as a national leader.
         </p>
-        <h3 class="text-lg">Rise Through Communist Politics</h3>
-  <p class="text-[15px] leading-relaxed">
+        <h3 id="mission_Puspa_kamal_Dahal_communist_politics" class="text-lg">Rise Through Communist Politics</h3>
+  <p id="mission_Puspa_kamal_Dahal_communist" class="text-[15px] leading-relaxed">
     In the 1980s and early 1990s, Dahal played a significant role in underground communist politics. He became the General Secretary of the Communist Party of Nepal (Maoist) in 1994 and advocated for radical change in the structure of the Nepali state. On February 13, 1996, under his leadership, the Maoist party launched a "People’s War" against the government, demanding a republic, social justice, and the end of feudalism.
   </p>
 
-  <h3 class="text-lg">Civil War & Peace Process</h3>
-  <p class="text-[15px] leading-relaxed">
+  <h3 id="mission_Puspa_kamal_Dahal_civil_war" class="text-lg">Civil War & Peace Process</h3>
+  <p id="mission_Puspa_kamal_Dahal_civil_war_detail" class="text-[15px] leading-relaxed">
     The Maoist insurgency lasted for ten years and claimed over 17,000 lives. Despite being labeled a militant leader, Dahal became a key negotiator during the peace process that ended the civil war in 2006. He signed the Comprehensive Peace Accord and led the Maoists into mainstream politics. The movement culminated in the abolition of the monarchy in 2008 and the establishment of the Federal Democratic Republic of Nepal.
   </p>
 
-        <h3 class="text-lg">Political journey</h3>
-        <p class="text-[15px] leading-relaxed">
+        <h3 id="mission_Puspa_kamal_Dahal_politics_journey"  class="text-lg">Political journey</h3>
+        <p id="mission_Puspa_kamal_Dahal_politics_journey_detail" class="text-[15px] leading-relaxed">
             Dahal served as the first Prime Minister of the Federal Democratic Republic of Nepal in 2008 following the abolition of the monarchy. He has held the position of Prime Minister three times and has been instrumental in drafting Nepal's new constitution and establishing a federal system. As the chairperson of the CPN (Maoist Centre), he remains an influential figure in coalition politics and national governance.
 
         </p>
-        <h3 class="text-lg">Legacy & Influence</h3>
-        <p class="text-[15px] leading-relaxed">
+        <h3 id="mission_Puspa_kamal_Dahal_legacy" class="text-lg">Legacy & Influence</h3>
+        <p id="mission_Puspa_kamal_Dahal_legacy_detail" class="text-[15px] leading-relaxed">
     Despite controversies surrounding his past as a rebel leader, Dahal is regarded as a transformative force in Nepal’s political history. His journey from guerrilla commander to head of state symbolizes Nepal’s complex path to peace and democracy. He continues to be an active voice in shaping the country's political landscape and development goals.
       </div>
     </section>
@@ -656,5 +642,7 @@
         </div>
       </div>
     </footer>
+    <script src="../assets/eng_to_nepali.js"></script>
+    <script src="../assets/menu.js"></script>
   </body>
 </html>

@@ -146,5 +146,3 @@ if (playBtn && thumbnail && iframe) {
       "https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&loop=1&playlist=kzi1ik6qjZs";
   });
 }
-
-

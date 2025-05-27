@@ -54,9 +54,6 @@ const translations = {
     politics: "POLITICS",
     the_cabinate: "THE CABINET",
     sports: "SPORTS",
-    movement: "MOVEMENT",
-    movement_detail:
-      "Uniting voices of Nepal through stories of resilience and change.",
     our: "OUR",
     mission: "MISSION",
     mission_detail:
@@ -185,10 +182,8 @@ const translations = {
     politics: "राजनीति",
     the_cabinate: "मन्त्रिपरिषद्",
     sports: "खेलकुद",
-    movement: "आन्दोलन",
-    movement_detail: "कथाहरूको माध्यमबाट नेपालका आवाजहरूलाई एकताबद्ध गर्दै।",
     our: "हाम्रो",
-    mission: "उद्देश्य",
+    mission_h1: "उद्देश्य",
     mission_detail:
       "समावेशी वृद्धि, नवप्रवर्तन र अवसरमार्फत नेपाललाई सशक्त बनाउने।",
     rishi_dhamala: "रिशी धमला",

@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     // Update indicator position and text
     if (lang === "np") {
-      indicator.style.left = "calc(100% - 2.75rem)";
+      indicator.style.left = "calc(100% - 2.25rem)";
       indicator.textContent = "NEP";
     } else {
       indicator.style.left = "0.25rem";

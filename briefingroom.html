@@ -38,9 +38,25 @@
       class="h-8 sm:h-10 px-0"
       alt="Logo"
     />
-            <span class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017] hidden sm:inline">MOVE ON NEPAL</span>
+      <span class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017] hidden sm:inline">MOVE ON NEPAL</span>
       </a>
+  <!-- Language Switcher -->
+  <div class="flex items-center space-x-6">
+ <div class="flex justify-end">
+  <div class="relative w-20 h-7 bg-[#7dbcff] rounded-full cursor-pointer flex items-center px-1" id="lang-toggle">
+    <div id="toggle-indicator"
+         class="absolute left-1 w-8 h-5 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-[10px] font-semibold z-10">
+      ENG
+    </div>
+    <div class="flex justify-between w-full text-[10px] font-semibold text-black px-2 z-0">
+      <span>ENG</span>
+      <span>NEP</span>
+    </div>
+  </div>
+</div>
 
+
+    <!-- menu -->
 <div id="openMenuMobile" aria-label="Open menu" class="flex nav items-center hover:text-red-700">
   <p class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block">MENU</p>
   <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
@@ -49,6 +65,7 @@
     <span class="line block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
   </button>
 </div>
+  </div>
     </nav>
 
     <!-- Desktop Menu Overlay ( responsive) -->
@@ -892,5 +909,8 @@
       </div>
     </footer>
     <script src="./assets/menu.js"></script>
+    <script src="./assets/language.js"></script>
+    <script src="./assets/eng_to_nepali.js"></script>
+    <script src="./assets/main.js"></script>
   </body>
 </html>

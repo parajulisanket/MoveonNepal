@@ -55,7 +55,7 @@ const translations = {
     the_cabinate: "THE CABINET",
     sports: "SPORTS",
     our: "OUR",
-    mission: "MISSION",
+    mission_h1: "MISSION",
     mission_detail:
       "Empowering Nepal through inclusive growth, innovation, and opportunity.",
     rishi_dhamala: "RISHI DHAMALA",

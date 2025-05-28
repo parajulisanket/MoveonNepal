@@ -36,9 +36,10 @@
       }
     </style>
   </head>
+  <body>
 
 <!-- Navigation Bar -->
-<nav class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg">
+<nav class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 ">
 
   <!-- Logo Section (left Logo) -->
   <a href="./index.html" class="flex items-center flex-shrink-0 cursor-pointer">
@@ -171,6 +172,7 @@
     </div>
   </div>
 </div>
+
 <style>
   @media (max-width: 639px) {
     #menuPanelDesktop .grid {
@@ -180,436 +182,215 @@
 </style>
 <!-- nav ends here and contain begins here -->
 
-<!-- Part 1 -->
- <!-- Sticky vertical section label -->
-<div id="section-label-container" class="fixed top-1/2 left-0 z-50 transform -translate-y-1/2 writing-mode-vertical text-white text-sm sm:text-md md:text-md tracking-widest  py-5 bg-[#1a2a4a]/70 text-white px-2 py-1 rounded-r-lg hover:bg-[#983017]/70 hidden sm:block">
-  <span id="section-label">MEDIA</span>
-</div>
-
-<div id="media" class="relative z-10 sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
-  <div class="relative w-full h-full overflow-hidden">
-    <!-- Background Image -->
-    <img
-      src="./assets/singhadurbar.jpeg"
-      alt="Durbar Image"
-      class="w-full h-full object-cover z-0 zoom-out"
-    />
-    <div class="absolute inset-0 bg-gradient-to-tl from-[#020a1b] to-transparent"></div>
-  </div>
-
-  <!-- Rundown Section -->
-  <div class="absolute bottom-[30px] lg:bottom-[350px] xl:bottom-[250px] left-1/2 lg:left-auto lg:right-[5%] transform lg:transform-none -translate-x-1/2 lg:translate-x-0 p-4 rounded w-full max-w-[600px] 
-      sm:w-full sm:max-w-[90%]
-      lg:w-[40%] xl:w-[35%]
-      text-center lg:text-left z-20"
-  >
-    <h1 id="title"
-      class="text-white text-[24px] sm:text-[18px] md:text-[22px] lg:text-[26px] xl:text-[30px] cat-card-title mb-2  tracking-widest"
-    >
-      The Rundown
-    </h1>
-    <p id="description"
-      class="text-white text-[18px] md:text-center md:m-auto sm:text-[16px] md:text-[18px] lg:text-[20px] xl:text-[22px] text-justify lg:text-left font-serif mx-auto lg:mx-0"
-    >
-      A daily or weekly brief summarizing top headlines.
-    </p>
-  </div>
-</div>
-
-<!-- Part 2 -->
-<div id="media" class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] relative z-30 overflow-x-auto lg:overflow-x-visible scrollbar-hide">
-  <div class="flex flex-nowrap lg:grid lg:grid-cols-4 gap-4 bg-gradient-to-b relative from-[#040b1e] to-[#020a1b] lg:px-20 md:px-10 sm:px-10">
-    <!-- Card 1 -->
-    <a href="">
-      <div class="z-30 bg-[#9fb0c2] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden lg:-mt-20 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 relative z-40">
-        <div class="p-4 sm:p-6">
-          <h3 id="tiktok" class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Tiktok</h3>
-          <p id="tiktok_detail" class="text-black text-[10px] sm:text-sm font-serif tracking-wider">Explore speeches, briefings, and media capturing impactful national moments.</p>
-        </div>
-        <div class="relative">
-          <iframe
-            class="w-full h-60 sm:h-80 object-cover"
-            src="https://www.youtube.com/embed/iljwpwHWl3s?autoplay=1&mute=1&loop=1&playlist=iljwpwHWl3s&controls=0"
-            allow="autoplay; encrypted-media"
-          ></iframe>
-        </div>
-      </div>
-    </a>
-
-    <!-- Card 2 -->
-    <a href="">
-      <div class="bg-[#f4f4f4] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden relative lg:-mt-10 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 z-40">
-        <div class="p-4 sm:p-6">
-          <h3 id="reels" class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Reels</h3>
-          <p id="reels_detail" class="text-black text-[10px] sm:text-sm font-serif tracking-wider">Capturing historic events, personal stories, and unforgettable public moments.</p>
-        </div>
-        <div class="relative">
-          <video class="w-full h-60 sm:h-80 object-cover" autoplay loop muted>
-            <source src="./assets/media.mp4" type="video/mp4" />
-          </video>
-        </div>
-      </div>
-    </a>
-
-    <!-- Card 3 -->
-    <a href="">
-      <div class="bg-[#7dbcff] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden relative lg:-mt-20 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 z-40">
-        <div class="p-4 sm:p-6">
-          <h3 id="Podcast" class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Podcast</h3>
-          <p id="Podcast_detail" class="text-black text-[10px] sm:text-sm font-serif tracking-wider">Inspiriing talks with Nepali business leaders, politicians, creators, and other influential voices.</p>
-        </div>
-        <div class="relative">
-          <iframe
-            class="w-full h-60 sm:h-80 object-cover"
-            src="https://www.youtube.com/embed/EerQZVcA3GA?autoplay=1&mute=1&loop=1&playlist=EerQZVcA3GA&controls=0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </a>
-
-    <!-- Card 4 -->
-    <a href="">
-      <div class="bg-[#ffdaa3] h-[300px] sm:h-[350px] lg:h-[450px] xl:h-[500px] rounded-lg shadow-lg overflow-hidden relative  lg:-mt-10 mt-6 sm:mt-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer min-w-[240px] sm:min-w-[260px] lg:min-w-0 z-40">
-        <div class="p-4 sm:p-6">
-          <h3 id="youtube" class="text-xl sm:text-2xl cat-card-title text-gray-800 tracking-widest pb-2">Youtube</h3>
-          <p id="youtube_detail" class="text-black text-[10px] sm:text-sm font-serif tracking-wider">Global video-sharing platform where users upload, watch, and interact with content ranging from tutorials to entertainment.</p>
-        </div>
-        <div class="relative">
-          <iframe
-            class="w-full h-60 sm:h-80 object-cover"
-            src="https://www.youtube.com/embed/RQcspgfANoc?start=7&autoplay=1&mute=1&loop=1&playlist=RQcspgfANoc&controls=0&modestbranding=1&showinfo=0&rel=0"
-            allow="autoplay; encrypted-media"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-    </a>
-  </div>
-</div>
-
-    
-
-<!-- part-3 -->
-<div id="movement" class="bg-gradient-to-b from-[#040b1e] to-[#020a1b] h-auto relative">
-  <div class="relative py-24 px-4 sm:px-8 md:px-12 lg:px-20 z-10"> 
-    
-    <!-- Responsive iframe container -->
-    <div class="relative w-full pt-[56.25%] group" id="video-section">
-      <!-- Video thumbnail overlay -->
-      <img
-        src="https://img.youtube.com/vi/kzi1ik6qjZs/hqdefault.jpg"
-        alt="Nepal parliament in deadlock over speaker replacement dispute"
-        class="absolute top-0 left-0 w-full h-full object-cover z-10"
-        id="video-thumbnail"
-        style="cursor:pointer;"
-      />
-      <!-- Play button -->
-      <button
-        id="play-btn"
-        aria-label="Play video"
-        class="absolute top-1/2 left-1/2 z-20 transform -translate-x-1/2 -translate-y-1/2   p-5  transition"
-        style="cursor:pointer;"
-      >
-        <span class="flex items-center justify-center px-6 py-2 sm:px-8 sm:py-3 bg-red-600 rounded-lg text-white shadow-lg hover:bg-red-700 transition-all duration-200 ease-in-out whitespace-nowrap">
-          <i class="fa-solid fa-play  text-sm sm:text-xl"></i>
-        </span>
-      </button>
-      <!-- Iframe, hidden initially -->
-      <iframe
-        id="video-iframe"
-        class="absolute top-0 left-0 w-full h-full z-30"
-        src="https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&mute=1&rel=0&modestbranding=1&iv_load_policy=3&loop=1&playlist=kzi1ik6qjZs&controls=1"
-        title="Nepal parliament in deadlock over speaker replacement dispute"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin"
-        allowfullscreen
-        style="display:none;"
-      ></iframe>
-    </div>
-  </div>
-</div>
-   
-<!-- Part 4 -->
-<div id="mission" class="relative">
+<!-- Business Hero Section -->
+<div class="relative max-w-full h-[300px] rounded-xl overflow-hidden mx-5">
   <!-- Background Image -->
   <img
-    src="./assets/parliament1.jpeg"
-    alt="parliament"
-    class="w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[700px] object-cover"
+    src="./assets/business_main.avif"
+    alt="Business Background"
+    class="absolute inset-0 w-full h-full object-cover"
   />
-
-  <!-- people to watch  Content -->
-  <div 
-  class="absolute top-1/2 left-0 w-full flex justify-center items-center flex-col space-y-6 p-4 md:p-8 transform -translate-y-1/2"
->
-  <div
-    class="bg-white/90 lg:h-[400px] w-full sm:w-11/12 md:w-4/5 lg:w-3/5 p-4 sm:p-6 h-auto flex flex-col justify-center items-center space-y-6"
-  >
-    <!-- Spotlight Title -->
-    <a href="/peopleToWatch.html" id="people_to_watch" class="text-[12px] sm:text-[14px] md:text-[16px] text-gray-800 cat-card-title tracking-widest text-center uppercase">
-      People to Watch
+  <!-- Overlay for contrast -->
+  <div class="absolute inset-0 bg-[#0a2458] bg-opacity-80"></div>
+  <!-- Content -->
+  <div class="relative z-10 flex flex-col items-center justify-center text-center px-6 h-full">
+    <h1 class="text-white text-3xl sm:text-4xl md:text-5xl font-bold font-[Merriweather] mb-3 drop-shadow-md">
+      Business
+    </h1>
+    <p class="nav text-white max-w-md text-sm sm:text-base md:text-lg mb-6">
+      The rise of e-commerce and fintech is transforming Nepal’s business landscape, creating exciting opportunities and new challenges.
+    </p>
+    <a href="#business-news" class="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-full font-semibold transition">
+      Explore Business News
     </a>
-
-    <!-- Cards in a Grid Layout for Mobile -->
-    <div class="grid grid-cols-2 gap-2 md:flex md:justify-between md:items-center md:gap-4 lg:gap-6 w-full">
-      <!-- Card 1 -->
-       <a href="./missionpages/missionPage1.html">
-      <div class="flex flex-col items-center text-center cursor-pointer group">
-        <img
-          src="./assets/rishi.jpg"
-          alt="Image 1"
-          class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-20 lg:h-20 rounded-full object-cover"
-        />
-        <div class="cursor-pointer nav">
-          <p id="journalists" class="mt-2 text-[10px] sm:text-[12px] md:text-sm text-gray-600 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">Journalist</p>
-          <p id="journalists_name" class="text-[12px] sm:text-sm md:text-base text-gray-800 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">Rishi Dhamala</p>
-        </div>
-      </div>
-      </a>
-
-      <!-- Card 2 -->
-       <a href="./missionpages/missionPage2.html">
-      <div class="flex flex-col items-center text-center cursor-pointer group">
-        <img
-          src="./assets/ram.jpg"
-          alt="Image 2"
-          class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full object-cover"
-        />
-        <div class="cursor-pointer nav">
-          <p id="presidents" class="mt-2 text-[10px] sm:text-[12px] md:text-sm text-gray-600 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">President</p>
-          <p id="presidents_name" class="text-[12px] sm:text-sm md:text-base text-gray-800 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">Ramchandra Paudel</p>
-        </div>
-      </div>
-      </a>
-
-      <!-- Card 3 -->
-       <a href="./missionpages/missionPage3.html">
-      <div class="flex flex-col items-center text-center cursor-pointer group nav">
-        <img
-          src="./assets/parchandey.webp"
-          alt="Image 3"
-          class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 rounded-full object-cover"
-        />
-        <p id="prime_ministers" class="mt-2 text-[10px] sm:text-[12px] md:text-sm text-gray-600 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">
-          Prime Minister
-        </p>
-        <p id="prime_ministers_name" class="text-[12px] sm:text-sm md:text-base text-gray-800  group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">
-          Puspa Kamal Dahal
-        </p>
-      </div>
-      </a>
-
-      <!-- Card 4 -->
-       <a href="./missionpages/missionPage4.html">
-      <div class="flex flex-col items-center text-center cursor-pointer group nav">
-        <img
-          src="./assets/ranju.jfif"
-          alt="Image 4"
-          class="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-20 lg:h-20 rounded-full object-cover"
-        />
-        <p id="youth_leaders" class="mt-2 text-[10px] sm:text-[12px] md:text-sm text-gray-600 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">
-          Youth Leader
-        </p>
-        <p id="youth_leaders_name" class="text-[12px] sm:text-sm md:text-base text-gray-800 group-hover:text-red-700 group-hover:underline group-hover:underline-offset-4">
-          Ranju Darshana
-        </p>
-      </div>
-      </a>
-    </div>
   </div>
 </div>
-</div>
+<!-- Business News Section -->
+ <!-- card part -->
+<section class="max-w-7xl mx-auto px-6 pt-20">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
 
-
-
-<!-- last part -->
-<div id="moveonstories" class="bg-[#f1f6fc]">
-  <div class="flex justify-between px-6 sm:px-10 md:px-12 py-6 sm:py-10 md:py-12">
-    <a href="/moveOnStories.html"><h2 id="move_on_stories" class="text-xl sm:text-2xl md:text-3xl cat-card-title tracking-widest">
-      MOVE ON STORIES
-    </h2></a>
-    <div class="hover:text-red-700 space-x-4 cursor-pointer flex">
-      <i class="fas fa-arrow-left" id="moveLeft"></i>
-      <i class="fas fa-arrow-right" id="moveRight"></i>
-    </div>
-</div>
-<div id="scrollContainer" class="overflow-x-auto px-6 sm:px-10 md:px-12 py-6 sm:py-10 md:py-12 lg:pb-20 pt-0 scrollbar-hide">
-    <div  class="flex gap-4 sm:gap-6 md:gap-8 w-max ">
-      <!-- Card 1 -->
-      <a href="./scotus.html">
-        <div
-          class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px]  z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-        >
-          <div class="relative">
-            <img src="./assets/politics1.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-          </div>
-          <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-            <h3 
-              id="politics"
-              class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-            >
-              POLITICS
-            </h3>
-            <p
-              id="politics_detail" 
-            class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-              Stay informed on political, new policies, party alliances, and government decisions from Kathmandu to the provinces.
-            </p>
-          </div>
-        </div>
-      </a>
-
-      <!-- Card 2 -->
-      <a href="./economy.html">
-      <div
-        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="relative">
-          <img src="./assets/card2.gif" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-        </div>
-        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-          <h3
-          id="Economy"
-            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-          >
-            ECONOMY
-          </h3>
-          <p
-          id="economy_detail" 
-          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-            Explore updates on inflation, trade, remittance, economic recovery, and budget announcements.
-          </p>
-        </div>
-      </div>
-      </a>
-
-      <!-- Card 3 -->
-      <a href="./business.html">
-      <div
-        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="relative">
-          <img src="./assets/card3.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-        </div>
-        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-          <h3
-          id="business"
-            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-          >
-            BUSINESS
-          </h3>
-          <p 
-          id="business_detail"
-          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-            Breaking business news including stock movements, financial trends, and corporate developments in Nepal.
-          </p>
-        </div>
-      </div>
-      </a>
-
-      <!-- Card 4 -->
-      <a href="./scotus.html">
-      <div
-        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="relative">
-          <img src="./assets/card4.jpeg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-        </div>
-        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-          <h3
-          id="global_nepali"
-            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-          >
-            GLOBAL NEPALI
-          </h3>
-          <p 
-          id="global_nepali_detail"
-          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-              Insight into the lives of Nepali migrants, diaspora news, and their impact on Nepal's economy and culture.
-          </p>
-        </div>
-      </div>
-      </a>
-      <!-- card-5 -->
-      <a href="./scotus.html">
-        <div
-          class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-        >
-          <div class="relative">
-            <img src="./assets/card5.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-          </div>
-          <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-            <h3
-            id="tech"
-              class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-            >
-              TECH
-            </h3>
-            <p 
-            id="tech_detail" 
-            class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-                News and insights on tech startups, innovation hubs, and digital transformation shaping Nepal’s future.
-            </p>
-          </div>
-        </div>
-      </a>
-
-      <!-- Card 6 -->
-      <a href="./scotus.html">
-      <div
-        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="relative">
-          <img src="./assets/card6.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-        </div>
-        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-          <h3
-          id="trends"
-            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-          >
-            TRENDS
-          </h3>
-          <p 
-          id="trends_detail"
-          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-              Track the latest trends in pop culture, technology, fashion, and social media shaping daily life and conversations.
-          </p>
-        </div>
-      </div>
-      </a>
-
-      <!-- Card 7 -->
-      <a href="./scotus.html">
-      <div
-        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer"
-      >
-        <div class="relative">
-          <img src="./assets/card7.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
-        </div>
-        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
-          <h3
-          id="disaster"
-            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
-          >
-            DISASTERS ALERTS
-          </h3>
-          <p 
-          id="disaster_detail"
-          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
-            Real-time coverage of earthquakes, landslides, and emergency updates affecting Nepal’s regions.
-          </p>
-        </div>
-      </div>
-      </a>
-
-    </div>
+    <!-- Card 1 -->
+<a href="#startup">
+  <div
+  class="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col  cursor-pointer"
+>
+  <img
+    src="./assets/business_card1.jpeg"
+    alt="Startup Growth"
+    class="w-full h-64 object-cover rounded-t-lg"
+  />
+  <div class="p-4">
+    <h3 class="text-xl nav text-gray-900 mb-2 text-left hover:text-red-700">
+      Startup Growth
+    </h3>
   </div>
 </div>
+</a>
 
-   <!-- footer -->
+
+ <!-- Card 2 -->
+  <a href="#digitalPayment">
+<div
+  class="bg-white rounded-lg overflow-hidden hover:shadow-lg transition-shadow duration-300 flex flex-col cursor-pointer"
+>
+  <img
+    src="./assets/business_card2.jpg"
+    alt="Digital Payments"
+    class="w-full h-64 object-cover rounded-t-lg"
+  />
+  <div class="p-4">
+    <h3 class="text-xl nav text-gray-900 mb-2 text-left hover:text-red-700">
+      Digital Payments
+    </h3>
+  </div>
+</div>
+</a>
+
+
+<!-- Card 3 -->
+ <a href="#governmentPolicies">
+<div
+  class="bg-white rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col cursor-pointer"
+>
+  <img
+    src="./assets/business_card3.jpg"
+    alt="Government Policies"
+    class="w-full h-64 object-cover rounded-t-lg"
+  />
+  <div class="p-4">
+    <h3 class="text-xl nav text-gray-900 mb-2 text-left hover:text-red-700">
+      Government Policies
+    </h3>
+  </div>
+</div>
+</a>
+
+
+<!-- Card 4 -->
+ <a href="#investmentTrends">
+<div
+  class="bg-white rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col cursor-pointer"
+>
+  <img
+    src="./assets/business_card4.jpg"
+    alt="Investment Trends"
+    class="w-full h-64 object-cover rounded-t-lg"
+  />
+  <div class="p-4">
+    <h3 class="text-xl nav text-gray-900 mb-2 text-left hover:text-red-700">
+      Investment Trends
+    </h3>
+  </div>
+</div>
+</a>
+  </div>
+   <!-- small hr line -->
+    <div class="max-w-xs mx-auto border-t border-gray-800 my-8"></div>
+</section>
+
+<!-- business part 2 -->
+<div class="max-w-2xl mx-auto px-4 py-8 text-gray-800">
+  <h2 class="text-2xl cat-card-title mb-4">Nepal’s Business Landscape</h2>
+  <p class="text-base leading-relaxed text-justify">
+    Nepal’s business environment is a dynamic mix of traditional commerce and emerging modern enterprises. From agriculture and tourism to banking, manufacturing, real estate, and rapidly growing tech startups, Nepal’s economy is expanding with diversity and resilience. Urban hubs like Kathmandu, Pokhara, and Biratnagar are seeing increased investment and entrepreneurial activity. Government initiatives, foreign investments, and digital transformation are also helping reshape business potential across the nation. Whether it's small local shops or innovative fintech solutions, Nepal’s business sector reflects a blend of heritage and future-focused growth.
+  </p>
+</div>
+
+<!-- Startup Business -->
+<section id="startup" class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8 mb-20 sm:flex sm:items-start sm:space-x-8">
+  <div class="sm:flex-shrink-0">
+    <div class="w-20 h-20 bg-[#0a2458] rounded-full flex items-center justify-center mb-4 sm:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 17v-4h6v4m-3-9v2m-6 4h12" />
+      </svg>
+    </div>
+  </div>
+  <div>
+    <h2 class="text-3xl cat-card-title text-[#0a2458] border-b-2 border-[#0a2458] inline-block mb-4 hover:text-red-700 hover:border-red-700">
+      The Rise of Startups in Nepal
+    </h2>
+    <p class="text-gray-700 leading-relaxed mb-4">
+      Nepal is experiencing a surge in startup culture, led by a new generation of entrepreneurs embracing technology and innovation. Sectors like fintech, e-commerce, agritech, and education tech are seeing rapid growth with local incubators, foreign investments, and increasing internet penetration.
+    </p>
+    <p class="text-gray-700 leading-relaxed">
+      Cities such as Kathmandu and Pokhara are emerging as startup hubs, offering coworking spaces, mentorship programs, and a growing ecosystem of creative talent. These ventures solve real problems and create jobs, marking a pivotal shift in Nepal’s business landscape.
+    </p>
+  </div>
+</section>
+
+<!-- Digital Payment -->
+<section id="digitalPayment" class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8 mb-20 sm:flex sm:items-start sm:space-x-8">
+  <div class="sm:flex-shrink-0">
+    <div class="w-20 h-20 bg-[#0a2458] rounded-full flex items-center justify-center mb-4 sm:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3" />
+      </svg>
+    </div>
+  </div>
+  <div>
+    <h2 class="text-3xl cat-card-title text-[#0a2458] border-b-2 border-[#0a2458] inline-block mb-4 hover:text-red-700 hover:border-red-700">
+      Digital Payment
+    </h2>
+ <p class="text-gray-700 leading-relaxed mb-4">
+  Mobile banking and digital wallets are rapidly transforming payment systems throughout Nepal, providing unprecedented convenience and improving financial inclusion for a wide range of users. These technologies are helping bridge gaps in traditional banking, especially in rural and underserved communities.
+</p>
+<p class="text-gray-700 leading-relaxed">
+  This ongoing evolution enables more people to access secure, fast, and cashless transactions, which is reshaping commerce, everyday financial activities, and even government services. As adoption grows, Nepal’s economy is becoming increasingly digitized and efficient.
+</p>
+
+  </div>
+</section>
+
+<!-- Government Policies -->
+<section id="governmentPolicies" class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8 my-20 sm:flex sm:items-start sm:space-x-8">
+  <div class="sm:flex-shrink-0">
+    <div class="w-20 h-20 bg-[#0a2458] rounded-full flex items-center justify-center mb-4 sm:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h6m-3 8v-8m0-8v2" />
+      </svg>
+    </div>
+  </div>
+  <div>
+    <h2 class="text-3xl cat-card-title text-[#0a2458] border-b-2 border-[#0a2458] inline-block mb-4 hover:text-red-700 hover:border-red-700">
+      Government Policies
+    </h2>
+  <p class="text-gray-700 leading-relaxed mb-4">
+  Tax reforms and trade regulations in Nepal are constantly evolving to create a more favorable environment for businesses. These changes impact how companies operate, encouraging transparency and compliance while stimulating sustainable economic growth across various sectors in the country.
+</p>
+<p class="text-gray-700 leading-relaxed">
+  The government’s policies are designed to foster innovation and simplify the process of doing business. By reducing bureaucratic hurdles and attracting both domestic and foreign investments, these measures aim to build a competitive and dynamic market that supports entrepreneurship and long-term prosperity.
+</p>
+
+  </div>
+</section>
+
+<!-- Investment Trends -->
+<section id="investmentTrends" class="max-w-4xl mx-auto bg-white rounded-lg shadow-md p-8 mb-20 sm:flex sm:items-start sm:space-x-8">
+  <div class="sm:flex-shrink-0">
+    <div class="w-20 h-20 bg-[#0a2458] rounded-full flex items-center justify-center mb-4 sm:mb-0">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </div>
+  </div>
+  <div>
+    <h2 class="text-3xl cat-card-title text-[#0a2458] border-b-2 border-[#0a2458] inline-block mb-4 hover:text-red-700 hover:border-red-700">
+      Investment Trends
+    </h2>
+    <p class="text-gray-700 leading-relaxed mb-4">
+  Emerging sectors such as renewable energy, technology, and tourism, combined with growing foreign investments, are fueling Nepal’s economic expansion. These developments are creating exciting new opportunities for entrepreneurs, startups, and investors to participate in and benefit from the country’s rapidly evolving market.
+</p>
+<p class="text-gray-700 leading-relaxed">
+  The investment landscape in Nepal is becoming increasingly diverse and dynamic, spanning infrastructure projects, innovative technologies, and sustainable initiatives. This growth is driving job creation, enhancing competitiveness, and contributing to long-term economic stability and prosperity.
+</p>
+
+  </div>
+</section>
+
+
+
+    <!-- footer -->
     <footer class="bg-white relative">
       <!-- Divider -->
       <div class="w-full flex justify-center pt-14">
@@ -663,12 +444,12 @@
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./economy.html">Economy</a>
+                <a href="#">Economy</a>
               </li>
               <li
                 class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
-                <a href="./business.html">Business</a>
+                <a href="#">Business</a>
               </li>
             </ul>
           </div>
@@ -808,12 +589,12 @@
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./economy.html">Economy</a>
+              <a href="#">Economy</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
-              <a href="./business.html">Business</a>
+              <a href="#">Business</a>
             </li>
             <li
               class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"

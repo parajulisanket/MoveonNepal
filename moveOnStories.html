@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-..."
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" href="./assets/logomain.png" type="image/png" />
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <style>
+      @keyframes zoomOut {
+        0% {
+          transform: scale(1.09);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      .zoom-out {
+        animation: zoomOut 5s ease-in-out forwards;
+      }
+    </style>
+  </head>
+
+  <!-- Navigation Bar -->
+  <nav
+    class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg"
+  >
+    <!-- Logo Section (left Logo) -->
+    <a
+      href="./index.html"
+      class="flex items-center flex-shrink-0 cursor-pointer"
+    >
+      <img src="./assets/logomain1.png" class="h-8 sm:h-10 px-0" alt="Logo" />
+      <span
+        class="font-bold font-serif text-base sm:text-lg text-[#0a2458] tracking-wider whitespace-nowrap hover:text-[#983017] hidden sm:inline"
+        >MOVE ON NEPAL</span
+      >
+    </a>
+
+    <!-- Language Switcher -->
+    <div class="flex items-center space-x-6">
+      <div class="flex justify-end">
+        <div
+          class="relative w-20 h-7 bg-[#7dbcff] rounded-full cursor-pointer flex items-center px-1"
+          id="lang-toggle"
+        >
+          <div
+            id="toggle-indicator"
+            class="absolute left-1 w-8 h-5 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-[10px] font-semibold z-10"
+          >
+            ENG
+          </div>
+          <div
+            class="flex justify-between w-full text-[10px] font-semibold text-black px-2 z-0"
+          >
+            <span>ENG</span>
+            <span>NEP</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- menu -->
+      <div
+        id="openMenuMobile"
+        aria-label="Open menu"
+        class="flex nav items-center hover:text-red-700"
+      >
+        <p
+          class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block"
+        >
+          MENU
+        </p>
+        <button
+          class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group"
+        >
+          <span
+            class="line block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
+          ></span>
+          <span
+            class="line block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
+          ></span>
+          <span
+            class="line block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"
+          ></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Desktop Menu Overlay ( responsive) -->
+  <div
+    id="menuPanelDesktop"
+    class="fixed top-0 left-0 h-full w-full bg-white z-50 transform translate-x-full transition-transform duration-500 ease-in-out hidden"
+  >
+    <div
+      class="h-full w-full flex flex-col xl:flex-row overflow-y-auto scrollbar-hide"
+    >
+      <!-- Header Row: Logo left, Close right -->
+      <div
+        class="w-full flex items-start justify-between px-8 pt-8 absolute top-0 left-0 z-50 bg-white"
+      >
+        <a href="/index.html">
+          <img
+            src="./assets/logomain.png"
+            class="h-16 object-contain"
+            alt="Logo"
+          />
+        </a>
+        <button
+          id="closeMenuDesktop"
+          class="flex flex-col items-center group cursor-pointer"
+          aria-label="Close"
+        >
+          <span class="nav text-xs text-red-700 tracking-widest mb-1"
+            >CLOSE</span
+          >
+          <span
+            class="text-4xl text-red-700 group-hover:scale-110 transition-transform duration-200"
+            >&times;</span
+          >
+        </button>
+      </div>
+      <!-- Main Content Grid (Menu + Sidebar) -->
+      <div
+        class="flex-1 flex flex-col justify-center items-center min-h-screen"
+      >
+        <div
+          class="w-full flex justify-center items-start pb-10 px-4 sm:px-8 md:px-16 pt-8 sm:pt-[110px]"
+        >
+          <div
+            class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 w-full max-w-xs sm:max-w-sm md:max-w-5xl mt-2 sm:mt-10"
+          >
+            <div>
+              <ul
+                class="font-[Merriweather] font-bold text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] space-y-8 sm:space-y-10"
+              >
+                <li
+                  class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer"
+                >
+                  <a href="/media.html">Media</a>
+                </li>
+                <li
+                  class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                >
+                  <a href="/movement.html">Movement</a>
+                </li>
+                <li
+                  class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                >
+                  <a href="/mission.html">Mission</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul
+                class="font-[Merriweather] font-bold text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] space-y-8 sm:space-y-10"
+              >
+                <li
+                  class="border-b border-[#bfcbe0] pb-1 cursor-pointer hover:text-red-700 hover:border-red-700 w-fit"
+                >
+                  <a href="/record.html">Podcast</a>
+                </li>
+                <li
+                  class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer"
+                >
+                  <a href="/record.html">The Records</a>
+                </li>
+                <li
+                  class="w-fit border-b border-[#bfcbe0] pb-1 flex items-center justify-between hover:text-red-700 hover:border-red-700 cursor-pointer"
+                >
+                  <a href="/briefingroom.html">The Briefingroom</a>
+                  <!-- <span class="text-lg">&#8250;</span> -->
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul
+                class="font-[Merriweather] font-bold text-[#1a2a4a] text-xl sm:text-2xl lg:text-[1.5rem] space-y-8 sm:space-y-10"
+              >
+                <li
+                  class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                >
+                  <a href="/aboutUs.html">About us</a>
+                </li>
+                <li
+                  class="w-fit border-b border-[#bfcbe0] pb-1 hover:text-red-700 hover:border-red-700 cursor-pointer"
+                >
+                  <a href="/index.html">Move on Nepal</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Sidebar -->
+      <div
+        class="xl:w-[340px] w-full bg-white flex flex-col items-start justify-start px-8 pt-32 pb-10 relative min-w-[260px] max-w-[100vw]"
+      >
+        <div
+          class="border-l flex flex-col w-full items-center justify-center h-full space-y-8 mt-2 hidden xl:flex"
+        >
+          <div class="space-y-2 text-center">
+            <a
+              href="./contactus.html"
+              class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+              >Contact Us</a
+            >
+            <p
+              class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+            >
+              Privacy Policy
+            </p>
+            <p
+              class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+            >
+              Copyright Policy
+            </p>
+            <p
+              class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline"
+            >
+              Accessibility Statement
+            </p>
+          </div>
+          <div
+            class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mb-2"
+          >
+            <i
+              class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"
+            ></i>
+          </div>
+          <div
+            class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mt-2"
+          >
+            <i
+              class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-threads hover:text-red-700 cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"
+            ></i>
+          </div>
+          <div class="mt-8 text-center">
+            <h4
+              class="text-[#1a2a4a] text-base font-[Merriweather] font-bold mb-1"
+            >
+              Move on Nepal
+            </h4>
+            <p
+              class="text-[#1a2a4a] text-base font-[Merriweather] font-normal leading-snug"
+            >
+              44600 Kathmandu,<br />
+              Nepal
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <style>
+    @media (max-width: 639px) {
+      #menuPanelDesktop .grid {
+        margin-top: 10rem !important;
+      }
+    }
+  </style>
+  <!-- nav ends here and contain begins here -->
+   
+  <!-- main  part -->
+   <div class="container mx-auto px-4 sm:px-6 lg:px-8 mt-10">
+    <div class="flex flex-col items-center">
+      <h1 class="text-3xl sm:text-4xl cat-card-title text-[#0a2458] mb-6 tracking-widest">Move on Stories</h1>
+      <p class="text-md sm:text-lg text-gray-700 mb-8 text-center max-w-2xl">
+        Explore inspiring stories of resilience, innovation, and community from around the world. Discover how individuals and organizations are making a difference in their communities and beyond.
+      </p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-10">
+        <!--  Story Card -->
+        <!-- Card 1 -->
+      <a href="./scotus.html">
+        <div
+          class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px]  z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer border border-gray-200 shadow-lg hover:shadow-xl"
+        >
+          <div class="relative">
+            <img src="./assets/politics1.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
+          </div>
+          <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
+            <h3 
+              id="politics"
+              class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
+            >
+              POLITICS
+            </h3>
+            <p
+              id="politics_detail" 
+            class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+              Stay informed on political, new policies, party alliances, and government decisions from Kathmandu to the provinces.
+            </p>
+          </div>
+        </div>
+      </a>
+        <!-- Repeat similar blocks for more stories -->
+           <!-- Card 2 -->
+      <a href="./economy.html">
+      <div
+        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer border border-gray-200 shadow-lg hover:shadow-xl"
+      >
+        <div class="relative">
+          <img src="./assets/card2.gif" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
+        </div>
+        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
+          <h3
+          id="Economy"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
+          >
+            ECONOMY
+          </h3>
+          <p
+          id="economy_detail" 
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+            Explore updates on inflation, trade, remittance, economic recovery, and budget announcements.
+          </p>
+        </div>
+      </div>
+      </a>
+         <!-- Card 3 -->
+      <a href="./scotus.html">
+      <div
+        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer border border-gray-200 shadow-lg hover:shadow-xl"
+      >
+        <div class="relative">
+          <img src="./assets/card3.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
+        </div>
+        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
+          <h3
+          id="business"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
+          >
+            BUSINESS
+          </h3>
+          <p 
+          id="business_detail"
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+            Breaking business news including stock movements, financial trends, and corporate developments in Nepal.
+          </p>
+        </div>
+      </div>
+      </a>
+        <!-- Card 4 -->
+       <a href="./scotus.html">
+      <div
+        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer border border-gray-200 shadow-lg hover:shadow-xl"
+      >
+        <div class="relative">
+          <img src="./assets/card4.jpeg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
+        </div>
+        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
+          <h3
+          id="business"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
+          >
+            GLOBAL NEPALI
+          </h3>
+          <p 
+          id="global_nepali_detail"
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+            Insight into the lives of Nepali migrants, diaspora news, and their impact on Nepal's economy and culture.
+          </p>
+        </div>
+      </div>
+      </a>
+        <!-- Card 5 -->
+       <a href="./scotus.html">
+      <div
+        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer border border-gray-200 shadow-lg hover:shadow-xl"
+      >
+        <div class="relative">
+          <img src="./assets/card5.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
+        </div>
+        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
+          <h3
+          id="tech"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
+          >
+            TECH
+          </h3>
+          <p 
+          id="tech_detail"
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+            News and insights on tech startups, innovation hubs, and digital transformation shaping Nepal’s future.
+          </p>
+        </div>
+      </div>
+      </a>
+        <!-- Card 6-->
+       <a href="./scotus.html">
+      <div
+        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer border border-gray-200 shadow-lg hover:shadow-xl"
+      >
+        <div class="relative">
+          <img src="./assets/card6.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
+        </div>
+        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
+          <h3
+          id="trends"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
+          >
+            TRENDS
+          </h3>
+          <p 
+          id="trends_detail"
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+            Track the latest trends in pop culture, technology, fashion, and social media shaping daily life and conversations.
+          </p>
+        </div>
+      </div>
+      </a>
+        <!-- Card 7-->
+       <a href="./scotus.html">
+      <div
+        class="bg-white h-[250px] sm:h-[300px] md:h-[400px] w-[240px] sm:w-[280px] md:w-[350px] overflow-hidden z-10 transform transition-transform duration-300 hover:-translate-y-3 cursor-pointer border border-gray-200 shadow-lg hover:shadow-xl"
+      >
+        <div class="relative">
+          <img src="./assets/card7.jpg" alt="" class="h-40 sm:h-48 md:h-60 w-auto" />
+        </div>
+        <div class="px-3 sm:px-4 md:px-6 py-4 sm:py-6 md:py-8">
+          <h3
+          id="disaster"
+            class="text-base sm:text-lg md:text-xl cat-card-title text-gray-800 tracking-widest pb-1 sm:pb-2"
+          >
+            DISASTER ALERT
+          </h3>
+          <p 
+          id="disaster_detail"
+          class="text-black text-[10px] sm:text-[12px] md:text-[14px] font-serif tracking-wide text-left mb-2 sm:mb-3">
+            Real-time coverage of earthquakes, landslides, and emergency updates affecting Nepal’s regions.
+          </p>
+        </div>
+      </div>
+      </a>
+        </div>
+        </div>
+        <div class="mt-10">
+          <p class="text-gray-600 text-sm text-center">
+            For more stories, stay connected with MoveOn Nepal.
+          </p>
+        </div>
+   </div>
+
+   <!-- footer -->
+    <footer class="bg-white relative">
+      <!-- Divider -->
+      <div class="w-full flex justify-center pt-14">
+        <hr class="w-5/6 border-t border-gray-300" />
+      </div>
+
+      <!-- Footer Content -->
+      <div
+        class="hidden sm:flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row justify-between items-stretch lg:items-stretch px-8 md:px-16 lg:px-32 py-8 md:py-12 lg:py-16 gap-y-8 md:gap-y-12 lg:space-y-0"
+      >
+        <!-- Links - Left Column -->
+        <div
+          class="flex flex-col lg:flex-row space-y-6 md:space-y-8 lg:space-y-0 lg:space-x-36 w-full lg:w-auto self-stretch"
+        >
+          <div class="text-sm">
+            <ul class="space-y-3 nav">
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./index.html">Home</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./media.html">Media</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./movement.html">Movement</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./mission.html">Mission</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm">
+            <ul class="space-y-3 nav">
+               <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./moveOnStories.html">Move on Stories</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="./scotus.html">Politics</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="#">Economy</a>
+              </li>
+              <li
+                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="#">Business</a>
+              </li>
+            </ul>
+          </div>
+          <div class="text-sm">
+            <ul class="space-y-3 nav">
+               <li
+                class=" border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="#">Global Nepali </a>
+              </li>
+              <li
+                class="  border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="#">Tech</a>
+              </li>
+              <li
+                class=" border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="#">Trends</a>
+              </li>
+              <li
+                class=" border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              >
+                <a href="#">Disaster Alert</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Contact and Address - Right Column -->
+        <div
+          class="flex flex-col items-start lg:items-start space-y-8 md:space-y-10 lg:space-y-0 lg:flex-row lg:space-x-20 w-full lg:w-auto self-stretch justify-between"
+        >
+          <div class="text-sm text-gray-600">
+            <ul class="space-y-2 nav">
+              <li
+                class="hover:text-red-700 "
+              >
+                <a href="/contactus.html">Contact Us</a>
+              </li>
+                <div>
+              <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
+              <p class="text-sm font-thin font-serif text-gray-600">
+                44600 Kathmandu,<br />
+                Nepal
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-col items-start text-start space-y-4 md:mt-6">
+            <div class="flex flex-col items-start space-y-2">
+              <p class="text-sm text-gray-700 nav mb-1">Follow us:</p>
+              <div class="flex space-x-4">
+                 <i
+                  class="fa-brands fa-facebook-f text-[#1877f3] cursor-pointer"
+                ></i>
+                <i
+                  class="fa-brands fa-instagram text-[#E4405F] cursor-pointer"
+                ></i>
+                <i
+                  class="fa-brands fa-x-twitter cursor-pointer"
+                ></i>
+              </div>
+              <div class="flex space-x-4">
+                <i
+                  class="fa-brands fa-youtube text-[#FF0000] cursor-pointer"
+                ></i>
+                <i
+                  class="fa-brands fa-threads  cursor-pointer"
+                ></i>
+                <i
+                  class="fa-brands fa-linkedin text-[#0077b5] cursor-pointer"
+                ></i>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </div>
+        <!-- Divider -->
+      <div class="w-full flex justify-center hidden md:flex">
+        <hr class="w-5/6 border-t border-gray-300" />
+      </div>
+      <div class="px-20 py-5 nav flex-col md:flex-row justify-evenly items-center text-gray-600 text-sm space-x-0 md:space-x-8 space-y-4 md:space-y-0 hidden md:flex">
+          <div class="hover:text-red-700 ">
+        <a href="/privacyPolicy.html">Privacy Policy</a>
+          </div>
+          <div class="hover:text-red-700 ">
+        <a href="#">Copyright Policy</a>
+          </div>
+          <div class="hover:text-red-700 ">
+        <a href="#">Accessibility Statement</a>
+          </div>
+        <div class="text-gray-600  cursor-pointer">
+          Developed by
+          <a href="https://kantipurinfotech.com/"><img
+            src="./assets/kit.png"
+            alt="KIT logo"
+            class="w-20 h-full inline-block ml-2"
+          /></a>
+        </div>
+      </div>
+
+      <!-- Mobile View -->
+      <div class="sm:hidden flex flex-col items-start space-y-6 px-6 py-10 text-sm">
+        <div>
+          <ul class="space-y-4 nav">
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./index.html">Home</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./media.html">Media</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./movement.html">Movement</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./mission.html">Mission</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./moveOnStories.html">Move on Stories</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="./scotus.html">Politics</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Economy</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Business</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Global Nepali</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Tech</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Trends</a>
+            </li>
+            <li
+              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+            >
+              <a href="#">Disaster Alert</a>
+            </li>
+           
+          </ul>
+        </div>
+
+        <div>
+          <ul class="nav space-y-3 text-xs text-gray-600">
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="/contactus.html">Contact Us</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="/privacyPolicy.html">Privacy Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Copyright Policy</a>
+            </li>
+            <li
+              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+            >
+              <a href="#">Accessibility Statement</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex flex-col items-start space-y-2">
+          <p class="text-sm text-gray-700 nav">Follow us:</p>
+          <div class="flex space-x-4">
+             <i
+                class="fa-brands fa-facebook-f text-[#1877f3] cursor-pointer"
+              ></i>
+            <i
+              class="fa-brands fa-instagram text-[#E4405F] cursor-pointer"
+              ></i>
+             <i
+              class="fa-brands fa-x-twitter cursor-pointer"
+              ></i>
+            <i
+                class="fa-brands fa-youtube text-[#FF0000] cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-threads  cursor-pointer"
+            ></i>
+            <i
+              class="fa-brands fa-linkedin text-[#0077b5] cursor-pointer"
+            ></i>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <h4 class="text-sm font-serif font-semibold">Move on Nepal</h4>
+          <p class="text-sm font-thin font-serif text-gray-600">
+            44600 Kathmandu,<br />
+            Nepal
+          </p>
+          <h2 class="text-sm text-gray-600 hover:text-blue-700 cursor-pointer">
+            Developed by
+            <a href="https://kantipurinfotech.com/"><img
+              src="./assets/kit.png"
+              alt="KIT logo"
+              class="m-2 w-20 h-full inline-block"
+            /></a>
+          </h2>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/eng_to_nepali.js"></script>
+    <script src="./assets/language.js"></script>
+    <script src="./assets/main.js"></script>
+    <script src="./assets/menu.js"></script>
+  </body>
+</html>
+

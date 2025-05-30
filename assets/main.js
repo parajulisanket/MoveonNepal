@@ -146,3 +146,17 @@ if (playBtn && thumbnail && iframe) {
       "https://www.youtube.com/embed/kzi1ik6qjZs?autoplay=1&showinfo=0&rel=0&modestbranding=1&iv_load_policy=3&loop=1&playlist=kzi1ik6qjZs";
   });
 }
+
+// for mute and unmute in media page
+document.querySelectorAll(".video-wrapper").forEach((wrapper) => {
+  const video = wrapper.querySelector(".social-video");
+  const toggleBtn = wrapper.querySelector(".mute-toggle");
+  const icon = wrapper.querySelector(".volume-icon");
+
+  toggleBtn.addEventListener("click", () => {
+    video.muted = !video.muted;
+    icon.className = video.muted
+      ? "fa-solid fa-volume-xmark volume-icon"
+      : "fa-solid fa-volume-high volume-icon";
+  });
+});

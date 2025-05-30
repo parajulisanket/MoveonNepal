@@ -182,20 +182,33 @@
 
 <!-- Part 1 -->
  <!-- Sticky vertical section label -->
-<div id="section-label-container" class="fixed top-1/2 left-0 z-50 transform -translate-y-1/2 writing-mode-vertical text-white text-sm sm:text-md md:text-md tracking-widest  py-5 bg-[#1a2a4a]/70 text-white px-2 py-1 rounded-r-lg hover:bg-[#983017]/70 hidden sm:block">
+<div id="section-label-container" class="fixed top-1/2 left-0 z-50 transform -translate-y-1/2 writing-mode-vertical text-white text-sm sm:text-md md:text-md tracking-widest  py-5 bg-[#0464fc]/70 text-white px-2 py-1 rounded-r-lg hover:bg-[#983017]/70 hidden sm:block">
   <span id="section-label">MEDIA</span>
 </div>
 
 <div id="media" class="relative z-10 sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
-  <div class="relative w-full h-full overflow-hidden">
-    <!-- Background Image -->
-    <img
-      src="./assets/singhadurbar.jpeg"
-      alt="Durbar Image"
-      class="w-full h-full object-cover z-0 zoom-out"
-    />
-    <div class="absolute inset-0 bg-gradient-to-tl from-[#020a1b] to-transparent"></div>
-  </div>
+<div class="relative w-full h-full overflow-hidden" id="slideshow">
+  <!-- Images -->
+  <img
+    src="./assets/indexHero1.jpeg"
+    alt="Durbar Image 1"
+    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-100 zoom-out"
+  />
+  <img
+    src="./assets/indexHero2.webp"
+    alt="Durbar Image 2"
+    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+  />
+  <img
+    src="./assets/indexHero3.jpg"
+    alt="Durbar Image 3"
+    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 opacity-0"
+  />
+
+  <!-- Gradient Overlay -->
+  <div class="absolute inset-0 bg-gradient-to-tl from-[#020a1b] to-transparent z-10"></div>
+</div>
+
 
   <!-- Rundown Section -->
   <div class="absolute bottom-[30px] lg:bottom-[350px] xl:bottom-[250px] left-1/2 lg:left-auto lg:right-[5%] transform lg:transform-none -translate-x-1/2 lg:translate-x-0 p-4 rounded w-full max-w-[600px] 
@@ -627,7 +640,7 @@
           <div class="text-sm">
             <ul class="space-y-3 nav">
               <li
-                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+                class="border-b font-semibold border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
                 <a href="./index.html">Home</a>
               </li>
@@ -651,7 +664,7 @@
           <div class="text-sm">
             <ul class="space-y-3 nav">
                <li
-                class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+                class="border-b font-semibold border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
               >
                 <a href="./moveOnStories.html">Move on Stories</a>
               </li>
@@ -705,7 +718,7 @@
           <div class="text-sm text-gray-600">
             <ul class="space-y-2 nav">
               <li
-                class="hover:text-red-700 "
+                class="hover:text-red-700 font-semibold "
               >
                 <a href="/contactus.html">Contact Us</a>
               </li>
@@ -776,7 +789,7 @@
         <div>
           <ul class="space-y-4 nav">
             <li
-              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              class="border-b font-semibold border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
             >
               <a href="./index.html">Home</a>
             </li>
@@ -796,7 +809,7 @@
               <a href="./mission.html">Mission</a>
             </li>
             <li
-              class="border-b border-gray-400 hover:text-red-700 hover:border-red-700 w-fit"
+              class="border-b border-gray-400 font-semibold hover:text-red-700 hover:border-red-700 w-fit"
             >
               <a href="./moveOnStories.html">Move on Stories</a>
             </li>
@@ -842,7 +855,7 @@
         <div>
           <ul class="nav space-y-3 text-xs text-gray-600">
             <li
-              class="hover:text-red-700 hover:border-b-red-700 hover:border-b w-fit"
+              class="hover:text-red-700 font-semibold hover:border-b-red-700 hover:border-b w-fit"
             >
               <a href="/contactus.html">Contact Us</a>
             </li>

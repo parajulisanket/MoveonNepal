@@ -27,7 +27,8 @@
 
 /* fonts for body and headings */
 body {
-  font-family: "Merriweather", serif;
+  /* font-family: "Merriweather", serif; */
+  font-family: Georgia, Times, Times New Roman, serif;
 }
 
 h1,

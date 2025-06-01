@@ -173,4 +173,4 @@ setInterval(() => {
 
   slides[current].classList.remove("opacity-0");
   slides[current].classList.add("opacity-100");
-}, 5000);
+}, 3000);

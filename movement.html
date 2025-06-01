@@ -51,23 +51,26 @@
         class="flex items-center flex-shrink-0 cursor-pointer"
       >
         <img src="./assets/logomain1.png" class="h-8 sm:h-10 px-0" alt="Logo" />
+
+        <!-- Hide "MOVE ON NEPAL" on mobile -->
         <span
-          class="font-bold font-serif text-base sm:text-lg text-white tracking-wider whitespace-nowrap"
-          >MOVE ON NEPAL</span
+          class="hidden sm:block font-bold font-serif text-base sm:text-lg text-white tracking-wider whitespace-nowrap"
         >
+          MOVE ON NEPAL
+        </span>
       </a>
 
       <!-- Menu Links for Desktop -->
       <div
         id="openMenuMobile"
         aria-label="Open menu"
-        class="flex nav items-center hover:text-red-700"
+        class="flex nav items-center"
       >
-        <p
-          class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block"
-        >
+        <!-- Hide "MENU" on mobile -->
+        <p class="text-[15px] text-white cursor-pointer hidden sm:block">
           MENU
         </p>
+
         <button
           class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group"
         >
@@ -83,6 +86,7 @@
         </button>
       </div>
     </nav>
+
     <!-- Desktop Menu Overlay (responsive) -->
     <div
       id="menuPanelDesktop"

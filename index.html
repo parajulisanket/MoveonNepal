@@ -15,27 +15,27 @@
       referrerpolicy="no-referrer"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <link rel="icon" href="./assets/logomain.png" type="image/png" />
     <title>Home</title>
     <meta charset="UTF-8" />
-    <style>
-      @keyframes zoomOut {   
-        0% {
-          transform: scale(1.09);
+      <style>
+        @keyframes zoomOut {   
+          0% {
+            transform: scale(1.09);
+          }
+          100% {
+            transform: scale(1);
+          }
         }
-        100% {
-          transform: scale(1);
-        }
-      }
 
-      .zoom-out {
-        animation: zoomOut 5s ease-in-out forwards;
-      }
-    </style>
-  </head>
+        .zoom-out {
+          animation: zoomOut 5s ease-in-out forwards;
+        }
+      </style>
+    </head>
 
 <!-- Navigation Bar -->
 <nav class="sticky top-0 z-50 bg-white flex items-center justify-between px-4 h-16 shadow-lg">
@@ -52,29 +52,29 @@
 
   <!-- Language Switcher -->
   <div class="flex items-center space-x-6">
- <div class="flex justify-end">
-  <div class="relative w-20 h-7 bg-[#0464fc] rounded-full cursor-pointer flex items-center px-1" id="lang-toggle">
-    <div id="toggle-indicator"
-         class="absolute left-1 w-8 h-5 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-[10px] font-semibold z-10">
-      ENG
+    <div class="flex justify-end">
+      <div class="relative w-20 h-7 bg-[#0464fc] rounded-full cursor-pointer flex items-center px-1" id="lang-toggle">
+        <div id="toggle-indicator"
+          class="absolute left-1 w-8 h-5 bg-white rounded-full shadow-md transition-all duration-300 flex items-center justify-center text-red-700 text-[10px] font-semibold z-10">
+            ENG
+        </div>
+        <div class="flex justify-between w-full text-[10px] font-semibold text-white px-2 z-0">
+          <span>ENG</span>
+          <span>NEP</span>
+        </div>
+      </div>
     </div>
-    <div class="flex justify-between w-full text-[10px] font-semibold text-white px-2 z-0">
-      <span>ENG</span>
-      <span>NEP</span>
-    </div>
-  </div>
-</div>
 
 
     <!-- menu -->
-<div id="openMenuMobile" aria-label="Open menu" class="flex nav items-center hover:text-red-700">
-  <p class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block">MENU</p>
-  <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
-    <span class="line block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-    <span class="line block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-    <span class="line block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
-  </button>
-</div>
+    <div id="openMenuMobile" aria-label="Open menu" class="flex nav items-center hover:text-red-700">
+      <p class="text-[15px] text-gray-700 hover:text-red-700 cursor-pointer hidden sm:block">MENU</p>
+      <button class="text-[12px] nav cursor-pointer hover:border-[#983017] hover:text-[#983017] flex flex-col justify-center items-center w-10 h-10 p-1 group">
+        <span class="line block w-6 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+        <span class="line block w-4 h-[1.5px] bg-black mb-1.5 transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+        <span class="line block w-6 h-[1.5px] bg-black transition-all duration-300 self-start group-hover:w-7 group-hover:bg-red-700"></span>
+      </button>
+    </div>
   </div>
 </nav>
  
@@ -151,14 +151,14 @@
           <p class="hover:text-red-700 text-[#1a2a4a] text-base font-[Prompt] font-normal tracking-wide cursor-pointer hover:underline">Accessibility Statement</p>
         </div>
         <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mb-2">
-          <i class="fa-brands fa-instagram hover:text-red-700 cursor-pointer"></i>
-          <i class="fa-brands fa-facebook-f hover:text-red-700 cursor-pointer"></i>
-          <i class="fa-brands fa-x-twitter hover:text-red-700 cursor-pointer"></i>
+          <i class="fa-brands fa-facebook-f text-[#1877f3] cursor-pointer"></i>
+          <i class="fa-brands fa-instagram text-[#E4405F] cursor-pointer"></i>
+          <i class="fa-brands fa-x-twitter cursor-pointer"></i>
         </div>
         <div class="flex flex-wrap gap-4 text-xl text-[#1a2a4a] justify-center mt-2">
-          <i class="fa-brands fa-youtube hover:text-red-700 cursor-pointer"></i>
-          <i class="fa-brands fa-threads hover:text-red-700 cursor-pointer"></i>
-          <i class="fa-brands fa-reddit-alien hover:text-red-700 cursor-pointer"></i>
+          <i class="fa-brands fa-youtube text-[#FF0000] cursor-pointer"></i>
+          <i class="fa-brands fa-threads cursor-pointer"></i>
+           <i class="fa-brands fa-linkedin text-[#0077b5] cursor-pointer"></i>
         </div>
         <div class="mt-8 text-center">
           <h4 class="text-[#1a2a4a] text-base font-[Merriweather] font-bold mb-1">Move on Nepal</h4>
@@ -187,8 +187,8 @@
 </div>
 
 <!-- <div id="media" class="relative z-10 sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]"> -->
-  <div id="media" class="relative z-10 h-[350px] sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
-<div class="relative w-full h-full overflow-hidden" id="slideshow">
+<div id="media" class="relative z-10 h-[350px] sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
+  <div class="relative w-full h-full overflow-hidden" id="slideshow">
   <!-- Images -->
   <img
     src="./assets/indexHero1.jpeg"
@@ -437,20 +437,18 @@
 </div>
 </div>
 
-
-
 <!-- last part -->
 <div id="moveonstories" class="bg-[#f1f6fc]">
   <div class="flex justify-between px-6 sm:px-10 md:px-12 py-6 sm:py-10 md:py-12">
     <a href="/moveOnStories.html"><h2 id="move_on_stories" class="text-xl sm:text-2xl md:text-3xl cat-card-title tracking-widest">
       MOVE ON STORIES
-    </h2></a>
-    <div class="hover:text-red-700 space-x-4 cursor-pointer flex">
-      <i class="fas fa-arrow-left" id="moveLeft"></i>
-      <i class="fas fa-arrow-right" id="moveRight"></i>
-    </div>
-</div>
-<div id="scrollContainer" class="overflow-x-auto px-6 sm:px-10 md:px-12 py-6 sm:py-10 md:py-12 lg:pb-20 pt-0 scrollbar-hide">
+      </h2></a>
+      <div class="hover:text-red-700 space-x-4 cursor-pointer flex">
+        <i class="fas fa-arrow-left" id="moveLeft"></i>
+        <i class="fas fa-arrow-right" id="moveRight"></i>
+      </div>
+  </div>
+  <div id="scrollContainer" class="overflow-x-auto px-6 sm:px-10 md:px-12 py-6 sm:py-10 md:py-12 lg:pb-20 pt-0 scrollbar-hide">
     <div  class="flex gap-4 sm:gap-6 md:gap-8 w-max ">
       <!-- Card 1 -->
       <a href="./scotus.html">
@@ -894,7 +892,7 @@
                 class="fa-brands fa-youtube text-[#FF0000] cursor-pointer"
             ></i>
             <i
-              class="fa-brands fa-threads  cursor-pointer"
+              class="fa-brands fa-threads cursor-pointer"
             ></i>
             <i
               class="fa-brands fa-linkedin text-[#0077b5] cursor-pointer"

@@ -22,43 +22,44 @@
     <title>The Movement</title>
     <meta charset="UTF-8" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      @keyframes zoomOut {
-        0% {
-          transform: scale(1.09);
-        }
-        100% {
-          transform: scale(1);
-        }
-      }
-
-      .zoom-out {
-        animation: zoomOut 5s ease-in-out forwards;
-      }
-      .hidden {
-        display: none !important;
-      }
-    </style>
   </head>
   <body class="bg-[#001038] min-h-screen relative">
     <nav
       id="main-navbar"
       class="sticky top-0 z-50 bg-[#001038] flex items-center justify-between px-4 h-16 transition-all duration-500 ease-in-out transform"
     >
-      <!-- left logo of nav -->
+      <!-- Logo Section (left Logo) -->
       <a
         href="./index.html"
         class="flex items-center flex-shrink-0 cursor-pointer"
       >
         <img src="./assets/logomain1.png" class="h-8 sm:h-10 px-0" alt="Logo" />
-
-        <!-- Hide "MOVE ON NEPAL" on mobile -->
         <span
-          class="hidden sm:block font-bold font-serif text-base sm:text-lg text-white tracking-wider whitespace-nowrap"
+          class="font-bold font-serif text-base sm:text-lg text-white tracking-wider whitespace-nowrap hover:text-gray-300 hidden sm:inline"
+          >MOVE ON NEPAL</span
         >
-          MOVE ON NEPAL
-        </span>
       </a>
+
+      <!-- menu list -->
+      <div class="items-center justify-end flex-grow hidden lg:flex mr-10 nav">
+        <ul class="flex gap-6 cursor-pointer text-[12px] sm:text-[14px]">
+          <li
+            class="text-white w-fit border-b border-[#bfcbe0] pb-1  cursor-pointer"
+          >
+            <a href="/media.html">Media</a>
+          </li>
+          <li
+            class="text-white w-fit border-b border-[#bfcbe0] pb-1  cursor-pointer"
+          >
+            <a href="/movement.html">Movement</a>
+          </li>
+          <li
+            class="text-white w-fit border-b border-[#bfcbe0] pb-1 cursor-pointer"
+          >
+            <a href="/mission.html">Mission</a>
+          </li>
+        </ul>
+      </div>
 
       <!-- Menu Links for Desktop -->
       <div
